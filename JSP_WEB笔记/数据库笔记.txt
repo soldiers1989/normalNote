@@ -1,0 +1,21 @@
+1.数据库没有办法加载连接的情况：（在有main的java 类中，可以连接的）
+
+mysql-connector-java-5.1.38-bin.jar这个包不要引入。而是直接复制黏贴在 WebRoot--WEB-INF-lib文件夹中。。。不知道为什么？
+
+2.java String 数据库查询
+String str = "select * from user where";
+rs = stmt.executeQuery(str + "  userName= '"+userName+"'&& userPassword='"+userPassword+"'   "); 用符号： "+变量+" 来传入变量。。。
+
+3.数据库查询中文出错：
+String str = "select * from user where ";
+rs = stmt.executeQuery(str +"userName='"+userName+"' and userPassword = '"+userPassword+"' ");
+
+where处要留一个空格。。。不然是语法出错。。。（汗，查了好久，还去改变mysql的配置my.ini不知道 会有什么后果。。。）
+SQL 使用单引号来环绕文本值（大部分数据库系统也接受双引号）。如果是数值，请不要使用引号。
+
+这是正确的：
+SELECT * FROM Persons WHERE FirstName='Bush'
+
+这是错误的：
+SELECT * FROM Persons WHERE FirstName=Bush
+			

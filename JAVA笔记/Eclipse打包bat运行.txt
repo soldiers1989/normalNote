@@ -1,0 +1,45 @@
+
+bat命令可以这么写：（注意，包名.文件名 才是一个完整的名字,bat文件 要与 jar包文件 在同一个目录下）
+A:
+::java -cp 环境变量 main路径 args参数1，args参数2,...........
+java -cp ./*; com.test.testArguments string log           
+pause
+B:
+java -jar XXX.jar
+
+
+
+
+打包中，第三方jar包引用 的解决方法：
+
+运行时将其加入classpath的方式行不行？就是在运行jar的同时加入classpath参数：
+java -classpath some.jar  -jar test.jar
+ 
+这种方式是不行的，因为使用classpath指定的jar是由AppClassloader来加载，java 命令 加了-jar 参数以后，AppClassloader就只关注test.jar范围内的class了，classpath参数失效。
+
+方法一、使用Bootstrap Classloader来加载这些类。
+ 
+我们可以在运行时使用如下参数：
+ 
+ 
+-Xbootclasspath:完全取代系统Java classpath.最好不用。
+-Xbootclasspath/a: 在系统class加载后加载。一般用这个。
+-Xbootclasspath/p: 在系统class加载前加载,注意使用，和系统类冲突就不好了.
+win32     java -Xbootclasspath/a: some.jar;some2.jar;  -jar test.jar
+unix          java -Xbootclasspath/a: some.jar:some2.jar:  -jar test.jar
+win32系统每个jar用分号隔开，unix系统下用冒号隔开。（windows使用bat脚本，unix使用sh脚本的命令）
+
+方法二、使用Extension Classloader来加载
+ 
+你可以把需要加载的jar都扔到%JRE_HOME%/lib/ext下面，这个目录下的jar包会在Bootstrap Classloader工作完后由Extension Classloader来加载。非常方便，非常省心。:)
+ 
+方法三、还是用AppClassloader来加载，不过不需要classpath参数了
+eclipse 打包，注意选择mainclass,manifest.mf 文件我们可以打包前先建立，还有，打包时，引入包可以不用打钩
+ 
+我们在MANIFEST.MF中添加如下代码：
+Class-Path: lib/some.jar
+ 
+lib是和test.jar同目录的一个子目录，test.jar要引用的some.jar包就在这里面。
+然后测试运行，一切正常！
+
+方法四，第三方插件的使用！

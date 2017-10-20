@@ -1,0 +1,6 @@
+svn://192.168.0.253/projectA/program     --程序
+
+svn://192.168.0.253/projectA/design      --策划美术等
+改变后的地址
+
+svn://192.168.1.253/projectA

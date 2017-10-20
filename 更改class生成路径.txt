@@ -1,0 +1,12 @@
+当从SVN下载更新后，需要更改三个配置文件.project的路径
+
+三个配置文件分别放在：
+
+D:\xxxxx\server\gof\gof
+
+D:\xxxxx\server\gof\platform
+
+D:\xxxxx\server\gof\testWorldSrv
+
+更改成：D:\xxxxx\server\gof\classes   ----这个是放置生成class的文件夹
+D:/SVNpro/server/gof/classes

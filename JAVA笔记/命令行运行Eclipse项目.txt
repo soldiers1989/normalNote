@@ -1,0 +1,8 @@
+1.使用 java -cp要配置好环境变量
+
+2.运行的main文件，要带好完整的 包名.文件名
+
+比如，文件在D:\WorkSpaceMyEclipse\mainTest\bin\mainTest 下，名字为 test.class。。。。可以看出包名是mainTest.
+命令行如下：java -cp "%CLASSPATH%" mainTest.test
+
+注意：双引号“” 可以防止环境变量空格出错。

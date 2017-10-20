@@ -1,0 +1,27 @@
+1.JDK,即，Java SE Development Kit即，java标准开发包。sun 提供的用于开发java应用程序的开发包。
+它提供了，编译，运行java程序所需的各种工具和资源。。。包括java编译器，java运行时环境。以及java常用各类库。。
+
+2.JRE--java runtime environment(注意它与JDK的关系)  java运行时环境(与JVM的关系--JRE包含JVM)--如果只是运行java的话，一般不用安装JDK！！
+
+3.jdk安装之后jre文件夹就是安装java程序所必须的JRE环境。
+
+4.有一个与JDK并列的JRE文件夹，应该是公共的JRE吧。。。可以不用下载安装
+
+5.PATH的作用：在使用CMD命令行时，输入javac和java命令，系统会从指定的PATH中查找javac或java命令。
+
+6.javac命令：  javac -d destdir srcFile  举例： javac -d . ttt.java   解释：-d 后面连接的是 生成的.class放置的文件夹（.表示当前文件夹），
+  后面的ttt.java是指所要编译的文件!!!注意：如果用“.”, 会把.java 文件的包也生成出来，如果java文件有包结构的话！！
+
+7.CLASSPATH相关：JDK1.5以上的版本，不用设置CLASSPATH也是可以的。java java类名 命令的时候，JRE要搜索这个java类，一般是在本地搜索。
+  所以，CLASSPATH设置.；表示在当前目录查到这个java类。除此之外，编译运行java程序要用到的类，dt.jar，tool.jar.要设置好路径，让JRE找到
+  所以，就需要设置CLASSPATH环境。
+  
+8. 可以在运行java程序时，临时设置classpath路径
+   java -cp dirl;dir2;dir3; ttt(java类) aa bb cc(输入参数args[],数组用空格间隔)
+   java -cp dirl;dir2;dir3;%CLASSPATH% ttt(java类)
+9. jar命令打包：
+    1.缺省包：进入所在的class文件夹内，打包 jar cvf filename.jar a.class b.class（或jar cvf filename.jar *），打包出来的是缺省包文件夹名的，即
+	  class放置在default package包中
+	2.包含包路径:计入class文件在所在的文件夹，打包。 jar -cvf filename.jar foldername  生成的jar文件，是带有包路径的。
+	3.可执行包：只要修改jar包中的MANIFEST.MF文件，在其中加入包的入口信息：Main-Class: 包名.类名.(可以用压缩文件把MANIFEST文件解压出来，删除jar包中的
+	MANIFEST.MF,再修改解压出来的MANIFEST.MF，压缩进入jar包。大功告成！！！)

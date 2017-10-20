@@ -1,0 +1,18 @@
+1、 String  -- json对象
+ JSONArray ja = JSON.parseArray(json);   ---JSON原带方法
+ Utils.toJSONObject(json)'				----Utils工具类
+ Utils.toJSONArray(json)'
+ jo.getInteger(strItemSn) ---得到key所对应的Integer值
+ 
+2、json对象 -- String
+ ja.toJSONString;
+ jb.toJSONString;
+ 
+ Utils.toJSONString(object);
+ 
+3、String -- int[]    字符串 转换 int数组
+ Utils.strToIntArray(human.getHoroscopeFreeCount());  --工具类
+ 
+4、int[] -- String    int数组 转换 字符串
+ Utils.arrayIntToStr(horoCount)
+ 

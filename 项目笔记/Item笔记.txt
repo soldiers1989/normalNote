@@ -1,0 +1,38 @@
+1.装备获得item的方法：
+
+     a.//获得物品
+		Item itemBody = ItemBodyManager.inst().getById(unitObj, itemId);//getPack(unitObj).get(itemId);
+     b.
+	 ItemBase itb;//要强化的装备的数据库信息
+	   
+	   ItemPack bag = getPack(unitObj);
+       //装备是否穿在身上if~else	   
+       ItemBody itemBody = bag.get(id);
+       if(itemBody == null) {
+	   //查找背包中对应的物品
+	     Item item = ItemBagManager.inst().getById(humanObj, id);
+		 itb = item;
+		 } else{
+			//获得装备基础信息			
+			itb = itemBody;
+		}
+	？？？：为什么 item最后获得的是在身体背包中的装备？
+	
+2。背包删除物品。。有实时更新到UI吗？
+Item itemDes
+ItemPack packDes
+    itemDes.remove();
+	packDes.remove(itemDes.getId());
+	
+3..背包物品发生改变，发送改变信息给UI
+sendChangeMsg(unitObj.getHumanObj(), change, packSrc.getContainer());
+4.
+扣金币：HumanManager.inst().reduceMoney
+删物品：ItemBagManager.inst().remove//已经包含了向UI发送更新的信息了。。。。，
+
+
+
+5.某个物品发生变化发给客户端itemchange
+ItemChange change = new ItemChange();
+	change.mods.add(item);
+	sendChangeMsg(humanObj, change,eContainer);

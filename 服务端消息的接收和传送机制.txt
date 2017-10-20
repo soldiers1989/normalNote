@@ -1,0 +1,30 @@
+1.消息的传送：
+
+在xxxManager 里面编写SC的传送端口
+
+//根据MSG文件产生的内容，生成一个msg
+SCQuestDailyInfo.Builder msg = SCQuestDailyInfo.newBuilder();
+//对msg进行修改操作
+		for (QuestDailyVO vo : voList) {
+			msg.addQuest(vo.createMsg());
+		}
+//传送msg,通信完成
+		humanObj.sendMsg(msg);
+
+2.消息的接收
+
+在xxxMsgHandler里面编写CS的传送端口
+
+//引用，根据protocol文件在Msg.java内部产生的类
+@MsgReceiver(CSCommitQuest.class)
+//MsgParam类的使用
+public void putOn(MsgParam param){
+//通过MsgParam类活动人物对象	
+		HumanObject humanObj = param.getHumanObject();
+		//判断背包空间是否足够
+		if(!ItemBagManager.inst().SpaceAmple(humanObj,1)){
+			return ;
+		}
+		QuestManager.inst().commitQuest(humanObj);
+	}
+

@@ -1,0 +1,7 @@
+如果程序无法运行，遇到exception，
+那么：
+1.clean项目
+
+2.每次clean后都要---->运行D:\SVNpro\server\gof copyJSON 把配置表格复制？
+
+3.注意D:\SVNpro\server\gof\classes 里面的文件夹META_INF是否丢失---->奇怪，为什么会丢失呢？？--用SVN查看

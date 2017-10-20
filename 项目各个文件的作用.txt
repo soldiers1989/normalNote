@@ -1,0 +1,11 @@
+WorldStartup.class 整个程序的入口
+
+MsgReceiverInit.class 接受所有来自客户端的请求
+
+Eclipse: Ctrl+T按类名查找类 
+         Ctrl+R 查找文件
+
+4.调试的时候，一次打开三个bat文件：pwConn0,pwDB,pwWorld0
+pwWorld0这个bat,用于链接平台，debug时不能打开
+
+

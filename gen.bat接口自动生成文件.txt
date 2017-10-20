@@ -1,0 +1,8 @@
+D:\SVNpro\server\gof 里面的 gen.bat 点击后将 自动生成并覆盖 MsgReceiverInit.class
+
+**在package org.gof.demo.worldsrv.包里建立的xx类，用于处理来自客户端的信息
+
+要在MsgReceiverInit.class文件中生成接口的方法是：
+
+在xx类中的的方法前添加：@MsgReceiver(CSQueryFriendList.class)语句
+其中CSQueryFriendList.class是protocol文件自动生成文件Msg.java里面的类

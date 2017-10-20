@@ -1,0 +1,15 @@
+有时候 MySQL忽然无法登陆，提示是 expired(过期)
+解决方法：
+原始密码123456
+
+打开mysql command line client 进入命令行管理器
+输入语句如下：
+
+mysql> use mysql;
+mysql> UPDATE user SET Password = PASSWORD('newpass') WHERE user = 'root';
+mysql> FLUSH PRIVILEGES;
+
+如果不加分号;视为同一个语句，如：
+mysql> use mysql 
+mysql> UPDATE user SET Password = PASSWORD('newpass') WHERE user = 'root';
+mysql> FLUSH PRIVILEGES;

@@ -1,0 +1,16 @@
+1.需要部署几个文件在Java jdk中
+
+文件的路径是：D:\SVNFile\ComProgram\server\tool\zmq-lib\win_64
+部署在：C:\Program Files\Java\jdk1.8.0_20\bin
+
+2.生成数据库的名字和位置设置：
+
+  在gof 中的 config.properties 设置
+  
+  #数据库设置###############################
+db.schema=game_DEV_DB
+db.url=jdbc:mysql://127.0.0.1:3306/
+db.user=root
+db.pwd=root
+
+

@@ -1,0 +1,3 @@
+D:\SVNdesign\client-release\bin\res\afbeced4cd75831cdf3e4afb831d3bcb    连接哪台电脑上程序的ip地址
+
+D:\SVNpro\server\gof\config  gofConfig.properties改变服务器数据库地址  连接哪台电脑的数据库ip地址

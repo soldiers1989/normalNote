@@ -1,0 +1,6 @@
+打开MySql Command Line Client；
+输入密码打开
+
+然后输入：UPDATE user SET Password=PASSWORD('root') where USER='root';
+再输入：flush privileges;
+OK....

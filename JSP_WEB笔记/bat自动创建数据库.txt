@@ -1,0 +1,28 @@
+1.把自己要用的项目打包成jar。
+注意到选择界面JAR File Specification时，Export generated class files and resources 和 Export java source files and resources都打钩
+到 JARManifest Specification时， Main class 要选择，这是程序的入口
+
+2.光打自己的包还不行，程序要用到数据库等其他资源包
+修改自己打的包的 MANIFEST.MF文件
+
+Sealed: true
+Main-Class: retry.creatSql
+Class-Path: mysql-connector-java-5.1.38-bin.jar                   -----这个就是需要的外部包
+
+
+
+set CLASSPATH=F:\study\mylib\myjar.jar;%CLASSPATH%; 
+ 
+javac -d F:\mywebapp\WEB-INF\classes %1 
+ 
+pause 
+ 
+什么意思？
+相信大家都对上面3行的作用都很容易理解，第一行先是设置 CLASSPATH 环境变量，而用分号 ; 隔开后面的 %CLASSPATH% 是已经设置好的系统变量，
+重要的是前面部分特定于某个应用需要用到的 CLASSPATH，其实就是一些 .jar 包的引入。
+第二行使用 javac –d命令附加将要存放编译生成的 .class 文件的路径，在 Java web 应用中常见的就是mywebapp\WEB-INF\classes 目录了。
+第二行末尾的一个 %1 的用意稍后再讲。
+
+ java -D java.ext.dirs=./lib com.project.main.Main 
+ java命令-D用来设置系统变量值;java.ext.dirs表示的是告诉虚拟机加载该路径下 
+     所有的jar文件;ext.dirs指定的jar文件由extention classloader负责加载

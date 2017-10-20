@@ -1,0 +1,6 @@
+1.在classes文件夹内的 META-INF----i18n
+  testWorldSrv文件夹src----META-INF----i18n
+
+里面修改，拖到eclipse中修改。输入的汉字会变成一种字符格式
+
+2.返回服务端提示：在配置表CONFIG中的SysMsg.xlsx中修改添加

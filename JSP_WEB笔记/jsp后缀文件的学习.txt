@@ -1,0 +1,32 @@
+<div align = "center" > 用户登录         ----在屏幕上显示字体
+
+<hr   >界面上 一片空间
+
+<form method="post" name ="login" action="UserLogin"></form>  表单，用来向别的界面或对象传递消息,设置 传送方法，post,名字login,,传送方向 UserLogin（浏览器输入）函数，在web.xml中的servletmapping路径要相同
+
+<p></p>  段落标记
+<input type="text" size="15" name = "userName" >输入 的类型，字体，以及代表本输入的对象名字
+
+<input type="submit" value="登录" name="sub">  类型，是提交， 值：是登录，提交按钮显示的字体。。本对象的名字是 sub.
+
+<% %>圈起来的部分，表示代码。。没圈起来的，则是显示在界面上的文字。。
+<%=userName %> 表示 userName参数的值,显示在界面上
+
+
+web.xml上的数据：
+ <servlet>   
+    <servlet-name>U</servlet-name>                ---servlet的名字可以随便取，不用跟函数名相同
+    <servlet-class>action.UserLogin</servlet-class>--所触发的servlet的具体路径
+  </servlet>
+  
+    <servlet-mapping>
+    <servlet-name>U</servlet-name>				-----servlet的名字要跟上面取的名字一样
+    <url-pattern>/UserLogin</url-pattern>		-----浏览器输入的路径
+  </servlet-mapping>
+  
+  
+1.在网页上输入网址地址的设置：
+右键工程--Properties--MyEclipse-Deployment Assembly  设置 web context root。。。。如果系统没有自动刷新，需要clean一下
+
+1.在jsp页面导入java包
+<%@ page import="user.User" %>

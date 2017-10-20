@@ -1,0 +1,19 @@
+protol文件位置：D:\SVNpro\msg\protol
+
+1.修改protocol文件后，要生成；
+修改生成器： _gen_all
+
+注意：：服务端只要用gen_server.bat就可以了
+
+！！如果书写格式错误，比如讲optional写成option，那么文件将无法编译
+
+修改后生成文件的位置：D:\SVNpro\msg\gen\server\org\gof\demo\worldsrv\msg
+
+黏贴在D:\SVNpro\server\gof\testWorldSrv\gen\org\gof\demo\worldsrv\msg
+
+
+
+2.手机掉线可能是protol协议出现问题，
+
+如果message DItem 这类的协议出现了不同，即客户端与服务端不同。那么久连接不上
+ 即使不同的部分是可选的(即：optional.在CS或SC中optional不同是不会影响的)

@@ -1,0 +1,30 @@
+1.  private TickTimer scheduleTimer = new TickTimer(10000); // 调度的处理 --- 生成一个定时器对象，每十秒执行一次。。
+
+2.@Override      //服务器一开启，就开始执行和监听！！！
+	public void pulseOverride() {此方法，每20毫秒执行一次
+	if (scheduleTimer.isPeriod(Port.getTime())) {监听，每10000毫秒执行一次，以20毫秒一个单位计时
+			onSchdule();
+			System.out.println("humanGlobal的信息************调度的处理"+Port.getTime());
+		}
+	}
+	
+	3.@ScheduleMethod(DataResetService.cron_Day_12ST) --------@ScheduleMethod有这个注释，系统将自动的，每个固定的时间执行
+	这个注释，只有在Service类中有作用..用于定时处理一些操作
+	
+	4。定时处理时间的机制：---针对在线玩家的操作！！！
+	    1.pulseOverride()每20毫秒执行一次
+		2.if (scheduleTimer.isPeriod(Port.getTime())) {每10000毫秒执行一次
+			onSchdule();---//处理 shceduleMap的各种事件
+		}
+		3.各个@ScheduleMethod(DataResetService.cron_Day_12ST)语句块定时执行，---@ScheduleMethod有这个注释，系统将自动的，每个固定的时间执行
+		对ConcurrentSkipListMap<Integer, Long> shceduleMap 添加事件
+		
+		4. onSchdule方法，调用HumanObjectService （HumanObjectServiceProxy）的onSchedule方法
+		
+		5.HumanObjectService （HumanObjectServiceProxy）的onSchedule方法 调用HumanManage的onScheduleEvent(humanObj, key, timeLast)方法
+		
+		6.onScheduleEvent方法，发送事件！！！！
+		Event.fire(key, "humanObj", humanObj, "timeLoginLast", timeNow);
+	String whereSql = Utils.createStr(" WHERE `Rank` <= {} limit {},{};", ParamManager.rankTopRecordMaxNum[RankIntType.Combat.value()], i * countPerFind, countPerFind);		dbPrxRankCombat.findByQuery(false, whereSql);
+	
+{Account=1, SurplusBuyActNum=0, PvpDiWoId=0, GWarIsAuto=0, FashionClothesSn=0, EquipWeaponStrthLv=0, TimeLogout=1461778636076, GenRelationActivated=, MpCur=0, HpRecovery=0, GhostJade=0, NowAward=0, CompeteHistoryTopAward=, PvpModeTimeToHePing=0, AttingIndex=-1, ActValue=88, GenRecruited={"1004":1,"1023":1}, GWarEnermys={"11":100010000001022976,"1":100010000001022976,"12":100010000001022976,"2":100010000001021670,"3":100010000001022976,"4":100010000001022976,"5":100010000001021466,"6":100010000001021471,"7":100010000001022976,"8":100010000001022976,"9":100010000001021282,"10":100010000001022976}, FashionWeaponSn=0, SaintLevel=27, GuildContribute=0, GuildImmoNum=0, GWarProgress=1, FashionShow=1, VipLevel=8, GuildPropJSON=, Aggro=0, id=100010000000100001, LvStarResonance=0,0, ModelSn=1004, DevIMEI=0, DeleteRole=0, HoroFreeCount=0,0,0, TimeOnLine=2299946, Trial=0, EquipUnusedWeaponSn=0, GiftPayBack=, SkillGroupSn=0, RenameNum=0, ResistThunder=0, SaintExp=3627, StageHistory=[[1,1,97.2,144.3,"common"]], CompeteFightNum=0, HpMax=559, SoulElement=8256, Level=30, InFighting=0, SumCombat=0, NowAwardNum=0, GenSkillPointAllTime=0, OfficialSn=1, AntiCritAdd=0, GWarDieList=, Mana=0.0, Dodge=0, EquipClothesStrthLv=0, Sex=0, NowAwardGotNum=0, GeneralMostCombat=10201, Officialstatus=0, PvpMode=, GuideClose=1, Stre=0.0, ActRepStoryAward=, Inte=0.0, HoroIsFirst={"11":0,"1":0,"2":0,"3":0}, RankWorship={"0":0,"1":0,"2":0,"3":0}, GWarAutoPro=0, GuildLevel=0, EquipWeaponSn=0, DailyLivenessReward=, GWarReset=0, FirstCreateHuman=0, GuideFlags=, AntiBlock=0, ElementSn=0, Honor=0, LottoryFreeCount=0, CompeteRankTop=1764, TeamId=0, GenSkillPoint=20, TitleShow=1, GWarPass=0,0, Hit=0, GWarEnterHp={"1014":100,"1024":100,"1022":100}, AtkSpeed=1.0, GuildLeaveTime=0, IncreaseFire=0, Ghost=0, TitleStatus={"1":3}, Sn=0, HoroJPCount=1,1,1, GameSet=, CritAdd=0, ActValueMax=90, ItemBagNumMax=150, HoroJPGap=0,0,0, GuildDrawJSON=, Resigntimes=0, SoulToken=0, SkillStuffCost=0, Name=人人公爵, AntiCrit=0, HumanDigit=100001, Coin=149890, LottoryCooldown={}, DefPhy=22, AtkPhy=45, VipCanDrawLevel=1,2,3,4,5,6,7,8, GMPrivilege=1, DailyOnlineTime=0, QuestNameChangePassed=0, Gold=10426, GoldExchangeCoinNum=0, ElementType=0, CompeteIntegral=0, ActRepFinishNum={}, VipQuotaNums={"1":1}, GuildDrawResetNum=0, GuildCDR=0, IncreaseIce=0, GuildBelong=0, PeneMag=0, GWarEnerMp=0, GeneralSumCombat=10201, Profession=0, GuildDrawNum=0, GenSkillPointBuyNum=0, GuideIds=, GenLineup=[{"g1":100010000001140002,"sn":3,"g2":100010000001140001,"g3":0},{"g1":100010000001140001,"sn":1,"g2":100010000001140002,"g3":0},{"g1":100010000001140002,"sn":2,"g2":100010000001140001,"g3":0}], ModUnlock=, QuestWeekLiveness=0, Combat=223, Block=0, Icon=0, ResistFire=0, VipAccumulateGold=6480, EquipClothesSn=0, SkillSet1=, SkillSet2=, EquipPosJSON=[{"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0},{"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0}], AtkMag=45, TimeSecOnline=17640, OnlineAward=0,0,0,0,0,0,0, ResistIce=0, GenUseLineup=2, ActValueFullTime=1461786360101, PvpModeOriginal=, Glory=70, PayNum=1, IncreaseThunder=0, BloodSuck=0, CompeteFightTime=1461781799970, PayBack=0, MpMax=0, EnchantTimes=0, HpCur=559, EquipUnusedWeaponStrthLv=0, SkillAllSn=, ServerId=1, DevMAC=, ActRepStoryLastPass=, SessionKey=1317100832, QuestDailyLiveness=0, FirstStory=1, GWarEnterMp=0, PlatformId=1, Crit=0, SaintMaxCombat=9822, CompeteIntegralAward=, PenePhy=0, FightStateEndTime=0, TitleSN=0, Speed=7.0, FightSet=, HoroCooldown={1:1461760840876,2:-1,3:1461760840876}, TimeCreate=1461760839902, WeekLivenessReward=, DrawPayBack=, DefMag=22, DevType=0, LottorySelectedCount=, FirstPay=1, TimeLogin=1461787421534, GuildDrawState=0, MwMaxCrit=150, Contribute=0, Exp=100, CompeteBuyNum=0, CompeteLottery=0, MwMinCrit=200}

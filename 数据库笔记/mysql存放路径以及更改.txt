@@ -1,0 +1,11 @@
+1.查找
+ 进入sql控制台：
+ 在sql命令行下 sql>select @@datadir，得到路径是：C:\ProgramData\MySQL\MySQL Server  5.7\data
+ 
+2.更改mysql数据文件位置
+解答：1. 关闭mysql服务器(windows)： 以系统管理员身份.打开cmd，执行net start 查看mysql是否启动。启动的话就停止net stop mysql.
+      2. 把mysql数据文件，拷贝/剪切到想存放的路径
+      3. 修改my.ini文件datadir参数为想存放的路径
+      4. 启动mysql服务器：net start mysql
+      注意：1. win7下编辑my.ini时，如果用ultraedit打开，不会是管理员身份，改后对mysql不生效。用记事本打开。
+            2. my.ini在原位置保存后不能编辑。要剪切到别的地方，改后在粘贴回来。

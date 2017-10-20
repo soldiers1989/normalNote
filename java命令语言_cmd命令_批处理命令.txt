@@ -1,0 +1,37 @@
+## .bat文件放在哪个文件夹，java编译默认的路径就是该目录路径
+
+##
+java中：
+../ 代表当前目录的上一层目录
+./ 代表当前目录
+
+##
+
+-cp 和 -classpath 一样，是指定类运行所依赖其他类的路径，通常是类库，
+jar包之类，需要全路径到jar包
+
+##
+javac 编译xxx.java文件成xxx.class文件
+java xxx 执行xxx.class文件
+
+##
+当xxx有包结构 package a.b.c时
+
+在当前文件目录加下构造出包结构 a/b/c
+确保c中有xxx.class文件
+
+然后在当前目录下运行语句是：java a.b.c.xxx
+
+如果此时你使用cd a，进入a目录，则我们需要使用java -cp ../ a.b.c.xxx，这样才会找到class文件
+
+java -cp ./ family.me.helloworld ---------------->在当前文件夹下，运行包内的指定文件
+
+java -cp ./javadecode family.me.helloworld ------>在当前文件夹下，进入javadecode文件夹 运行包内的指定文件
+
+##
+有了包结构，java xxx 的语句也必须改变
+
+##  指定生成了类放置位置 -d + 路径
+javac helloworld.java -d C:\Users\Administrator\Documents\javadecode
+::如果不指定生成的class的路径，那么将不会生成包结构。指定了路径就能生成包结构
+javac helloworld.java -d C:\Users\Administrator\Documents\javadecode
