@@ -1,0 +1,64 @@
+1.CallPoint 是远程节点，主要用于放置远程节点的信息
+
+2.CallPoint 的参数:
+	public String nodeId;
+	public String portId;
+	public Object servId;
+	public String callerInfo;			//调用者信息
+
+3.构造函数：
+
+	public CallPoint() {
+
+	}
+
+	public CallPoint(String nodeId, String portId, Object servId) {
+		this.nodeId = nodeId;
+		this.portId = portId;
+		this.servId = servId;
+		this.callerInfo = "";
+	}
+	
+3. 三个方法：
+	@Override
+	public void writeTo(OutputStream stream) throws IOException {
+		stream.write(nodeId);
+		stream.write(portId);
+		stream.write(servId);
+		stream.write(callerInfo);
+	}
+
+	@Override
+	public void readFrom(InputStream stream) throws IOException {
+		nodeId = stream.read();
+		portId = stream.read();
+		servId = stream.read();
+		callerInfo = stream.read();
+	}
+
+	@Override
+	public String toString() {
+		return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+					.append("nodeId", nodeId)
+					.append("portId", portId)
+					.append("servId", servId)
+					.append("callerInfo", callerInfo)
+					.toString();
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

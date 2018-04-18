@@ -1,0 +1,57 @@
+1.AccountServiceProxy 的实例化：
+	AccountServiceProxy accountServ = AccountService.createProxy();
+	
+
+2. 在 AccountService 类中有一个创建代理类的方法 
+
+	public static AccountServiceProxy createProxy() {
+		return AccountServiceProxy.newInstance(Config.getGameWorldPartDefaultNodeId(), Config.getGameWorldPartDefaultPortId(), Distr.SERV_GATE);
+	}	
+	
+	
+3.代理类调用代理的方法：
+	accountServ.setHumanOnlineFull(num);
+	
+	代理类中，该方法：
+	public void setHumanOnlineFull(int onlineNum) {
+		callerInfo = Utils.getCallerInfo();
+		remote.callerInfo = callerInfo;
+		localPort.call(immutableOnce, remote, EnumCall.AccountService_setHumanOnlineFull_int, "AccountService_setHumanOnlineFull_int", new Object[] {onlineNum});
+		if(immutableOnce) immutableOnce = false;
+	}
+	
+	用到的参数：
+	private CallPoint remote;
+	private Port localPort;
+	private String callerInfo;
+	// 当此参数为true时同NODE间传递将不在进行克隆，直接使用此对象进行。可极大提高性能，但如果设置不当可能引起错误。
+	private boolean immutableOnce;
+	
+	public static final int AccountService_setHumanOnlineFull_int = 6;
+	
+	
+	
+	***************************************
+	未了解内容：
+	1. Utils.getCallerInfo()方法
+	2. CallPoint remote 作用 OK
+	3. Port 作用
+	4.immutableOnce的作用
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

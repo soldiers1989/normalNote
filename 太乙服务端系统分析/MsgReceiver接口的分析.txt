@@ -1,0 +1,204 @@
+1.MsgReceiver函数式接口的class:
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface MsgReceiver {
+	Class<? extends GeneratedMessage>[] value();
+}
+
+GeneratedMessage是prototbuf-java-2.6.1.jar的类，信息类
+
+2.接口的使用方法举例：
+	@MsgReceiver(CSQunyingCreateTeam.class)
+	public void _msg_CSQunyingCreateTeam(MsgParam param) {
+		HumanObject humanObj = param.getHumanObject();
+		QunyingManager.inst()._msg_CSQunyingCreateTeam(humanObj);
+	}
+
+
+
+3.在AccountMsgHandler类中的使用：
+
+在类中的静态块，通过方法反射，给一个set赋值
+
+// 下属监听消息
+	public static final Set<Class<? extends GeneratedMessage>> methods = new HashSet<>();
+
+	static {
+		// 寻找本类监听的消息
+		Method[] mths = AccountMsgHandler.class.getMethods();
+		for (Method m : mths) {
+			// 不是监听函数的忽略
+			if (!m.isAnnotationPresent(MsgReceiver.class)) {
+				continue;
+			}
+
+			// 记录
+			MsgReceiver ann = m.getAnnotation(MsgReceiver.class);
+			methods.add(ann.value()[0]);
+		}
+	}
+
+4.在CombatMsgHandler类中的使用
+
+在类中的静态块，通过方法反射，给一个set赋值
+
+// 下属监听消息
+	public static final Set<Class<? extends GeneratedMessage>> methods = new HashSet<>();
+
+	static {
+		// 寻找本类监听的消息
+		Method[] mths = AccountMsgHandler.class.getMethods();
+		for (Method m : mths) {
+			// 不是监听函数的忽略
+			if (!m.isAnnotationPresent(MsgReceiver.class)) {
+				continue;
+			}
+
+			// 记录
+			MsgReceiver ann = m.getAnnotation(MsgReceiver.class);
+			methods.add(ann.value()[0]);
+		}
+	}
+	
+	
+5. 3和4节中的赋值在public class AccountExtendMsgHandler extends MsgHandler 类中被方法调用：
+
+	A:
+	@Override
+	protected void fire(GeneratedMessage msg, Param param) {
+		// 忽略不是本阶段要关心的协议
+		if (!AccountMsgHandler.methods.contains(msg.getClass()) && !CombatMsgHandler.methods.contains(msg.getClass())) {
+			return;
+		}
+
+		// 拼写参数
+		MsgParamAccount mp = new MsgParamAccount(msg);
+		mp.setConnPoint(param.<CallPoint> get("connPoint"));
+		mp.setService(param.<AccountService> get("serv"));
+		mp.setConnId(param.<Long> get("connId"));
+		mp.setConnStatus(param.<ConnectionStatus> get("connStatus"));
+		MsgSender.fire(mp);
+	}
+	
+	MsgParamAccount ；类是一个盛放变量的类，有变量：CallPoint，AccountService，long connId，ConnectionStatus，GeneratedMessage msg，Map<String, Object> param
+	
+	public class MsgParamAccount extends MsgParamBase {
+	private CallPoint connPoint; // 发送消息的连接点
+	private AccountService service; // 所属服务
+	private long connId; // 连接ID
+	private ConnectionStatus connStatus; // 连接状态
+
+	public MsgParamAccount(GeneratedMessage msg) {
+		super(msg);
+	}
+	
+	public class MsgParamBase {
+	private GeneratedMessage msg;
+
+	private Map<String, Object> param = new HashMap<>();
+
+	public MsgParamBase(GeneratedMessage msg) {
+		super();
+		this.msg = msg;
+	}
+	
+	B:
+	MsgSender.fire(mp)方法：
+	
+	/**
+	 * 发布事件
+	 * @param param
+	 */
+	public static void fire(MsgParamBase param) {
+		GeneratedMessage msg = param.getMsg();
+		if(null == msg) 
+			return;
+
+		instance.fireHandler(msg.getClass(), null, param);
+	}
+	
+	C:
+	MsgSender 类简介：
+	
+	MsgSender extends ObServer<Class<? extends GeneratedMessage>, MsgParamBase> 
+	// 实例化单例
+	public static final MsgSender instance = new MsgSender();
+
+	// 缓存目标实例
+	private static final Map<Class<?>, Object> targetMsgHandlers = new ConcurrentHashMap<>();
+	
+	getTargetBean()	
+	fire()
+	getListenerAnnotation()
+	
+	D:ObServer 类简介：
+	/**
+ * 观察者模式基类 职责 1.初始化 2.发布事件 3.通知观察者
+ */
+	public abstract class ObServer<K, P> {}
+	private final Map<Object, Set<CommonFunction>> eventMethod = new HashMap<>();
+	
+	
+	获取监听这个事件的注解
+	getListenerAnnotation();	
+	
+	获取事件接收对象的实例	
+	getTargetBean();
+	注册时间侦听函数，此函数一般由自动生成的代码调用
+	reg()
+	
+	_fireHandler(String fullKey, P param)
+	fireHandler(K key, Object subKey)
+	fireHandler(K key, Object subKey, P param)
+	getListenerKey()
+	getSubKeysFromValue()
+	createMethodKey()
+	
+	用到的方法详细：
+		protected final void fireHandler(K key, Object subKey, P param) {
+		// 创建事件关键字
+		// 如果有子事件 那么会创建两个事件(主事件 + 子事件)
+		_fireHandler(createMethodKey(key, null), param);
+		if (null != subKey) {
+			_fireHandler(createMethodKey(key, subKey), param);
+		}
+	}
+		private static String createMethodKey(Object key, Object subKey) {
+		String mk = key.toString();
+
+		// 如果有 那么拼装子事件
+		if (subKey != null && !subKey.toString().equals("")) {
+			mk = mk + "$" + subKey.toString();
+		}
+
+		return mk;
+	}
+	
+	/*
+	 * 最终真正的执行
+	 */
+	private void _fireHandler(String fullKey, P param) {
+		Set<CommonFunction> funcs = eventMethod.get(fullKey);
+		if (null != funcs) {
+			for (CommonFunction f : funcs) {
+				f.apply(param);
+			}
+		}
+	}
+	
+	
+6：	AccountExtendMsgHandler 类的 fire(GeneratedMessage msg, Param param) 方法在何处被调用：
+	父类 MsgHandler 方法 handle(byte[] buffer, Object... params) 中调用
+ 
+	handle方法在何处被调用：
+	
+	HumanObjectService extends Service 中的方法 msgHandler(long connId, byte[] chunk)被调用
+	
+	AccountService extends Service 中的方法 msgHandler(long connId, ConnectionStatus status, byte[] msgbuf)被调用
+	
+	
+	
+	
+
+

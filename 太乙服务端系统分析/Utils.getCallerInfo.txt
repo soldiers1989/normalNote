@@ -1,0 +1,40 @@
+1.方法：获取rpc调用处的函数信息，文件名:行号 调用者函数名
+		
+		public static String getCallerInfo() {
+		StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+		StackTraceElement e = stackTrace[3];
+		return new StringBuilder().append(e.getFileName()).append(":")
+					.append(e.getLineNumber()).append(" ")
+					.append(e.getMethodName()).toString();
+	}
+	
+	getStackTrace（）：返回一个堆栈轨迹元素的数组，代表了这个线程的堆栈情况。 
+	如果：1.这个线程没有被开启；2.这个线程被开启了但是没有被系统运行过（因为线程运行是需要根据一定规律轮换的）；3.这个线程结束了。 
+
+　　这三种情况下getStackTrace()返回的数组长度为0。
+	
+	
+	如果返回的数组长度不为0，那么数组的第一个元素代表栈顶元素，即是这个调用序列中最recent的方法。 
+    第二个元素就是调用方法的类. 
+　　数组的最后一个元素代表栈底元素，即调用序列中最远的一个元素。
+	
+	
+2. getStackTrace()方法返回的是 调用函数的顺序，
+	下标0是最近的调用者即getStackTrace
+	下标1是调用getStackTrace的方法，即getCallerInfo
+	以此类推。。。。
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

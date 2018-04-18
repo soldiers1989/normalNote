@@ -1,0 +1,3 @@
+update groupchat set applyInfo="+sqlStr+" where groupId="+chatGroupId
+
+sqlStr必须是字符串，如果是json数据的话，要用单引号括起来：String sqlStr = "'"+applyJson.toString()+"'";

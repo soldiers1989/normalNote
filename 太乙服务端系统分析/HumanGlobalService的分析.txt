@@ -1,0 +1,53 @@
+1.HumanGlobalService 重写 Service 的方法 pulseOverride()
+	
+	/**
+	 * 子类可覆盖心跳
+	 */
+	public void pulseOverride() {
+
+	}
+
+2.Service 的方法  pulse() 调用了 pulseOverride 方法：
+
+	/**
+	 * 心跳
+	 */
+	public final void pulse() {
+		pulseOverride();// 子类可覆盖心跳
+		pulseSchedulers();// 执行时间调度队列
+	}
+3.HumanGlobalService 重写的 方法 pulseOverride 调用了 pulseAccountOnlineFull() 方法
+
+		private void pulseAccountOnlineFull(long now) {
+		if(!accountOnlineFullTimer.isPeriod(now)) {
+			return;
+		}
+		
+		// 当前人数
+		int num = datas.size();
+		//Log.temp.info("pulseAccountOnlineFull:num============{}",num);
+		// 同步到account服务器
+		accountServ.setHumanOnlineFull(num);
+	}
+	
+	方法内的参数：
+	// 向account同步服务器人数满员状态
+	public static int ACCOUNTTIME = 10;			//检查超时时间
+	private TickTimer accountOnlineFullTimer = new TickTimer(ACCOUNTTIME * Time.SEC);
+	AccountServiceProxy accountServ;	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
