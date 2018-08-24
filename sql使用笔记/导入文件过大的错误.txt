@@ -1,0 +1,20 @@
+
+1.可能是值设置的问题
+在数据库的commander line client 中，
+
+查看允许的最大数据量：
+show VARIABLES like '%max_allowed_packet%';
+
+设置 最大量：
+set global max_allowed_packet = 1024*1024*1024; 
+
+查看时间缓冲区大小：
+show variables like '%net_buffer_length%';
+设置缓冲区大小：
+set global net_buffer_length=100000;   --  导出时的缓冲区
+
+2.可能是磁盘储存空间不足的问题。
+修改储存位置。
+   1.复制C:\ProgramData\MySQL\MySQL Server 5.5\中的data目录到，你要保存的位置
+   2.用记事本打开C:\ProgramData\MySQL\MySQL Server 5.5\data\目录下的my.ini
+　　找到datadir="C:\ProgramData\MySQL\MySQL Server 5.5\data"，修改到你要保存的位置

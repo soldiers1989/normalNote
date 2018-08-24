@@ -1,0 +1,32 @@
+【后台】
+七政：http://ltd.qzgame.cc:1009/taiyi/
+正式安卓服：http://plat.ty.qzgame.cc/TY_Android/
+正式安卓服2：http://plat.ty.qzgame.cc/TY_Android_a/
+测试服：http://plat.ty.qzgame.cc/taiyi/
+http://plat.ty.qzgame.cc/TY_IOS_a
+http://plat.ty.qzgame.cc/TY_IOS_b
+
+【热更】
+七政：http://testres.ty.qzgame.cc:1027
+FTP地址：10.163.254.243
+端口：21
+账号：res_upload
+密码：res_upload
+
+上传
+ftp://120.92.216.197
+res_upload
+res_upload
+下载
+http://res-cdn.ty.qzgame.cc/update
+
+F
+华为：http://plat.ty.qzgame.cc/TY_HW/
+应用宝：http://plat.ty.qzgame.cc/TY_YYB_a
+商務包：http://plat.ty.qzgame.cc/TY_Business/
+移动MM：http://plat.ty.qzgame.cc/TY_MM_a/
+
+新手战斗的服务器：guide.ty.qzgame.cc  端口：20001
+
+
+客户端保存快捷键： ctrl+s
