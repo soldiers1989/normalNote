@@ -1,7 +1,6 @@
 【后台】
 七政：http://ltd.qzgame.cc:1009/taiyi/
-正式安卓服：http://plat.ty.qzgame.cc/TY_Android/
-正式安卓服2：http://plat.ty.qzgame.cc/TY_Android_a/
+
 测试服：http://plat.ty.qzgame.cc/taiyi/
 http://plat.ty.qzgame.cc/TY_IOS_a
 http://plat.ty.qzgame.cc/TY_IOS_b
@@ -21,8 +20,11 @@ res_upload
 http://res-cdn.ty.qzgame.cc/update
 
 F
-华为：http://plat.ty.qzgame.cc/TY_HW/
-应用宝：http://plat.ty.qzgame.cc/TY_YYB_a
+安卓混服审核：http://plat.ty.qzgame.cc/TY_HW_b
+安卓混服：http://plat.ty.qzgame.cc/TY_HW_a					http://plat.ty.qzgame.cc/TY_HW_b/
+应用宝：http://plat.ty.qzgame.cc/TY_YYB_a                 	http://plat.ty.qzgame.cc/TY_YYB_b/
+应用宝审核：http://plat.ty.qzgame.cc/TY_YYB_c
+
 商務包：http://plat.ty.qzgame.cc/TY_Business/
 移动MM：http://plat.ty.qzgame.cc/TY_MM_a/
 

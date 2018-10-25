@@ -1,1 +1,1172 @@
 全屏切换：alt+enter
+tail 不小心进入某种模式：退出：ctrl+c
+
+   78  sh closeServer3.sh 
+   79  sh closeServer1.sh 
+   80  sh closeServer0.sh 
+   81  ls
+   82  cd ty_s1
+   83  ls
+   84  sh closeServer.sh 
+   85  sh genDB.sh 
+   86  sh crossGenDB.sh 
+   87  ls
+   88  sh startServer.sh 
+   89  ps -ef | grep java
+   90  cd ..
+   91  cd ty_s3
+   92  sh genDB.sh 
+   93  sh crossGenDB.sh 
+   94  sh startServer3.sh 
+   95  cd /qzdata1/
+   96  cd server/
+   97  cd ty_s3
+   98  ls
+   99  sh closeServer3.sh 
+  100  sh genDB.sh 
+  101  sh startServer3.sh 
+  102  ps -ef | grep java
+  103  sh closeServer3.sh 
+  104  sh genDB.sh 
+  105  sh startServer3.sh 
+  106  ps -ef | grep java
+  107  sh closeServer3.sh 
+  108  sh genDB.sh 
+  109  sh startServer3.sh 
+  110  ps -ef | grep java
+  111  sh closeServer3.sh 
+  112  sh startServer3.sh 
+  113  cd /qzdata1/backup/
+  114  rz -E
+  115  tar -zxvf zabbix-3.4.1.tar.gz
+  116  cd zabbix-3.4.1
+  117  ./configure --prefix=/usr/local/zabbix --enable-agent
+  118  make install
+  119  \cp misc/init.d/fedora/core/zabbix_agentd /etc/init.d/
+  120  sed -i 's/BASEDIR=\/usr\/local/BASEDIR=\/usr\/local\/zabbix/g' /etc/init.d/zabbix_agentd
+  121  sed -i 's/Server=127.0.0.1/Server=125.77.254.10/g' /usr/local/zabbix/etc/zabbix_agentd.conf
+  122  sed -i 's/ServerActive=127.0.0.1/ServerActive=125.77.254.10/g' /usr/local/zabbix/etc/zabbix_agentd.conf
+  123  cd ..
+  124  rm -rf zabbix-3.4.1
+  125  \cp zabbix_agentd.conf /usr/local/zabbix/etc/
+  126  yum install  libxml2-devel  pcre-devel -y
+  127  cp /usr/local/zabbix/etc/zabbix_agentd.conf .
+  128  tar -zxvf zabbix-3.4.1.tar.gz
+  129  cd zabbix-3.4.1
+  130  ./configure --prefix=/usr/local/zabbix --enable-agent
+  131  make && make install
+  132  \cp misc/init.d/fedora/core/zabbix_agentd /etc/init.d/
+  133  sed -i 's/BASEDIR=\/usr\/local/BASEDIR=\/usr\/local\/zabbix/g' /etc/init.d/zabbix_agentd
+  134  cd ..
+  135  rm -rf zabbix-3.4.1
+  136  \cp zabbix_agentd.conf /usr/local/zabbix/etc/
+  137  sed -i 's/Server=125.77.254.10/Server=10.163.254.250/g' /usr/local/zabbix/etc/zabbix_agentd.conf
+  138  sed -i 's/ServerActive=125.77.254.10/ServerActive=10.163.254.250/g' /usr/local/zabbix/etc/zabbix_agentd.conf
+  139  /etc/init.d/zabbix_agentd restart
+  140  groupadd zabbix
+  141  useradd zabbix -g zabbix -M -s /sbin/nologin
+  142  /etc/init.d/zabbix_agentd restart
+  143  cat /tmp/zabbix_agentd.log 
+  144  HOST_NAME=`hostname`
+  145  sed -i "s/Hostname=Zabbix server/Hostname=$HOST_NAME/g" /usr/local/zabbix/etc/zabbix_agentd.conf 
+  146  sed -i 's/Server=127.0.0.1/Server=10.163.254.250/g' /usr/local/zabbix/etc/zabbix_agentd.conf
+  147  sed -i 's/ServerActive=127.0.0.1/ServerActive=10.163.254.250/g' /usr/local/zabbix/etc/zabbix_agentd.conf
+  148  /etc/init.d/zabbix_agentd restart
+  149  cat /tmp/zabbix_agentd.log 
+  150  cat /usr/local/zabbix/etc/zabbix_agentd.conf | grep 250
+  151  cat /tmp/zabbix_agentd.log 
+  152  /etc/init.d/iptables stop
+  153  sh closeServer3.sh 
+  154  cd /qzdata1/
+  155  cd server/
+  156  cd ty_s3
+  157  ls
+  158  sh closeServer3.sh 
+  159  ps -ef | grep java
+  160  sh startServer3.sh 
+  161  ps -ef | grep java
+  162  sh closeServer3.sh 
+  163  sh genDB.sh 
+  164  ps -ef | grep java
+  165  sh startServer3.sh 
+  166  ps -ef | grep java
+  167  sh closeServer3.sh 
+  168  sh startServer3.sh 
+  169  sh closeServer3.sh 
+  170  sh genDB.sh 
+  171  sh startServer3.sh 
+  172  ps -ef | grep java
+  173  sh closeServer3.sh 
+  174  sh genDB.sh 
+  175  ps -ef | grep java
+  176  sh startServer3.sh 
+  177  ps -ef | grep java
+  178  sh closeServer3.sh 
+  179  sh genDB.sh 
+  180  sh startServer3.sh 
+  181  ps -ef | grep java
+  182  cd..
+  183  cd ..
+  184  cd ty_s1
+  185  ls
+  186  sh closeServer.sh 
+  187  ps -ef | grep java
+  188  sh startServer.sh 
+  189  ps -ef | grep java
+  190  sh closeServer.sh 
+  191  ps -ef | grep java
+  192  sh startServer.sh 
+  193  ps -ef | grep java
+  194  sh closeServer.sh 
+  195  sh startServer.sh 
+  196  sh closeServer.sh 
+  197  sh startServer.sh 
+  198  sh closeServer.sh 
+  199  sh startServer.sh 
+  200  sh closeServer.sh 
+  201  sh startServer.sh 
+  202  cd ..
+  203  cd ty_s3
+  204  ls
+  205  sh closeServer3.sh 
+  206  ps -ef | grep java
+  207  sh genDB.sh 
+  208  sh startServer3.sh 
+  209  cd ..
+  210  cd ty_s1
+  211  sh closeServer.sh 
+  212  sh startServer.sh 
+  213  ps -ef | grep java
+  214  sh closeServer.sh 
+  215  sh startServer.sh 
+  216  cd ..
+  217  cd ty_s3
+  218  sh closeServer3.sh 
+  219  sh startServer3.sh 
+  220  sh closeServer3.sh 
+  221  sh startServer3.sh 
+  222  sh closeServer3.sh 
+  223  sh startServer3.sh 
+  224  ps -ef | grep java
+  225  sh closeServer3.sh 
+  226  ps -ef | grep java
+  227  sh startServer3.sh 
+  228  ps -ef | grep java
+  229  sh closeServer3.sh 
+  230  ps -ef | grep java
+  231  sh startServer3.sh 
+  232  sh closeServer3.sh 
+  233  ps -ef | grep java
+  234  sh startServer3.sh 
+  235  sh closeServer3.sh 
+  236  ps -ef | grep java
+  237  sh startServer3.sh 
+  238  cd ..
+  239  cd ty_s1
+  240  sh closeServer.sh 
+  241  sh genDB.sh 
+  242  sh crossGenDB.sh 
+  243  ps -ef | grep java
+  244  sh startServer.sh 
+  245  ps -ef | grep java
+  246  sh closeServer.sh 
+  247  ps -ef | grep java
+  248  sh startServer.sh 
+  249  cd ..
+  250  cd ty_s3
+  251  sh closeServer3.sh 
+  252  ps -ef | grep java
+  253  sh startServer3.sh 
+  254  sh closeServer3.sh 
+  255  sh startServer3.sh 
+  256  cd ..
+  257  cd ty_s1
+  258  sh closeServer.sh 
+  259  sh startServer.sh 
+  260  cd ..
+  261  cd ty_s3
+  262  sh closeServer3.sh 
+  263  ps -ef | grep java
+  264  sh genDB.sh 
+  265  sh startServer3.sh 
+  266  sh closeServer3.sh 
+  267  sh startServer3.sh 
+  268  sh closeServer3.sh 
+  269  sh startServer3.sh 
+  270  cd ..
+  271  cd ty_s1
+  272  sh closeServer.sh 
+  273  sh startServer.sh 
+  274  cd ..
+  275  cd ty_s3
+  276  sh closeServer3.sh 
+  277  sh startServer3.sh 
+  278  cd ../ty_s1
+  279  sh closeServer.sh 
+  280  sh startServer.sh 
+  281  sh closeServer.sh 
+  282  sh startServer.sh 
+  283  cd ../ty_s3
+  284  sh closeServer.sh 
+  285  sh closeServer3.sh 
+  286  sh startServer3.sh 
+  287  sh closeServer3.sh 
+  288  sh startServer3.sh 
+  289  cd ../ty_s1
+  290  sh closeServer.sh 
+  291  sh startServer.sh 
+  292  sh closeServer.sh 
+  293  sh startServer.sh 
+  294  cd ../ty_s3
+  295  sh closeServer3.sh 
+  296  sh startServer3.sh 
+  297  find / -name libstdc++.so.6
+  298  strings /usr/lib64/libstdc++.so.6 | grep GLIBCXX
+  299  cd /qzdata1/server/ty_s1
+  300  ls
+  301  ps -ef | grep java
+  302  cat log4j2/world0/world0.log
+  303  tailf log4j2/world0/world0.log
+  304  cd ..
+  305  cd ty_s3
+  306  ls
+  307  sh closeServer3.sh 
+  308  sh crossDB3.sh 
+  309  sh closeServer3.sh 
+  310  sh crossGenDB.sh 
+  311  sh genDB.sh 
+  312  sh startServer3.sh 
+  313  sh closeServer3.sh 
+  314  sh startServer3.sh 
+  315  sh closeServer3.sh 
+  316  sh genDB.sh 
+  317  sh startServer3.sh 
+  318  sh closeServer3.sh 
+  319  sh genDB.sh 
+  320  sh startServer3.sh 
+  321  date
+  322  cd /qzdata1/server/
+  323  ll
+  324  ll ty_s0/
+  325  htop
+  326  df -h
+  327  cd /qzdata1/
+  328  ll
+  329  cd backup/
+  330  ll
+  331  tar -xf 201709251007_taiyi_game1_dump.bz2 
+  332  ll
+  333  cd taiyi_game1_dump/
+  334  ll
+  335  rpm -ql subversion
+  336  /usr/bin/svnversion --version
+  337  whereis svn
+  338  which svn
+  339  find / -name "*svn*"
+  340  yun remove subversion
+  341  yum remove subversion
+  342  yum install subversion
+  343  rpm -ql subversion
+  344  /usr/bin/svnversion --version
+  345  mkdir -p /var/svn/svnrepos
+  346  svnadmin create /var/svn/svnrepos
+  347  cd /var/svn/svnrepos
+  348  ls
+  349  cd /conf
+  350  cd conf
+  351  ls
+  352  vi authz
+  353  vi passwd
+  354  vi svnserve.conf 
+  355  svnserve -d -r /var/svn/svnrepos
+  356  vi passwd
+  357  vi authz
+  358  ps -ef|grep svn
+  359  kill -9 8743
+  360  svnserve -d -r /var/svn/
+  361  ps -ef|grep svn
+  362  ls
+  363  vi authz
+  364   vim /etc/bashrc 
+  365  source /etc/bashrc 
+  366  echo "*.* @10.163.254.10" >> /etc/rsyslog.conf 
+  367  /etc/init.d/rsyslog restart
+  368  cat /etc/security/limits.conf
+  369  cat /var/log/cron
+  370  w
+  371  cat >> /etc/security/limits.conf << EOF*           soft   nofile       65535
+  372  *           hard   nofile       65535
+  373  EOF
+  374  ulimit -a
+  375  ulimit -SHn 65536
+  376  ulimit -a
+  377  cat /etc/security/limits.conf
+  378  ps -ef|grep mysql
+  379  history
+  380  history|grep svn
+  381  history|grep tar
+  382  cd /qzdata1/server/ty_s3
+  383  ls
+  384  sh closeServer3.sh 
+  385  sh genDB.sh 
+  386  sh startServer3.sh 
+  387  sh closeServer3.sh 
+  388  sh genDB.sh 
+  389  sh startServer3.sh 
+  390  sh closeServer3.sh 
+  391  sh genDB.sh 
+  392  sh startServer3.sh 
+  393  cd ..
+  394  cd ty_s1
+  395  sh closeServer.sh 
+  396  sh genDB.sh 
+  397  sh startServer.sh 
+  398  cd log4j2/world0/
+  399  tailf world0.log
+  400  cd ..
+  401  sh closeServer.sh 
+  402  sh genDB.sh 
+  403  sh startServer.sh 
+  404  cd ..
+  405  cd ty_s3
+  406  sh closeServer3.sh 
+  407  sh genDB.sh 
+  408  sh startServer3.sh 
+  409  cd ../ty_s1
+  410  tailf log4j2/world0/world0.log
+  411  sh closeServer3.sh 
+  412  sh genDB.sh 
+  413  sh startServer3.sh 
+  414  ls
+  415  sh startServer.sh 
+  416  ls
+  417  sh genDB.sh 
+  418  sh startServer.sh 
+  419  tailf log4j2/world0/world0.log
+  420  sh closeServer.sh 
+  421  sh genDB.sh 
+  422  sh startServer.sh 
+  423  tailf log4j2/world0/world0.log
+  424  sh closeServer.sh 
+  425  sh genDB.sh 
+  426  sh startServer.sh 
+  427  cd..
+  428  cd ..
+  429  cd ty_s2
+  430  sh closeServer_v.sh 
+  431  sh startServer_v.sh 
+  432  ps -ef|grep java
+  433  cd ..
+  434  cd ty_s3
+  435  sh config/
+  436  cd..
+  437  sh closeServer3.sh 
+  438  sh genDB.sh 
+  439  sh startServer3.sh 
+  440  tailf log4j2/world0/world0.log
+  441  cd /qzdata1/server/ty_s3/
+  442  ls
+  443  sh closeServer3.sh 
+  444  sh genDB.sh 
+  445  sh startServer3.sh 
+  446  cd /qzdata1/server/ty_s1/
+  447  sh closeServer.sh 
+  448  sh genDB.sh 
+  449  sh startServer.sh 
+  450  cd /qzdata1/server/ty_s
+  451  cd /qzdata1/server/ty_s3
+  452  sh closeServer3.sh 
+  453  sh genDB.sh 
+  454  s startServer3.sh 
+  455  sh startServer3.sh 
+  456  sh closeServer3.sh 
+  457  sh startServer3.sh 
+  458  cd /qzdata1/server/ty_s1/
+  459  sh closeServer.sh 
+  460  sh startServer.sh 
+  461  service iptables status
+  462  netstat -ntpl
+  463  cd /qzdata1/server/ty_s3
+  464  sh closeServer3.sh 
+  465  sh genDB.sh 
+  466  sh startServer3.sh 
+  467  cd /qzdata1/server/ty_s1
+  468  sh closeServer3.sh 
+  469  sh genDB.sh 
+  470  sh startServer3.sh 
+  471  sh startServer.sh 
+  472  cd /qzdata1/server/ty_s3
+  473  sh closeServer3.sh 
+  474  sh startServer3.sh 
+  475  sh closeServer3.sh 
+  476  sh startServer3.sh 
+  477  tailf log4j2/world0/world0.log
+  478  cd /qzdata1/server/ty_s3
+  479  tailf log4j2/world0/world0.log
+  480  sh closeServer3.sh 
+  481  sh genDB.sh 
+  482  sh crossGenDB.sh 
+  483  sh startServer3.sh 
+  484  sh closeServer3.sh 
+  485  sh crossGenDB.sh 
+  486  sh genDB.sh 
+  487  sh startServer3.sh 
+  488  sh closeServer3.sh 
+  489  sh genDB.sh 
+  490  sh startServer3.sh 
+  491  sh closeServer3.sh 
+  492  sh genDB.sh 
+  493  sh startServer3.sh 
+  494  cat log4j2/world0/world0.log | grep .jar
+  495  cat log4j2/world0/world0.log | grep -C 5 "at "
+  496  sh closeServer3.sh 
+  497  sh genDB.sh 
+  498  sh startServer3.sh 
+  499   sh closeServer3.sh
+  500  cd ..
+  501  ls
+  502  cd ..
+  503  ls
+  504   sh closeServer3.sh
+  505  pwd
+  506  ls
+  507  cd server
+  508  ls
+  509  cd ty_s3
+  510  ls
+  511   sh closeServer3.sh
+  512  sh startServer3.sh 
+  513  cd ..
+  514  ls
+  515  cd server/
+  516  ls
+  517  cd ty_s2
+  518  ls
+  519  sh startServer_v.sh 
+  520  cd ..
+  521  ls
+  522  cd ty_s1
+  523  ls
+  524  sh startServer_v.sh 
+  525  sh startServer.sh 
+  526  ls
+  527  cd ..
+  528  ls
+  529  cd ty_s3
+  530  ls
+  531  sh closeServer3.sh 
+  532  sh closeServer3 
+  533  ls
+  534  cd..
+  535  cd ..
+  536  ls
+  537  cd ..
+  538  ls
+  539  cd ..
+  540  ls
+  541  cd qzdata1
+  542  ls
+  543  cd data_v
+  544  ls
+  545  cd ..
+  546  cd server
+  547  ls
+  548  cd ty_s3
+  549  sh closeServer3
+  550  sh closeServer3.sh 
+  551  sh startServer3.sh 
+  552  cd /qzdata1/server/ty_s3/
+  553  sh genDB.sh 
+  554  sh startServer3.sh 
+  555  sh closeServer3.sh 
+  556  sh startServer3.sh 
+  557  ls
+  558  sh startServer3.sh 
+  559  ls
+  560  vim closeServer3.sh 
+  561  sh closeServer3.sh 
+  562  vim closeServer3.sh 
+  563  sh startServer3.sh 
+  564  ps -ef|grep java
+  565  ch closeServer3.sh 
+  566  sh genDB.sh 
+  567  sh srvPlatform3.sh 
+  568  sh startServer3.sh 
+  569  sh closeServer3.sh 
+  570  sh startServer3.sh 
+  571  sh closeServer3.sh 
+  572  sh genDB.sh 
+  573  sh startServer3.sh 
+  574  sh closeServer3.sh 
+  575  sh startServer3.sh 
+  576  sh closeServer3.sh 
+  577  sh genDB.sh 
+  578  sh startServer3.sh 
+  579  sh closeServer3.sh 
+  580  sh genDB.sh 
+  581  sh startServer3.sh 
+  582  tailf log4j2/world0/world0.log
+  583  sh closeServer3.sh 
+  584  sh genDB.sh 
+  585  sh startServer3.sh 
+  586  tailf log4j2/world0/world0.log
+  587  sh closeServer3.sh 
+  588  sh startServer3.sh 
+  589  tailf log4j2/world0/world0.log
+  590  cd /qzdata1/server/ty_s3/
+  591  sh closeServer3.sh 
+  592  sh genDB.sh 
+  593  sh startServer3.sh 
+  594  tailf log4j2/world0/world0.log
+  595  cd /qzdata1/server/ty_s3/
+  596  ls
+  597  sh closeServer3.sh 
+  598  sh genDB.sh 
+  599  sh startServer3.sh 
+  600  sh closeServer3.sh 
+  601  sh startServer3.sh 
+  602  sh closeServer3.sh 
+  603  sh genDB.sh 
+  604  sh startServer3.sh 
+  605  sh closeServer3.sh 
+  606  sh genDB.sh 
+  607  sh closeServer3.sh 
+  608  sh startServer3.sh 
+  609  tailf log4j2/world0/world0.log
+  610  cat log4j2/world0/world0.log | grep ".jar"
+  611  cat log4j2/world0/world0.log | grep "java"
+  612  cat log4j2/world0/world0.log | grep -C 5 "java"
+  613  cat log4j2/world0/world0.log | grep -C 5 ".jar"
+  614  vim log4j2/world0/world0.log
+  615  cd /qzdata1/server/ty_s3/
+  616  ts
+  617  lt
+  618  sh closeServer3.sh 
+  619  sh genDB.sh 
+  620  sh startServer3.sh 
+  621  sh closeServer3.sh 
+  622  sh genDB.sh 
+  623  sh startServer3.sh 
+  624  sh closeServer3.sh 
+  625  sh genDB.sh 
+  626  sh startServer3.sh 
+  627  ls
+  628  sh closeServer3.sh 
+  629  sh genDB.sh 
+  630  sh startServer3.sh 
+  631  cd /qzdata1/server/ty_s3/
+  632  sh closeServer3.sh 
+  633  sh genDB.sh 
+  634  sh startServer3.sh 
+  635  cd /qzdata1/server/ty_s3/
+  636  tailf log4j2/world0/world0.log
+  637  cd /qzdata1/server/ty_s3/
+  638  sh closeServer3.sh 
+  639  sh genDB.sh 
+  640  sh startServer3.sh 
+  641  cd /qzdata1/server/ty_s3/
+  642  sh closeServer3.sh 
+  643  sh genDB.sh 
+  644  sh startServer3.sh 
+  645  cd /qzdata1/server/ty_s3/
+  646  sh closeServer3.sh 
+  647  sh genDB.sh 
+  648  sh startServer3.sh 
+  649  cd /qzdata1/server/ty_s3
+  650  cd /qzdata1/server/ty_s3/
+  651  ps aux|grep java
+  652  sh closeServer3.sh 
+  653  ps aux|grep java
+  654  sh genDB.sh 
+  655  sh startServer3.sh 
+  656  tailf log4j2/world0/world0.log
+  657  sh closeServer3.sh 
+  658  sh genDB.sh 
+  659  sh startServer3.sh 
+  660  tailf log4j2/world0/world0.log
+  661  sh closeServer3.sh 
+  662  sh genDB.sh 
+  663  sh startServer3.sh 
+  664  ps aux|grep java
+  665  sh closeServer3.sh 
+  666  sh genDB.sh 
+  667  sh startServer3.sh 
+  668  tailf log4j2/world0.log
+  669  sh closeServer3.sh 
+  670  ps aux|grep java
+  671  sh closeServer3.sh 
+  672  ps aux|grep java
+  673  sh genDB.sh 
+  674  sh startServer3.sh 
+  675  ps aux|grep java
+  676  tailf log4j2/world0/world0.log
+  677  cat log4j2/world0/world0.log
+  678  sh closeServer3.sh 
+  679  sh genDB.sh 
+  680  sh startServer3.sh 
+  681  cat log4j2/world0/world0.log | grep "java"
+  682  tailf log4j2/world0/world0.log
+  683  ps aux|grep java
+  684  tailf log4j2/world0/world0.log
+  685  sh closeServer3.sh 
+  686  sh genDB.sh 
+  687  sh startServer3.sh 
+  688  sh closeServer3.sh 
+  689  sh genDB.sh 
+  690  sh startServer3.sh 
+  691  sh closeServer3.sh 
+  692  sh genDB.sh 
+  693  sh startServer3.sh 
+  694  tailf log4j2/world0/world0.log
+  695  sh closeServer3.sh 
+  696  sh genDB.sh 
+  697  sh startServer3.sh 
+  698  tailf log4j2/world0/world0.log
+  699  sh closeServer3.sh 
+  700  sh genDB.sh 
+  701  sh startServer3.sh 
+  702  tailf log4j2/world0/world0.log
+  703  cat log4j2/world0/world0.log | grep -C 5 ".jar"
+  704  cat log4j2/world0/world0.log | grep -C 5 "Activity"
+  705  tailf log4j2/world0/world0.log
+  706  sh closeServer3.sh 
+  707  sh genDB.sh 
+  708  sh startServer3.sh 
+  709  java -version
+  710  tailf log4j2/world0/world0.log
+  711  sh closeServer3.sh 
+  712  sh genDB.sh 
+  713  sh startServer3.sh 
+  714  tailf log4j2/world0/world0.log
+  715  sh closeServer3.sh 
+  716  sh genDB.sh 
+  717  sh startServer3.sh 
+  718  sh closeServer3.sh 
+  719  sh startServer3.sh 
+  720  tailf log4j2/world0/world0.log
+  721  sh closeServer3.sh 
+  722  sh startServer3.sh 
+  723  cat log4j2/world0/world0.log | grep -C 5 ".jar"
+  724  tailf log4j2/world0/world0.log
+  725  sh closeServer3.sh 
+  726  sh genDB.sh 
+  727  sh startServer3.sh 
+  728  sh closeServer3.sh 
+  729  sh genDB.sh 
+  730  sh startServer3.sh 
+  731  sh closeServer3.sh 
+  732  sh genDB.sh 
+  733  sh startServer3.sh 
+  734  sh closeServer3.sh 
+  735  sh genDB.sh 
+  736  sh startServer3.sh 
+  737  sh closeServer3.sh 
+  738  sh startServer3.sh 
+  739  tailf log4j2/world0/world0.log
+  740  cat log4j2/world0/world0.log | grep -C 5 ".jar"
+  741  date
+  742  sh closeServer3.sh 
+  743  sh genDB.sh 
+  744  sh startServer3.sh 
+  745  sh closeServer3.sh 
+  746  sh genDB.sh 
+  747  sh startServer3.sh 
+  748  mysql -uroot -p
+  749  cat /etc/my.cnf 
+  750  cd /qzdata1/server/ty_s3/
+  751  sh closeServer3.sh 
+  752  sh genDB.sh 
+  753  sh startServer3.sh 
+  754  cd /qzdata1/server/ty_s3/
+  755  sh closeServer3.sh 
+  756  sh genDB.sh 
+  757  sh startServer3.sh 
+  758  cd /qzdata1/
+  759  cd /qzdata1/server/ty_s3/
+  760  sh closeServer3.sh 
+  761  sh genDB.sh 
+  762  sh startServer3.sh 
+  763  cd /qzdata1/server/ty_s3/
+  764  sh closeServer3.sh 
+  765  sh genDB.sh 
+  766  sh startServer3.sh 
+  767  cd /qzdata1/server/ty_s3/
+  768  sh closeServer3.sh 
+  769  sh genDB.sh 
+  770  sh startServer3.sh 
+  771  cd /qzdata1/
+  772  cd /qzdata1/server/ty_s3/
+  773  sh closeServer3.sh 
+  774  sh genDB.sh 
+  775  sh startServer3.sh 
+  776  cd /qzdata1/server/ty_s3/
+  777  sh closeServer3.sh 
+  778  sh genDB.sh 
+  779  sh startServer3.sh 
+  780  cd /qzdata1/server/ty_s3/
+  781  sh closeServer3.sh 
+  782  sh genDB.sh 
+  783  sh startServer3.sh 
+  784  cd /qzdata1/server/ty_s3/
+  785  sh closeServer3.sh 
+  786  sh genDB.sh 
+  787  sh startServer3.sh 
+  788  cd /qzdata1/server/ty_s3/
+  789  sh closeServer3.sh 
+  790  sh startServer3.sh 
+  791  cd /qzdata1/server/ty_s3/
+  792  cd /qzdata1/server/ty_s3
+  793  tailf log4j2/world0/world0.log
+  794  sh closeServer3.sh 
+  795  sh genDB.sh 
+  796  sh startServer3.sh 
+  797  tailf log4j2/world0/world0.log
+  798  sh closeServer3.sh 
+  799  sh startServer3.sh 
+  800  cat log4j2/world0/world0.log | grep -C 5 ".jar"
+  801  tailf log4j2/world0/world0.log
+  802  sh closeServer3.sh 
+  803  sh startServer3.sh 
+  804  sh closeServer3.sh 
+  805  sh genDB.sh 
+  806  ls
+  807  sh crossGenDB.sh 
+  808  sh startServer3.sh 
+  809  sh closeServer3.sh 
+  810  sh genDB.sh 
+  811  sh startServer3.sh 
+  812  sh closeServer3.sh 
+  813  sh genDB.sh 
+  814  sh startServer3.sh 
+  815  /qzdata1/server/ty_s3/
+  816  cd /qzdata1/server/ty_s3/
+  817  tailf log4j2/world0/world0.log
+  818  cd /qzdata1/server/ty_s3
+  819  tailf log4j2/world0/world0.log
+  820  sh closeServer3.sh 
+  821  sh genDB.sh 
+  822  sh crossGenDB.sh 
+  823  sh startServer3.sh 
+  824  sh closeServer3.sh 
+  825  sh genDB.sh 
+  826  sh crossGenDB.sh 
+  827  sh startServer3.sh 
+  828  cd /qzdata1/server/ty_s3/
+  829  tailf log4j2/world0/world0.log
+  830  cd /qzdata1/server/ty_s3/
+  831  sh closeServer3.sh 
+  832  sh genDB.sh 
+  833  sh crossgendb.sh
+  834  cd /qzdata1/server/ty_s3/
+  835  sh crossgendb.sh
+  836  sh crossGenDB.sh 
+  837  sh startServer3.sh 
+  838  cd /qzdata1/server/ty_s3/
+  839  sh closeServer3.sh 
+  840  sh genDB.sh 
+  841  sh crossGenDB.sh 
+  842  sh startServer3.sh 
+  843  cd /qzdata1/server/
+  844  cd /qzdata1/server/ty_s3/
+  845  sh closeServer3.sh 
+  846  sh startServer3.sh 
+  847  cd /qzdata1/server/
+  848  ls
+  849  cd ty_s3
+  850  ls
+  851  sh closeServer3.sh 
+  852  sh crossGenDB.sh 
+  853  sh genDB.sh 
+  854  sh startServer3.sh 
+  855  tailf log4j2/world0/world0.log
+  856  sh closeServer3.sh 
+  857  sh genDB.sh 
+  858  sh crossGenDB.sh 
+  859  sh startServer3.sh 
+  860  tailf log4j2/world0/world0.log
+  861  cd /qzdata1/server/ty_s3
+  862  sh closeServer3.sh 
+  863  sh startServer3.sh 
+  864  sh closeServer3.sh 
+  865  sh startServer3.sh 
+  866  sh closeServer3.sh 
+  867  sh startServer3.sh 
+  868  tailf log4j2/world0/world0.log
+  869  clock -show
+  870  clock --show
+  871  sh closeServer3.sh 
+  872  sh startServer3.sh 
+  873  tailf log4j2/db/db.log 
+  874  tailf log4j2/world0/world0.log
+  875  sh closeServer3.sh 
+  876  sh genDB.sh 
+  877  sh startServer3.sh 
+  878  hwclock -- show
+  879  hwclock --show
+  880  date
+  881  date -s 04/06/2018
+  882  date
+  883  date -s 04/06/2018 19:58
+  884  date -s 04/06/2018 19:58:00
+  885  date -s  19:58:00
+  886  date
+  887  date -s 04/07/2018 19:58:00
+  888  date 0407182002.00
+  889  date 040720022018.00
+  890  date
+  891  tailf log4j2/world0/world0.log
+  892  sh closeServer3.sh 
+  893  date 040719572018.00
+  894  sh startServer3.sh 
+  895  date
+  896  sh closeServer3.sh 
+  897  date 040721502018.00
+  898  date 040621502018.00
+  899  sh startServer3.sh 
+  900  ntpdate -u 210.72.145.44
+  901  date
+  902  cd /qzdata1/server/ty_s3
+  903  sh closeServer3.sh 
+  904  sh genDB.sh 
+  905  sh crossGenDB.sh 
+  906  sh startServer3.sh 
+  907  tailf log4j2/world0/world0.log
+  908  cat log4j2/world0/world0.log | grep ".jar"
+  909  tailf log4j2/world0/world0.log
+  910  cd /qzdata1/server/ty_s3/
+  911  tailf log4j2/world0/world0.log
+  912  ls
+  913  cat log4j2/world0/world0.log | grep "Exception"
+  914  cat log4j2/world0/world0.log | grep -C 5 "Exception"
+  915  cat log4j2/world0/world0.log | grep -C 15 "Exception"
+  916  netstat -ntpl
+  917  netstat -ntpl|grep 80
+  918  cd /qzdata1/data
+  919  ll
+  920  cd wwwroot
+  921  mkdir wwwroot
+  922  cd wwwroot/
+  923  ll
+  924  mkdir res.ty.qzgame.cc
+  925  useradd res_upload -d /qzdata1/data/wwwroot/res.ty.qzgame.cc -s /sbin/nologin
+  926  chown -R res_upload.res_upload /qzdata1/data/wwwroot/res.ty.qzgame.cc
+  927  passwd res_upload
+  928  cp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf.bak
+  929  vim /etc/vsftpd/vsftpd.conf
+  930  service vsftpd start
+  931  chkconfig vsftpd on
+  932  yum install nginx
+  933  cd /etc/nginx/conf.d/
+  934  ll
+  935  vim res.ty.qzgame.cc.conf 
+  936  service nginx restart
+  937  cd /qzdata1/data/wwwroot/res.ty.qzgame.cc/
+  938  ll
+  939  vim abc.txt
+  940  cd /etc/nginx/
+  941  ll
+  942  cd conf.d/
+  943  ll
+  944  mkdir bak
+  945  ll
+  946  mv default.conf ssl.conf virtual.conf bak/
+  947  service nginx restart
+  948  cd /qzdata1/server/
+  949  ll
+  950  cd ..
+  951  ll
+  952  cd data
+  953  ll
+  954  cd /qzdata1/server/ty_s3
+  955  sh closeServer3.sh 
+  956  sh genDB.sh 
+  957  sh crossGenDB.sh 
+  958  sh startServer3.sh 
+  959  tailf log4j2/world0/world0.log
+  960  sh closeServer3.sh 
+  961  sh genDB.sh 
+  962  sh crossGenDB.sh 
+  963  sh startServer3.sh 
+  964  tailf log4j2/world0/world0.log
+  965  tailf log4j2/db/db.log 
+  966  sh closeServer3.sh 
+  967  sh startServer3.sh 
+  968  cat log4j2/world0/world0.log|grep ".jar"
+  969  sh closeServer3.sh 
+  970  sh startServer3.sh 
+  971  sh closeServer3.sh 
+  972  sh startServer3.sh 
+  973  sh closeServer3.sh 
+  974  sh startServer3.sh 
+  975  sh closeServer3.sh 
+  976  sh startServer3.sh 
+  977  cat log4j2/world0/world0.log | grep "Exception"
+  978  cat log4j2/world0/world0.log | grep -C 5  "Exception"
+  979  sh closeServer3.sh 
+  980  sh genDB.sh 
+  981  sh crossGenDB.sh 
+  982  sh startServer3.sh 
+  983  sh closeServer3.sh 
+  984  sh startServer3.sh 
+  985  sh closeServer3.sh 
+  986  sh genDB.sh 
+  987  sh crossGenDB.sh 
+  988  sh startServer3.sh 
+  989  cd /qzdata1/server/ty_s3
+  990  ll
+  991  sh closeServer3.sh 
+  992  sh genDB.sh 
+  993  sh crossGenDB.sh 
+  994  sh startServer3.sh 
+  995  io
+  996  ip
+  997  port
+  998  cd /qzdata1/server/ty_s3/
+  999  ll
+ 1000  sh closeServer3.sh 
+ 1001  sh genDB.sh 
+ 1002  sh crossGenDB.sh
+ 1003  sh startServer3.sh
+ 1004  sh closeServer3.sh
+ 1005  sh closeServer3
+ 1006  sh startServer3.sh 
+ 1007  sh closeServer3
+ 1008  sh srvDB3.sh 
+ 1009  cat ty_game
+ 1010  sh ty_game
+ 1011  cat ty_game
+ 1012  sh startServer3.sh 
+ 1013  sh srvWorld3.sh 
+ 1014  cat ty_game
+ 1015  sh ty_game
+ 1016  sh srvWorld3.sh 
+ 1017  sh srvDB3.sh 
+ 1018  sh closeServer3.sh 
+ 1019  ps
+ 1020  pa aux
+ 1021  ps -A
+ 1022  ll
+ 1023  ls
+ 1024  ll
+ 1025  cd sh
+ 1026  ll
+ 1027  ls
+ 1028  sh closeServer.sh 
+ 1029  sh startServer.sh 
+ 1030  cd .
+ 1031  ll
+ 1032  cd ..
+ 1033  ll
+ 1034  cd ..
+ 1035  ll
+ 1036  cd ty_s3
+ 1037  ll
+ 1038  sh startServer3.sh
+ 1039  sh srvWorld3.sh
+ 1040  sh srvDB3.sh 
+ 1041  ps aux 
+ 1042  ps aux  | grep ty_s3
+ 1043  kill -0  23770
+ 1044  kill -9  23770
+ 1045  kill -9   23771
+ 1046  ps aux  | grep ty_s3
+ 1047  ls
+ 1048  sh ty_game
+ 1049  sh ty_game restart
+ 1050  sh ty_game
+ 1051  sh ty_game  23770
+ 1052  sh ty_game  genDB
+ 1053  sh ty_game genDB
+ 1054  sh ty_game status
+ 1055  cd ..
+ 1056  ls
+ 1057  ps aux 
+ 1058  ls
+ 1059  cd ty_s
+ 1060  cd ty_s3/
+ 1061  ls
+ 1062  cat genDB
+ 1063  cat ty_game.conf 
+ 1064  ls
+ 1065  cd libs/
+ 1066  ls
+ 1067  cd ..
+ 1068  ls
+ 1069  cd config/
+ 1070  ls
+ 1071  cat genDB
+ 1072  cat config.properties 
+ 1073  ls
+ 1074  cd ..
+ 1075  ls
+ 1076  sh ty_game
+ 1077  history
+ 
+ -- 日记
+ ps命令 Process Status:
+ 如果直接用ps命令，会显示所有进程的状态，通常结合grep命令查看某进程的状态。
+ 
+ grep （global search regular expression(RE) and print out the line,全面搜索正则表达式并把行打印出来）是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。
+ 
+
+启动这个进程的用户和它启动的时间（u）
+ps -aux  列出目前所有在内存中的程序
+ps -a  流出同一终端下的所有程序,包括其他用户程序
+ps -u  以用户为主的格式来显示程序状况
+px -x  显示所有程序,不以终端机来区分
+ 输出:
+
+[root@localhost test6]# ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  10368   676 ?        Ss   Nov02   0:00 init [3]                  
+root         2  0.0  0.0      0     0 ?        S<   Nov02   0:01 [migration/0]
+root         3  0.0  0.0      0     0 ?        SN   Nov02   0:00 [ksoftirqd/0]
+root         4  0.0  0.0      0     0 ?        S<   Nov02   0:01 [migration/1]
+root         5  0.0  0.0      0     0 ?        SN   Nov02   0:00 [ksoftirqd/1]
+root         6  0.0  0.0      0     0 ?        S<   Nov02  29:57 [events/0]
+root         7  0.0  0.0      0     0 ?        S<   Nov02   0:00 [events/1]
+root         8  0.0  0.0      0     0 ?        S<   Nov02   0:00 [khelper]
+root        49  0.0  0.0      0     0 ?        S<   Nov02   0:00 [kthread]
+root        54  0.0  0.0      0     0 ?        S<   Nov02   0:00 [kblockd/0]
+root        55  0.0  0.0      0     0 ?        S<   Nov02   0:00 [kblockd/1]
+root        56  0.0  0.0      0     0 ?        S<   Nov02   0:00 [kacpid]
+……省略部分结果
+
+说明:
+
+USER：该 process 属于那个使用者账号的
+PID ：该 process 的号码
+%CPU：该 process 使用掉的 CPU 资源百分比
+%MEM：该 process 所占用的物理内存百分比
+VSZ ：该 process 使用掉的虚拟内存量 (Kbytes)
+RSS ：该 process 占用的固定的内存量 (Kbytes)
+TTY ：该 process 是在那个终端机上面运作，若与终端机无关，则显示 ?，另外， tty1-tty6 是本机上面的登入者程序，若为 pts/0 等等的，则表示为由网络连接进主机的程序。
+STAT：该程序目前的状态，主要的状态有
+R ：该程序目前正在运作，或者是可被运作
+S ：该程序目前正在睡眠当中 (可说是 idle 状态)，但可被某些讯号 (signal) 唤醒。
+T ：该程序目前正在侦测或者是停止了
+Z ：该程序应该已经终止，但是其父程序却无法正常的终止他，造成 zombie (疆尸) 程序的状态
+START：该 process 被触发启动的时间
+TIME ：该 process 实际使用 CPU 运作的时间
+COMMAND：该程序的实际指令
+ 
+1. Ctrl +c： 退出所有正在执行的操作
+
+1、source
+
+source a.sh
+在当前shell内去读取、执行a.sh，而a.sh不需要有"执行权限"
+
+source命令可以简写为"."
+
+. a.sh（注意：中间是有空格的。）
+
+2、sh/bash
+
+sh a.sh
+bash a.sh
+都是打开一个subshell去读取、执行a.sh，而a.sh不需要有"执行权限"
+
+通常在subshell里运行的脚本里设置变量，不会影响到父shell的。
+
+3、./
+
+./a.sh
+#bash: ./a.sh: 权限不够
+chmod +x a.sh
+./a.sh
+打开一个subshell去读取、执行a.sh，但a.sh需要有"执行权限"
+
+可以用chmod +x添加执行权限
+ 
+4、fork、source、exec
+
+使用fork方式运行script时， 就是让shell(parent process)产生一个child process去执行该script，当child process结束后，会返回parent process，但parent process的环境是不会因child process的改变而改变的。
+使用source方式运行script时， 就是让script在当前process内执行， 而不是产生一个child process来执行。由于所有执行结果均于当前process内完成，若script的环境有所改变， 当然也会改变当前process环境了。
+使用exec方式运行script时， 它和source一样，也是让script在当前process内执行，但是process内的原代码剩下部分将被终止。同样，process内的环境随script改变而改变。
+通常如果我们执行时，都是默认为fork的。
+
+
+--- 编辑文件
+vi模式下编辑文件：
+vi /etc/saikik表示显示/etc/saikik文件的内容。-- 此时不能编辑
+Page Up和Page Down键可以上下翻页;
+按下Insert键，可以见到窗口左下角有“Insert”字样，表示当前为插入编辑状态，这时从键盘输入的内容将插入到光标位置;
+再按下Insert键，左下角将有“Replace”字样，表示当前为替换编辑状态，这时从键盘输入的内容将替换光标位置的内容。
+
+Esc键+:wq :编辑完内容后，按下Esc键，并输入“:wq”，然后回车就可以保存退出。
+ 
+如果不想保存而直接退出，则按下Esc键后，输入“:q!”，然后回车即可。“wq”表示Write和Quit，即保存退出;“q!”表示忽略修改强行退出。
+ 
+5. kill -n 
+ -n 指的是 信号编号
+ 
+6.$ su -c "kill -15 4982"
+	Password: 
+	若是没有权限，会报错：Operation not permitted 
+7.chmod -R 777 * ：表示对当前目录及目录下所有的文件赋予可读可写可执行权限。
+ 
+	 在linux终端先输入ll,可以看到如:
+	-rwx-r--r-- (一共10个参数) 表示文件所属组和用户的对应权限。
+	第一个跟参数属于管理员，跟chmod无关,先不管.
+	2-4参数:属于user
+	5-7参数:属于group
+	8-10参数:属于others
+	接下来就简单了:r==>可读 w==>可写 x==>可执行
+	r=4 w=2 x=1
+	所以755代表 rwxr-xr-x
+	777 代表 rwxr-rwx-rwx 所有用户都可读可写可执行。
+	
+8. sudo chmod 777 /ser/data/me.txt  --- 用 sudo语句修改文件的访问权限
+
+9.top 查看进程 ：通过top命令查看各个进程的cpu使用情况，默认按cpu使用率排序
+  top 查看线程：通过top -Hp 23344可以查看该进程下各个线程的cpu使用情况；
+  
+ 10.查看线程代码： jstack 进程pid | grep 线程pid16进制  例如： jstack 46924 | grep e58f
+ 
+11. 查看服务的pid
+sh taiyi_game status
+ 
+ 
+12.查看内存：df -h
+
+df：列出文件系统的整体磁盘使用量；
+
+du：评估文件系统的磁盘使用量（常用于评估目录所占容量）
+
+df参数：
+
+-a：列出所有的文件系统，包括系统特有的/proc等文件系统
+
+-k：以KB的容量显示各文件系统
+
+-m：以MB的容量显示各文件系统
+
+-h：以人们较易阅读的GB,MB,KB等格式自行显示
+
+-H：以M=1000K替代M=1024K的进位方式
+
+-T：连同该分区的文件系统名称（例如ext3）也列出
+
+-i：不用硬盘容量，而以inode的数量来显示
+
+
+
+本地：
+http://ltd.qzgame.cc:1009/taiyi/
+
+应用宝： 
+http://plat.ty.qzgame.cc/TY_YYB/
+
+安卓：
+
+http://plat.ty.qzgame.cc/TY_HW/
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
