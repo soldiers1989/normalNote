@@ -1,0 +1,116 @@
+
+
+1. 创建用户语句：
+ insert into mysql.user(Host,User,Password) values("localhost","test",password("1234"));
+ 
+2.创建用户报错：ERROR 1364 (HY000): Field 'ssl_cipher' doesn't have a default value
+
+出现错误的原因是mysql默认配置严格模式，该模式禁止通过insert的方式直接修改mysql库中的user表进行添加新用户。 
+解决方法是修改my.ini(Windows系统)或my.conf(Linux系统)配置文件，以linux系统为例将：
+
+
+
+sql-mode=STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION1
+
+修改成：
+
+
+
+sql-mode=NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION1
+
+然后重启mysql服务：
+service mysql restart
+
+3.正确创建用户方式：
+
+但是需要注意的是，既然mysql默认是禁止这种方法来创建用户是为了数据库的安全，所以我们也应该避免用插入的方式来创建用户。正确的创建用户的方式是：
+
+mysql> create user 'joey'@'localhost' identified by 'joey';
+Query OK, 0 rows affected (0.00 sec)
+
+然后为某些数据库给这个用户授权：
+grant all privileges on joey.* to 'joey'@'localhost' identified by 'joey'; 
+Query OK, 0 rows affected (0.00 sec)
+mysql> flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+
+
+举例：
+
+-- 创建远程用户--本地也有权限登陆 babay
+create user 'baby'@'%' IDENTIFIED BY 'game';   
+-- 创建本地用户 jiba
+create user 'jiba'@'localhost' IDENTIFIED BY 'game';
+注意：此处的"localhost"，是指该用户只能在本地登录，不能在另外一台机器上远程登录。如果想远程登录的话，将"localhost"改为"%"，表示在任何一台电脑上都可以登录。也可以指定某台机器可以远程登录。
+
+4.指定某个ip可以连接到本地的数据库，并设置权限：
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'10.163.126.107' IDENTIFIED BY 'FEFJay' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+第一行中，10.10.11.12是阿里云内网的一个地址，这个是允许远程访问的IP的值。自行改为其他值。
+root是账户名，后面的FEFJay是密码。
+即，允许来自10.10.11.12的连接并使用root账户和FEFJay这个密码进行访问。
+ALL PRIVILEGES ON 后面的*.*表示所有数据库，即完全访问权限，可以指定为特定数据库。
+而IP这里，可以使用%来表示所有IP。
+
+第二行是使设置立刻生效。
+
+5.本质：
+
+以上所有操作，其实就是在mysql库的user表，添加了一条新的记录，相应的：
+Host=特定ip，User=允许登录的用户名，Password=密码 等等。
+
+6.sql 语句实现：
+
+	1.use mysql;
+	2.CREATE USER 'test02'@'localhost' IDENTIFIED BY 'test';
+	3.GRANT SELECT, INSERT, UPDATE, REFERENCES, DELETE, CREATE, DROP, ALTER, INDEX, CREATE VIEW, SHOW VIEW ON `test`.* TO 'test02'@'localhost';
+	4.flush privileges;
+
+注释：3.ON后面的‘test’为数据库名，TO后面的 ‘test02’表示用户， ‘localhost’表示只能本地访问，如果 想让所有IP都可以访问，可以将localhost换成 ‘*’星号
+	  4.刷新权限
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

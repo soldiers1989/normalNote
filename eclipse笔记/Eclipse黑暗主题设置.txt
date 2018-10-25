@@ -1,0 +1,31 @@
+1.设置位置：preference--General--Appearance: 
+
+2.下载：网站下载主题：eclipsecolorthemes.org  ---------现在下载需要翻墙（2018-9-19）
+color theme 选择Sublime Text2---这个主题 本身有黑色的背景
+colors and fonts选择 Basic里面的 Text Font YaHei Consolas Hybrid 12号 -- 或者 Consolas 四号
+
+主题背景可以在 Appearance视图李的 Theme：选择
+
+也可以通过其他方法来设置，插件什么的。。。上网查下
+http://blog.csdn.net/xiaanming/article/details/8905199
+用户登录
+a = java.util.Date
+b = javax.swing.JFrame
+c = Chapter18.Hello
+d = javax.swing.JLabel
+e = world
+d%text=lable you don't know me!!!!!!!!
+Ebrima
+Gautami
+Raavi
+Shruti
+Vrinda
+
+3. 下载Eclipse的颜色主题(Color Themes)插件(2017/1/13  主干eclipse用这个方法)---------现在下载需要翻墙（2018-9-19）
+
+　　下载地址：http://eclipsecolorthemes.org/
+			http://eclipse-color-theme.github.com/update
+　　安装方法有两种，一是通过Eclipse的Marketplace找到Eclipse Color Theme插件，选择安装。
+4. 第二种方法：在eclipse 的 market 上输入 theme,可以查找到 ---------现在下载需要翻墙（2018-9-19）
+
+找到后安装

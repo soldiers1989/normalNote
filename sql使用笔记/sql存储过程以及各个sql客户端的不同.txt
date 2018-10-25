@@ -1,0 +1,217 @@
+1.delimiter 定界符
+delimiter 表是每遇到指定的定界符，都会像mysql提交语句执行。
+
+在存储过程中每个 SQL 语句的结尾都有个 “;”，如果这时候，每逢 “;” 就向 MySQL 提交的话，当然会出问题了。于是更改 MySQL 的 delimiter ，上面 MySQL 存储过程就编程这样子了：
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `subGenLineup`$$
+	....
+    END$$
+
+
+2.sqlyog 与 navicat 对存储过程的处理是不一样的
+
+Navicat： 用两个单引号 把提交语句的符号括起来
+	delimiter ';;'; 
+	...
+	end;;
+	
+sqlyog: 不需要使用单引号
+
+3。mysql的配置文件my.ini的位置 ： C:\ProgramData\MySQL\MySQL Server 5.7
+
+4.数据库保存路径查询：你可以在mysql 命令行里执行 show variables like '%datadir%';
+
+5. 修改创建的数据库保存路径：
+
+		1、在mysql安装完成后，要修改数据库存储的位置，比如从安装目录下的E:\Program Files (x86)\MySQL\data文件夹转移到D:\mydata文件夹。
+
+		2、在D:\下新建mydata文件夹
+
+		3、cmd进入dos窗口，输入net stop mysql停止MySQL服务，将C:\ProgramData\MySQL\MySQL Server 5.5\data（其中ProgramData为隐藏文件夹）下的文件夹和文件一起拷贝到D:\mydata文件夹下
+
+		4、在安装目录下找到my.ini文件，找到：
+
+		#Path to the database root
+		datadir="C:/ProgramData/MySQL/MySQL Server 5.5/Data/"
+
+		将datadir的值更改为datadir="D:/mydata/"
+
+		5、保存后，cmd进入dos窗口，输入net start mysql重新启动mySQL服务即可。
+		
+6. 一个电脑同时装两个mysql：
+
+				同一台电脑装两个mysql
+				1 配置my.ini
+
+				进入到安装目录，发现几个my***.cnf文件，找一个做为配置原件。
+				这边使用的是my-medium.cnf，将其改名为my.ini
+
+				一共更改三处
+				-1: 找到如下配置段：
+
+				[client]
+				#password=my_password
+				port=3306
+				#socket=MySQL
+
+				将其更改为：
+
+				[client]
+				#password=my_password
+				#5.5.36版本已经占用3306这个端口号，所以改为3307
+				port=3307
+				#socket=MySQL
+				#设置编码格式，看项目了，是否是使用默认的，不需要的可以直接加#屏蔽
+				default-character-set=utf8
+
+				-2:
+				[mysqld]
+				port=3306
+				#socket=MySQL
+
+				将其更改为：
+
+				[mysqld]
+				port=3307
+				#socket=MySQL
+				# 同理，编码格式是否改变看项目需求
+				#character-set-server=utf8
+
+				-3：重点部分
+				# Uncomment the following rows if you move the MySQL distribution to another
+				# location
+				#basedir = d:/mysql/
+				#datadir = d:/mysql/data/
+
+				将其更改为：
+
+				# Uncomment the following rows if you move the MySQL distribution to another
+				# location
+				basedir = d:/mysql4.0.18/
+				datadir = d:/mysql4.0.18/data/
+
+				2 安装服务
+
+				-1: 进入bin目录
+
+				打开cmd, 输入一下命令
+
+				d:
+				cd mysql4.0.18\bin
+
+				-2: 安装mysql服务
+				之前安装的5.5.36版本，使用的是默认的mysql服务名：MySQL
+				可以打开任务管理器--服务，查看到这个服务。
+				4.0.18版本需要使用一个新的服务名，这边命名为：mysql4.0.18
+
+				进入到bin目录之后，输入以下代码安装服务：
+				mysqld --install mysql4.0.18 --defaults-file='d:\mysql4.0.18\my.ini'
+
+				如果运行成功，则会显示Service Successfully installed.
+				这时候打开任务管理器--服务，可以看到一个mysql4.0.18服务。
+
+				3 设置密码
+
+				-1:
+				这时候保持在bin目录中，不要离开。
+				输入以下代码：
+				mysql -u root -P 3307
+
+				3307是端口号，如果正常，就连接到数据库了。
+
+				-2:
+				这时候，多了一个mysql符号。
+				输入以下命令，设置密码：
+
+				mysql>use mysql;
+
+				mysql>update user set password=password('你想设置的密码') where user='root';
+
+				mysql>flush privileges;
+
+				mysql>quit;
+
+				4.开启和关闭服务：
+
+				方法1：可以在任务管理器--服务中找到这个两个mysql服务，右键点击名称，显示启动服务
+				和停止服务。
+
+				方法2：打开cmd, 通过net start ***/net stop ***来开启和关闭服务。
+
+				net start mysql // 开启mysql5.5.36服务
+				net stop mysql // 关闭mysql5.5.36服务
+
+				net start mysql4.0.18 // 开启mysql4.0.18服务
+				net stop mysql4.0.18 // 关闭mysql4.0.18服务
+				
+7.重新设置 mysql 密码:
+
+		1.以系统管理员身份登陆系统。
+		2.打开cmd-----net start 查看mysql是否启动。启动的话就停止net stop mysql.
+		3.我的mysql安装在d:\usr\local\mysql4\bin下。
+		4.跳过权限检查启动mysql.
+		d:\usr\local\mysql\bin\mysqld-nt --skip-grant-tables
+		5.重新打开cmd。进到d:\usr\local\mysql4\bin下：
+		d:\usr\local\mysql\bin\mysqladmin -u root flush-privileges password "newpassword"
+		d:\usr\local\mysql\bin\mysqladmin -u root -p shutdown 这句提示你重新输密码。
+		6.在cmd里net start mysql
+		
+7.1 本机重新修改密码的过程：
+	1.修改本地mysql目录中的my.ini文件
+
+		添加skip-grant-tables
+		
+	2.在win +r 输入cmd，进行mysql的重启启动操作
+		net stop mysql5.6
+		net start mysql5.6
+		
+	3.直接输入mysql -uroot -p
+
+		然后不输入密码直接回车就可以进入数据库
+
+		执行sql修改root用户的密码：
+
+		UPDATE user SET Password = PASSWORD('newpass') WHERE user = 'root';
+		
+	4.最后的最后，记得把之前加进去my.ini的skip-grant-tables重新删掉~
+		
+8.
+	彻底删除mysql服务（清理注册表）
+	前言
+
+	由于安装某个项目的执行文件，提示要卸载MySQL以便它自身MySQL安装，然后我禁用了MYSQL服务，再把这个文件夹删除后，发现还是提示请卸载MYSQL服务。
+
+	--------------------------------------------------------------------
+
+	禁用服务方式如下：
+	cmd
+	net stop mysql5.6
+	或者 我的电脑右键->管理->服务，进入后手动禁用。
+
+	 --------------------------------------------------------------------
+
+	通过网上查询后总结如下：
+
+	1.在cmd中，输入sc delete mysql，删除服务。
+
+	2.但是MYSQL服务只是显示禁用状态，并没有真正清理干净。
+
+
+
+	3.删除相关注册表信息
+
+	在Win7开始菜单栏搜索 regedit 进入注册表编辑器（在cmd下输入此命令也是可以打开的）
+
+	路径1：\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\services\eventlog\Application\MySQL
+
+	路径1：\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\services\eventlog\Application\MySQL
+
+	删除整个MySQL文件夹即可
+
+	4.MySQL服务彻底清除干净了，可以安装那个执行文件了。
+
+	5.总结
+
+	这方法可以解决重新安装MySQL失败的问题（清理之前MySQL服务不彻底导致）。
+
