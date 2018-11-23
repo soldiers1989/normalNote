@@ -1121,6 +1121,7 @@ Esc键+:wq :编辑完内容后，按下Esc键，并输入“:wq”，然后回车就可以保存退出。
 
 9.top 查看进程 ：通过top命令查看各个进程的cpu使用情况，默认按cpu使用率排序
   top 查看线程：通过top -Hp 23344可以查看该进程下各个线程的cpu使用情况；
+  退出：键入q即可或按ctrl c 
   
  10.查看线程代码： jstack 进程pid | grep 线程pid16进制  例如： jstack 46924 | grep e58f
  
@@ -1133,6 +1134,9 @@ sh taiyi_game status
 df：列出文件系统的整体磁盘使用量；
 
 du：评估文件系统的磁盘使用量（常用于评估目录所占容量）
+
+//查看当前目录下各个文件及目录占用空间大小
+du -sh *
 
 df参数：
 
@@ -1151,20 +1155,163 @@ df参数：
 -i：不用硬盘容量，而以inode的数量来显示
 
 
+1 查看CPU
 
-本地：
-http://ltd.qzgame.cc:1009/taiyi/
+1.1 查看CPU个数
+cat /proc/cpuinfo   --查看各个CPU的信息
 
-应用宝： 
-http://plat.ty.qzgame.cc/TY_YYB/
+cat /proc/cpuinfo | grep "physical id" | uniq | wc -l
+grep -c 'processor' /proc/cpuinfo
 
-安卓：
+总逻辑CPU数 = 物理CPU个数 * 每颗物理CPU的核数 * 超线程数
 
-http://plat.ty.qzgame.cc/TY_HW/
+查询CPU个数：
+
+cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
+
+查询核数：
+
+cat /proc/cpuinfo| grep "cpu cores"| uniq
+
+查询逻辑CPU总数：
+
+cat /proc/cpuinfo| grep "processor"| wc -l
 
 
 
- 
+
+
+2 **uniq命令：删除重复行;wc –l命令：统计行数**
+
+1.2 查看CPU核数
+
+# cat /proc/cpuinfo | grep "cpu cores" | uniq
+cpu cores : 4
+
+1.3 查看CPU型号
+
+# cat /proc/cpuinfo | grep 'model name' |uniq
+model name : Intel(R) Xeon(R) CPU E5630 @ 2.53GHz
+
+总结：该服务器有2个4核CPU，型号Intel(R) Xeon(R) CPU E5630 @ 2.53GHz
+
+ 2 查看内存
+
+2.1 查看内存总数
+
+#cat /proc/meminfo | grep MemTotal
+MemTotal: 32941268 kB //内存32G
+
+
+# dmidecode |grep -A16 "Memory Device$"
+Memory Device
+Array Handle: 0x1000
+Error Information Handle: Not Provided
+Total Width: 72 bits
+Data Width: 64 bits
+Size: 2048 MB //1条2G内存
+Form Factor: DIMM
+Set: 1
+Locator: DIMM1
+Bank Locator: Not Specified
+Type: DDR2
+Type Detail: Synchronous
+Speed: 667 MHz
+Manufacturer: 7F7F7F7F7F510000
+Serial Number: 0403E324
+Asset Tag: 450721
+Part Number: 72T256220HR3SA
+--
+Memory Device
+Array Handle: 0x1000
+Error Information Handle: Not Provided
+Total Width: 72 bits
+Data Width: 64 bits
+Size: 2048 MB //1条2G内存
+Form Factor: DIMM
+Set: 1
+Locator: DIMM2
+Bank Locator: Not Specified
+Type: DDR2
+Type Detail: Synchronous
+Speed: 667 MHz
+Manufacturer: 7F7F7F7F7F510000
+Serial Number: 0403E324
+Asset Tag: 450721
+Part Number: 72T256220HR3SA
+--
+Memory Device
+Array Handle: 0x1000
+Error Information Handle: Not Provided
+Total Width: 72 bits
+Data Width: 64 bits
+Size: No Module Installed //1个内存空槽
+Form Factor: DIMM
+Set: 2
+Locator: DIMM3
+Bank Locator: Not Specified
+Type: DDR2
+Type Detail: Synchronous
+Speed: Unknown
+Manufacturer:
+Serial Number:
+Asset Tag:
+Part Number:
+--
+Memory Device
+Array Handle: 0x1000
+Error Information Handle: Not Provided
+Total Width: 72 bits
+Data Width: 64 bits
+Size: No Module Installed //1个内存空槽
+Form Factor: DIMM
+Set: 2
+Locator: DIMM4
+Bank Locator: Not Specified
+Type: DDR2
+Type Detail: Synchronous
+Speed: Unknown
+Manufacturer:
+Serial Number:
+Asset Tag:
+Part Number:
+--
+Memory Device
+Array Handle: 0x1000
+Error Information Handle: Not Provided
+Total Width: 72 bits
+Data Width: 64 bits
+Size: No Module Installed //1个内存空槽
+Form Factor: DIMM
+Set: 3
+Locator: DIMM5
+Bank Locator: Not Specified
+Type: DDR2
+Type Detail: Synchronous
+Speed: Unknown
+Manufacturer:
+Serial Number:
+Asset Tag:
+Part Number:
+--
+Memory Device
+Array Handle: 0x1000
+Error Information Handle: Not Provided
+Total Width: 72 bits
+Data Width: 64 bits
+Size: No Module Installed //1个内存空槽
+Form Factor: DIMM
+Set: 3
+Locator: DIMM6
+Bank Locator: Not Specified
+Type: DDR2
+Type Detail: Synchronous
+Speed: Unknown
+Manufacturer:
+Serial Number:
+Asset Tag:
+Part Number:#
+总结：该服务器有两条2G内存 ，空余4个插槽
  
  
  

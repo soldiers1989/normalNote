@@ -1,0 +1,33 @@
+lizhenhua(禅道也有用)
+aN0/,(!c@9
+
+wuguozan
+hHylrbD0SY
+
+邮箱：
+lizhenhua@7zgame.cc
+http://192.168.1.253/svn/xingxiu_doc
+http://10.163.254.253/svn/xingxiu
+SERVER_IP = 10.163.86.113
+
+int GWMaxAuto = ParamManager.GWMaxAuto;
+		for(int j=0;j<combatList.size();j++){
+			if(combatList.get(j)>combat){				
+				if(j <= GWMaxAuto){
+					godswarInfo.setGWarAutoPro(j);//设置可以扫荡的关卡数
+					break;
+				}else{
+					godswarInfo.setGWarAutoPro(GWMaxAuto);
+					break;
+				}
+			}						
+		}
+		
+	运维禅道：	
+     svn地址： svn://10.163.254.240/taiyi
+     svn账号： lizhenhua
+     svn密码： pZX4kPdMXilVRg
+	 
+	 
+	 
+	 

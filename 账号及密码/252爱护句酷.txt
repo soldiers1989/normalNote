@@ -1,0 +1,4 @@
+db.schema=gameDB_test
+db.url=jdbc:mysql://10.163.254.252:3306/
+db.user=root
+db.pwd=DOT2,tricker
