@@ -1,0 +1,404 @@
+
+
+1 一键换装  --
+
+2 宠物多个合成 --
+
+3 宠物炼化  --
+
+4 宠物重生  --
+
+5 bug,英雄上线没有加载宠物技能   --
+
+
+6 宠物更换后背包没有刷新    宠物抢装备后，SCUnitObjBodyItemInfo没有发宠物信息过来 --
+
+7 ?? 螭吻+1的技能没有下发		-- 
+
+8 宠物伤害的飘字。。。。（服务端没有发damage）
+
+9 剩余经验足够喂养时不应扣口粮	--
+
+10 没有上阵的宠物，去升星的话，没有消息返回。--
+
+11 宠物碎片的出售 --
+
+12 宠物商店倒计时问题  --
+
+2018/8/23--------------------------------------------
+
+1.QQ会员充值
+
+2.群英匹配问题
+
+2018/8/24--------------------------------------------
+
+仙盟合并后，注意观察成员的上次登录时间
+
+好友问题？-- 是由于各个分支没有合并主干的代码
+
+2018/8/28--------------------------------------------
+
+ 会员每日奖励：{"DT":20180827,"rc":1,"RS":2}，日期调成昨天，有小红点， RS 1表示未领取，2表示领取  rc奖励数量
+ 
+ 4,5004016,3003008,5004014 年费
+ 1000,1,1,1
+ 
+ 超级会员
+ 5002060,4,5001004,5001025
+ 1,100,100,20
+ {"":1,"":100,"":100,"":20}
+ 
+ {"s":[5002060,4,5001004,5001025],"n":[1,100,100,20],"s1":[5001025,3,5001009],"n1":[5,20000,5],"sn":9999,"rc":10}
+ 
+ 10.17分左右充值 的要查看
+ 
+ 
+ 
+ 30 服 到37服 所有充值手Q的角色
+ 年费203
+ {"s":[5004014,5004016,3003008,4],"n":[1,1,1,1000],"sn":999}
+ 
+ 活动数据添加：
+ id       humanId         activityId  sn     numValue    strValue 
+							203			0		0			{"RS":2} //已领取
+							204			0		0			{"DT":20180827,"rc":1,"RS":2}  //每日领奖
+ 
+2018/8/30--------------------------------------------
+
+1.战斗技能表现没有消失bug
+2.好友模块分支代码没有同步的bug --
+3.服务器 id 如何生成 ：
+平台id,服务器id,系统生成id
+platformDigit + serverDigit + id;即： 2*pow(10, 17) + 1*pow(10, 13) + id
+
+4.如何通过平台id,服务器id,来登陆：
+	1 通过账号，查找所有的id.
+	2 通过平台id,服务器id，确定该账号的哪个id用于登陆
+	3 判断该id是否上线
+	4 登陆
+	5 
+
+账号比数据库记录的账号段？？？
+数据库记录的账号： account+channelId 即 ow0h0056VxNN6tvio8DM95CftD0D74620B09C2CD765 = ow0h0056VxNN6tvio8DM95CftD0 + D74620B09C2CD765
+应用宝33服登陆的记录：name:lzh1 ,account:ow0h0056VxNN6tvio8DM95CftD0D74620B09C2CD765,id:300330000016001437
+登陆协议查看：loginType=YJ
+登陆协议查看：account=ow0h0056VxNN6tvio8DM95CftD0
+登陆协议查看：password=MTNfMHpPbjlERlppLURQODFJb0pBd3daQzN2OVhOTEQ5ZXpFRXpmdlZFV2FUcE15U1l6anNPMGhHWU5FUzVpcThwd2NIakhWdWI0bkZXMVR1MlBVTWpZTU8yV29fWERrUldnWVFpa0NwdllxdWcjIzI=
+登陆协议查看：channelId=D74620B09C2CD765
+登陆协议查看：account + channelId。accountName=ow0h0056VxNN6tvio8DM95CftD0D74620B09C2CD765
+登陆协议查看：version=1.2.0
+登陆检测到已有玩家存在，踢出存在的玩家！account=ow0h0056VxNN6tvio8DM95CftD0D74620B09C2CD765, loginedHumanId=300330000016001437
+登录打印,您的账号在另一地点登陆，您被迫下线account=ow0h0056VxNN6tvio8DM95CftD0D74620B09C2CD765
+
+2018/9/1--------------------------------------------
+// 在线的服务器列表
+http://plat.ty.qzgame.cc/serverlist.txt
+
+2018/9/3--------------------------------------------
+1.服务器用id登陆修改
+2.英雄冢奖励修改
+
+2018/9/5--------------------------------------------
+1.热更表格
+2018/9/10--------------------------------------------
+
+1.用户副本空，封魔不能打，点击日常没反应？-- 装备和武将数量太多
+
+2018/9/11--------------------------------------------
+
+1.猎魂模块了解一下
+2.一键装备bug  --客户端发送的数据有误
+3.英雄冢扫荡打开宝箱是否有误 -- 没发现明显错误
+
+
+2018/9/12--------------------------------------------
+
+1.英雄太多或者装备太多，猎魔，副本等没有数据的bug
+2.log4j2 xml 配置了解一下
+
+2018/9/13--------------------------------------------
+
+1.英雄太多或者装备太多，猎魔，副本等没有数据的bug -- 
+	由于一次性发送的太多的数据，
+	netty 的 ServerBootstrap() .childOption(ChannelOption.WRITE_BUFFER_HIGH_WATER_MARK, 1024 * 1024) // 控制输出流量，设置写buffer高水位，默认64K
+	需要设大一点
+2.输出缓冲池，在多人用的情况下，是每人一个缓冲池，还是多人共用缓冲池
+	怎么查看自己输入缓冲池的数据的大小
+	怎么查看缓冲池当前数据的大小
+2018/9/18--------------------------------------------
+1.有个IOS的合服数据和错了，原来的4个服，结果是8个服合并。但是主表human只有4个服的数据，真奇怪，log没有发现当天的日志8.28当天合并
+  用SQL手动删除多余的数据
+2.插入了两个角色，都是同一个账号。
+
+3.安卓混服审核服,应用宝审核服开通了
+2018/9/19--------------------------------------------
+
+1.审核服自动开启测试
+
+2018/9/20--------------------------------------------
+1.解决了25活动的bug，活动时间没重置，以及换取记录没重置
+等待中秋放假
+
+2018/9/25--------------------------------------------
+中秋回归：
+1.服务器背包东西太多的bug修复上传，运维重启
+2.消息缓存的bug了解。netty消息发送大小上限重新设置
+
+3.消息队列  MQ.Redis缓存
+消息的唯一性：
+消息确保传给消费者：
+
+2018/9/30--------------------------------------------
+1.副本进不去，消息没有处理。。
+在本地跟踪一下进入副本的流程，然后加日志查询。。
+
+
+建立副本：  本地port：localport: DefaultPort[nodeId=20000~world0,portId=port0]  调用call 方法
+			call（）：Call[type=0,fromNodeId=20000~world0,fromPortId=port0,to=CallPoint[nodeId=20000~world0,portId=stage3,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance],callId=85,methodKey=4,methodKeyName=StageService_createStageInstance_int_int_int,methodParam={62051,1008,1},returns={},param={}]
+			
+			远程port：CallPoint[nodeId=20000~world0,portId=stage4,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+
+
+本地加的日志记录：2018-09-30 11:18:37,705 (StageServiceProxy.java:198) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=20000~world0,portId=port0],remote=CallPoint[nodeId=20000~world0,portId=stage3,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+服务器上：
+创造副本信息：localPort=DefaultPort[nodeId=30009~world0,portId=port0],remote=CallPoint[nodeId=30009~world0,portId=stage2,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+
+
+
+{
+integration.PFService=game.worldsrv.integration.PFService@7d5be8aa, 
+stage.StageGlobalService=game.worldsrv.stage.StageGlobalService@6083aa22, 
+seam=game.seam.SeamService@78ccaf75,
+ gate=game.seam.account.AccountService@f18dbec}
+
+ 
+ 
+ 
+ {100001=game.worldsrv.stage.StageObjectService@63053849, 1000=game.worldsrv.stage.StageObjectService@5bd985e6, 200580000016000023=game.worldsrv.character.HumanObjectService@68647ca, stageDefault=game.worldsrv.stage.StageService@4aa11e07}
+
+ 
+ 线上服消息：
+ 2018-09-30 13:48:15,842 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=port0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=12107,methodKey=12,methodKeyName=<null>,methodParam={300110000016005669,CallPoint[nodeId=30009~world0,portId=0,servId=-7387758,callerInfo=<null>],[[1000, 1000, 0.0, 0.0]],1},returns={},param={}]
+2018-09-30 13:48:15,862 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=port0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=12108,methodKey=1,methodKeyName=<null>,methodParam={1000},returns={},param={}]
+2018-09-30 13:48:58,166 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=port0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=12122,methodKey=12,methodKeyName=<null>,methodParam={300110000016005669,CallPoint[nodeId=30009~world0,portId=0,servId=-998487230,callerInfo=<null>],[[1000, 1000, 0.0, 0.0]],1},returns={},param={}]
+2018-09-30 13:48:58,187 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=port0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=12123,methodKey=1,methodKeyName=<null>,methodParam={1000},returns={},param={}]
+2018-09-30 13:49:23,547 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=stage0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=7295934,methodKey=14,methodKeyName=<null>,methodParam={1000},returns={},param={}]
+2018-09-30 13:50:39,991 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=stage0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=7302420,methodKey=14,methodKeyName=<null>,methodParam={1000},returns={},param={}]
+2018-09-30 13:50:40,072 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=stage0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=7302799,methodKey=14,methodKeyName=<null>,methodParam={1000},returns={},param={}]
+2018-09-30 13:51:21,274 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=port0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=12136,methodKey=12,methodKeyName=<null>,methodParam={300110000016005669,CallPoint[nodeId=30009~world0,portId=0,servId=1463392981,callerInfo=<null>],[[1000, 1000, 0.0, 0.0]],1},returns={},param={}]
+2018-09-30 13:51:21,294 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=port0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=12137,methodKey=1,methodKeyName=<null>,methodParam={1000},returns={},param={}]
+2018-09-30 13:51:22,379 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=stage0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=7306864,methodKey=14,methodKeyName=<null>,methodParam={1000},returns={},param={}]
+2018-09-30 13:51:26,769 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=port0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=12147,methodKey=12,methodKeyName=<null>,methodParam={300170000016000060,CallPoint[nodeId=30009~world0,portId=0,servId=-642038072,callerInfo=<null>],[[1000, 1000, 0.0, 0.0]],1},returns={},param={}]
+2018-09-30 13:51:26,790 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=30009~world0,fromPortId=port0,to=CallPoint[nodeId=30009~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=12148,methodKey=1,methodKeyName=<null>,methodParam={1000},returns={},param={}]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+本地福：
+call的过滤信息：=Call[type=1000,fromNodeId=20001~world0,fromPortId=stage0,to=CallPoint[nodeId=20001~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=2887,methodKey=2,methodKeyName=<null>,methodParam={66081,1012,1},returns={},param={}]
+2018-09-30 13:55:58,637 (StageServiceProxy.java:198) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=20001~world0,portId=port0],remote=CallPoint[nodeId=20001~world0,portId=stage3,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+2018-09-30 13:55:58,645 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=20001~world0,fromPortId=port0,to=CallPoint[nodeId=20001~world0,portId=stage3,servId=stageDefault,callerInfo=],callId=67,methodKey=4,methodKeyName=<null>,methodParam={66081,1012,1},returns={},param={}]
+2018-09-30 13:55:58,656 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=20001~world0,fromPortId=stage3,to=CallPoint[nodeId=20001~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=10235,methodKey=11,methodKeyName=<null>,methodParam={200010000375000003,1012,青城山室内,20001~world0,stage3},returns={},param={}]
+2018-09-30 13:55:58,685 (Connection.java:265) [DEBUG][CORE_CONN] ===服务端返回消息：msg=10022:SCCrossFightInfo:[], account=2bdd70a747fda9c0b98b6425c17c2d05_ALIF52F35C5A04A1876, connId=-748510917, remoteAddress=/10.163.86.113:56711
+2018-09-30 13:55:58,713 (Connection.java:611) [DEBUG][CORE_CONN] ===客户端请求消息：msg=1203:CSStageSwitch:[areaSwitchKey: "1012:200010000375000003"
+], account=2bdd70a747fda9c0b98b6425c17c2d05_ALIF52F35C5A04A1876, connId=-748510917
+2018-09-30 13:55:58,727 (MsgHandler.java:81) [DEBUG][CORE_MSG] ====客户端请求消息：msg=1203:CSStageSwitch:[areaSwitchKey: "1012:200010000375000003"
+]
+2018-09-30 13:55:58,976 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=20001~world0,fromPortId=stage0,to=CallPoint[nodeId=20001~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=2892,methodKey=16,methodKeyName=<null>,methodParam={HumanObject[id=200580000016000023,name=晨曦宝贝呀],200010000375000003,0.00,0.00,0.00,0.00},returns={},param={}]
+2018-09-30 13:55:58,996 (Port.java:323) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=20001~world0,fromPortId=port0,to=CallPoint[nodeId=20001~world0,portId=port0,servId=stage.StageGlobalService,callerInfo=],callId=68,methodKey=1,methodKeyName=<null>,methodParam={200010000375000003},returns={},param={}]
+2018-09-30 13:55:59,065 (Connection.java:265) 
+
+
+正常的服的日志信息：
+2018-10-01 00:31:36,218 (Port.java:573) [INFO][CORE] 创造副本信息,port.call,methodKeyName=StageService_createStageInstance_int_int_int
+2018-10-01 00:31:36,218 (Port.java:626) [INFO][CORE] 创造副本信息,sendCall
+2018-10-01 00:31:36,218 (Port.java:632) [INFO][CORE] 创造副本信息,本node直接发送
+2018-10-01 00:31:36,218 (Node.java:383) [INFO][CORE] 创造副本信息,node.callHandle，type=1000
+2018-10-01 00:31:36,218 (Node.java:396) [INFO][CORE] 创造副本信息,node.callHandle,得到指向的port，port=StagePort[nodeId=20068~world0,portId=stage4]，call=Call[type=1000,fromNodeId=20068~world0,fromPortId=port0,to=CallPoint[nodeId=20068~world0,portId=stage4,servId=stageDefault,callerInfo=],callId=8636,methodKey=4,methodKeyName=<null>,methodParam={18051,1001,1},returns={},param={}]
+2018-10-01 00:31:36,230 (Port.java:336) [INFO][CORE] 创造副本信息,port.pulseCalls,得到服务service，service=game.worldsrv.stage.StageService@71ddd508
+2018-10-01 00:31:36,231 (StageService.java:61) [INFO][GAME] 创造副本信息：createStageInstance(),portId=200680000163000305,remote=200680000163000305
+
+
+2018-10-01 00:33:14,183 (StageGlobalService.java:586) [INFO][GAME] 创造副本信息：stageSn=18061,mapSn=1002
+2018-10-01 00:33:14,183 (StageServiceProxy.java:195) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=20068~world0,portId=port0],remote=CallPoint[nodeId=20068~world0,portId=stage2,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+2018-10-01 00:33:14,183 (Port.java:573) [INFO][CORE] 创造副本信息,port.call,methodKeyName=StageService_createStageInstance_int_int_int
+2018-10-01 00:33:14,184 (Port.java:626) [INFO][CORE] 创造副本信息,sendCall
+2018-10-01 00:33:14,184 (Port.java:632) [INFO][CORE] 创造副本信息,本node直接发送
+2018-10-01 00:33:14,184 (Node.java:383) [INFO][CORE] 创造副本信息,node.callHandle，type=1000
+2018-10-01 00:33:14,184 (Node.java:396) [INFO][CORE] 创造副本信息,node.callHandle,得到指向的port，port=StagePort[nodeId=20068~world0,portId=stage2]，call=Call[type=1000,fromNodeId=20068~world0,fromPortId=port0,to=CallPoint[nodeId=20068~world0,portId=stage2,servId=stageDefault,callerInfo=],callId=8738,methodKey=4,methodKeyName=<null>,methodParam={18061,1002,1},returns={},param={}]
+2018-10-01 00:33:14,203 (Port.java:336) [INFO][CORE] 创造副本信息,port.pulseCalls,得到服务service，service=game.worldsrv.stage.StageService@44c3ce1f
+2018-10-01 00:33:14,207 (StageService.java:61) [INFO][GAME] 创造副本信息：createStageInstance(),portId=200680000165000314,remote=200680000165000314
+[dev_yilin@TaiYi-AN-S01-136-109 world0]$ cat world0.log | grep "callId=8738"
+2018-10-01 00:33:14,184 (Node.java:396) [INFO][CORE] 创造副本信息,node.callHandle,得到指向的port，port=StagePort[nodeId=20068~world0,portId=stage2]，call=Call[type=1000,fromNodeId=20068~world0,fromPortId=port0,to=CallPoint[nodeId=20068~world0,portId=stage2,servId=stageDefault,callerInfo=],callId=8738,methodKey=4,methodKeyName=<null>,methodParam={18061,1002,1},returns={},param={}]
+2018-10-01 00:33:14,203 (Port.java:322) [INFO][CORE] call的过滤信息：=Call[type=1000,fromNodeId=20068~world0,fromPortId=port0,to=CallPoint[nodeId=20068~world0,portId=stage2,servId=stageDefault,callerInfo=],callId=8738,methodKey=4,methodKeyName=<null>,methodParam={18061,1002,1},returns={},param={}]
+[dev_yilin@TaiYi-AN-S01-136-109 world0]$ 
+
+不正常的服， stageDefault 这个service 不见了。。。怎么就消失了呢。。。
+并非是不见了，而是stage线程卡死，导致消息队列没有处理。一直阻塞添加消息，而没有处理
+
+2018/10/08--------------------------------------------
+
+1.装备强化，精炼等 战力下降           ---
+2.英雄置换多次，战力下降			  ！！
+3.打精英打完要下一页，退出都不行？     ？？
+4.用户重生，碎片丢失，进阶丹经验丢失  --
+5.用户重生，碎片丢失，进阶丹经验丢失  --
+
+6.排插宠物战斗的错误
+
+2018/10/09--------------------------------------------
+
+1.合服的新区没办法创角
+
+2.装备太多，上阵卡顿，需要优化  -- 消息发送处理
+
+武将上阵，下阵，，，装备升级，装备上下穿戴
+
+猎魂的升级，卡顿
+
+
+3.置换需要测试
+
+4.战斗功能测试
+
+2018/10/15--------------------------------------------
+
+1.战斗技能的重复调用
+
+2.太乙战斗逻辑统一分析
+
+2018/10/15--------------------------------------------
+
+测试 掌教师尊上 5
+
+2018/10/23--------------------------------------------
+
+简略了解一下 gm,不需要深入。懂得调用就可以
+$item 1 1
+
+$hp 2000
+
+问题： 1. 协议是否是自动生成的
+
+2018/10/24--------------------------------------------
+
+比拼系统：
+1.原来的排行榜如何抓取
+2.新的排行榜如何生成
+3.是否需要定义新的协议和配表
+
+2018/10/24--------------------------------------------
+1.服务的概念
+2.什么时候需要一个服务
+3.服务和节点的关系
+
+2018/10/26--------------------------------------------
+1.太乙移动mm的部署
+2.英灵自定义GM命令：$my
+
+2018/10/27--------------------------------------------
+1.七日狂欢数据登陆时是如何加载的
+2.玩家点击领奖是如何进行的
+3.当条件满足是，是如何影响七日狂欢界面的
+
+比拼系统：
+系统开机时的加载
+玩家登陆时的加载
+领取奖励
+
+各个排行榜如何获取，并发送给客户端
+协议如何定义？
+2018/10/29--------------------------------------------
+用位来保存数值的领取状态：
+原始值0，求1到5领取后的值的改变：
+1<<1 = 10
+0|10 = 10 = 2
+
+1<<2 = 100
+10|100 =110 = 6
+
+1<<3 = 1000
+110|1000 = 1110 = 14
+
+1<<4 = 10000
+1110|10000 = 11110 = 30
+
+1<<5 = 100000
+11110|100000 =111110 = 62
+
+原始值0，5领取后的值的改变：
+1<<5 = 100000
+0|100000 = 100000
+
+1<<2 = 100
+100000|100 = 100100
+
+判断是否领取计算：
+原始值 右移 POS位
+	已知原始值111110=62
+	判断位置1是否领取：
+	62>>>1 = 111110>>> 1 = 11111
+	res = 11111|1 = 11111|00001 = 1 = true
+	
+	已知原始值111110=62
+	判断位置2是否领取：
+	62>>>1 = 111110>>> 2 = 1111
+	res = 1111|1 = 1111|0001 = 1 = true
+
+
+用一个long数据类记录各个活动的登陆情况。（用位登记）
+	
+说明：数值<<移动的位数
+
+  
+	初始值 0，设置 2
+	public static void setBool(Player player, 2, boolean flag) {
+		long bools = player.getBools();      	0
+		long bitAss = 1<<pbv.ordinal();			1<<2 = 100
+		if (flag) {								true
+			bools |= bitAss;					0 |= 100  =100
+		} else if ((bools&bitAss)>0){
+			bools ^= bitAss;
+		}
+		player.setBools(bools);   				bools = 100 =4
+	}
+
+	public static boolean getBool(Player player, PlayerBoolVar 2) {
+		return (player.getBools()&(1<<pbv.ordinal()))!=0;
+	}
+	
+	100 & 1<<2  = 1  说明设置过了
+	
+	初始值 100 ，设置 3
+	setBool(3)
+	100
+	1<<3 = 1000
+	100|1000 = 1100
+	初始值 1100
+	
+	查看各个为的记录情况：
+	1100 & 1<<2 0100  100 
+	1100 & 1<<3 1000  1000
+	1100 & 1<<0 1     0
+	1100 & 1<<1 10    0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

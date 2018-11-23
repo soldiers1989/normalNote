@@ -1,0 +1,3317 @@
+
+2018-10-29 17:48:13,562 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 17:48:44,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 17:49:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 17:49:31,000 (Log.java:142) [INFO][GAME] ===AccountManager.java:195 _msg_CSLogin3 玩家登陆信息1008：account=603158693,password=8bc9aadb197325a2bdef13c8aba3215c,channelId=3,serverId=90006,loginType=4
+2018-10-29 17:49:31,300 (Log.java:142) [INFO][GAME] ===AccountManager.java:694 _msg_CSQueryById 查询角色信息：humanid=900050000031000003
+2018-10-29 17:49:32,005 (HumanManager.java:944) [INFO][GAME] ===玩家登陆！account=6031586933, humanId=900050000031000003
+2018-10-29 17:49:32,010 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 17:49:32,011 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 17:49:33,328 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 17:49:40,554 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000444,sn=28
+2018-10-29 17:49:50,238 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000445,sn=21
+2018-10-29 17:49:56,077 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000446,sn=23
+2018-10-29 17:50:08,844 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000447,sn=23
+2018-10-29 17:50:13,574 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 17:50:14,704 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000448,sn=27
+2018-10-29 17:50:21,488 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000449,sn=24
+2018-10-29 17:50:27,510 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000450,sn=25
+2018-10-29 17:50:33,346 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000451,sn=26
+2018-10-29 17:50:41,860 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000452,sn=22
+2018-10-29 17:50:48,703 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000453,sn=1
+2018-10-29 17:50:59,250 (HttpIpFilter.java:27) [INFO][PLATFORM] 请求者的Ip=120.92.216.197
+2018-10-29 17:50:59,251 (HttpServerHandler.java:80) [INFO][PLATFORM] [-1094396673]收到HTTP请求:{}
+2018-10-29 17:50:59,257 (HttpServerHandler.java:125) [INFO][PLATFORM] POST请求：uri=/payNotify, param={accountId=603158693, amount=1500, quantity=1, productId=1, rate=0.0, orderId=201810291750487d36uk, roleId=900050000031000003, amountReal=1500, sandbox=false, currency=rmb, userId=900050000031000003, paymentType=PPTV渠道}
+2018-10-29 17:50:59,279 (PayManager.java:58) [INFO][PLATFORM] onPay
+2018-10-29 17:50:59,305 (PFService.java:44) [INFO][PLATFORM] payNotice {accountId=603158693, amount=1500, quantity=1, productId=1, orderId=201810291750487d36uk, rate=0.0, roleId=900050000031000003, amountReal=1500, sandbox=false, currency=rmb, userId=900050000031000003, paymentType=PPTV渠道}
+2018-10-29 17:50:59,306 (Log.java:142) [INFO][GAME] ===PF_PAY_Manager.java:75 onPay 充值开始jo={accountId=603158693, amount=1500, quantity=1, productId=1, orderId=201810291750487d36uk, rate=0.0, roleId=900050000031000003, amountReal=1500, sandbox=false, currency=rmb, userId=900050000031000003, paymentType=PPTV渠道}
+2018-10-29 17:50:59,385 (Log.java:142) [INFO][GAME] ===PF_PAY_Manager.java:163 _result_onPay1 充值中
+2018-10-29 17:50:59,385 (Log.java:142) [INFO][GAME] ===PF_PAY_Manager.java:181 _result_onPay1 充值中，查询玩家jo={accountId=603158693, amount=1500, quantity=1, productId=1, orderId=201810291750487d36uk, rate=0.0, roleId=900050000031000003, amountReal=1500, sandbox=false, currency=rmb, userId=900050000031000003, paymentType=PPTV渠道}
+2018-10-29 17:50:59,406 (Log.java:142) [INFO][GAME] ===PF_PAY_Manager.java:283 _result_onPay2 充值中
+2018-10-29 17:50:59,406 (Log.java:142) [INFO][GAME] ===PF_PAY_Manager.java:300 _result_onPay2 充值中，玩家在线，正在充值，jo={accountId=603158693, amount=1500, quantity=1, productId=1, orderId=201810291750487d36uk, rate=0.0, roleId=900050000031000003, amountReal=1500, sandbox=false, currency=rmb, userId=900050000031000003, paymentType=PPTV渠道}
+2018-10-29 17:50:59,418 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:417 sendSCVipChangeMsg 发送vip等级变化,name=屈侯不尤, vipLv=1, vipExp=150
+2018-10-29 17:50:59,427 (Log.java:142) [INFO][GAME] ===PF_PAY_Manager.java:346 _result_onPay3 充值结束
+2018-10-29 17:50:59,427 (Log.java:142) [INFO][GAME] ===PF_PAY_Manager.java:348 _result_onPay3 充值结束，充值成功jo={accountId=603158693, amount=1500, quantity=1, productId=1, orderId=201810291750487d36uk, rate=0.0, roleId=900050000031000003, amountReal=1500, sandbox=false, currency=rmb, userId=900050000031000003, paymentType=PPTV渠道}
+2018-10-29 17:51:13,572 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 17:51:21,444 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000456,sn=2
+2018-10-29 17:51:41,039 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000457,sn=2
+2018-10-29 17:52:05,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 17:52:13,574 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 17:52:30,135 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000458,sn=2
+2018-10-29 17:52:48,758 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000003,name=屈侯不尤],id=900050000041000459,sn=2
+2018-10-29 17:53:06,934 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 17:53:13,552 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 17:53:13,552 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 17:53:13,553 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 17:53:13,553 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+
+
+
+
+2018-10-29 17:58:13,559 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 17:58:47,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 17:59:13,560 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:00:01,044 (Port.java:329) [WARN][CORE] 执行Call队列时无法找到处理服务：call=Call[type=1000,fromNodeId=90005~world0,fromPortId=game0,to=CallPoint[nodeId=90005~world0,portId=0,servId=1271025193,callerInfo=HumanGlobalManager.java:27 sendMsg],callId=32573,methodKey=5,methodKeyName=Connection_sendMsg_int_Chunk,methodParam={4801,},returns={},param={}]
+2018-10-29 18:00:03,597 (Port.java:329) [WARN][CORE] 执行Call队列时无法找到处理服务：call=Call[type=1000,fromNodeId=90005~world0,fromPortId=stage0,to=CallPoint[nodeId=90005~world0,portId=0,servId=1271025193,callerInfo=HumanObject.java:877 sendMsg],callId=70814,methodKey=5,methodKeyName=Connection_sendMsg_int_Chunk,methodParam={3702,},returns={},param={}]
+2018-10-29 18:00:13,570 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:00:57,406 (HumanManager.java:1637) [INFO][GAME] ===玩家登出！account=6031586933, humanId=900050000031000003
+2018-10-29 18:01:13,570 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 18:02:08,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:02:13,559 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 18:02:26,576 (Log.java:142) [INFO][GAME] ===AccountManager.java:195 _msg_CSLogin3 玩家登陆信息1008：account=test,password=,channelId=,serverId=90005,loginType=1
+2018-10-29 18:02:26,818 (Log.java:142) [INFO][GAME] ===AccountManager.java:694 _msg_CSQueryById 查询角色信息：humanid=900050000031000002
+2018-10-29 18:02:27,505 (HumanManager.java:944) [INFO][GAME] ===玩家登陆！account=test, humanId=900050000031000002
+2018-10-29 18:02:27,508 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:TowerBegin
+2018-10-29 18:02:27,509 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:TowerEnd
+2018-10-29 18:02:27,509 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:FengMoBegin
+2018-10-29 18:02:27,509 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:FengMoEnd
+2018-10-29 18:02:27,510 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:InstanceBegin
+2018-10-29 18:02:27,510 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:InstanceEnd
+2018-10-29 18:02:27,510 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:ShopBegin
+2018-10-29 18:02:27,515 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:02:27,519 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:02:27,521 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:02:27,521 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:02:27,521 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:02:27,522 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:02:27,522 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:02:27,522 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:ShopEnd
+2018-10-29 18:02:27,522 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:InvadeBegin
+2018-10-29 18:02:27,523 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:InvadeEnd
+2018-10-29 18:02:27,523 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:DailyQuestBegin
+2018-10-29 18:02:27,523 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:DailyQuestEnd
+2018-10-29 18:02:27,524 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:RepSpecialBegin
+2018-10-29 18:02:27,524 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:RepSpecialEnd
+2018-10-29 18:02:27,525 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:GuildBegin
+2018-10-29 18:02:27,525 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:GuildEnd
+2018-10-29 18:02:27,527 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:QunyingBegin
+2018-10-29 18:02:27,527 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:QunyingEnd
+2018-10-29 18:02:27,527 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:MultiTeamBegin
+2018-10-29 18:02:27,527 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:MultiTeamEnd
+2018-10-29 18:02:27,527 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:HeroGraveBegin
+2018-10-29 18:02:27,528 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:HeroGraveEnd
+2018-10-29 18:02:27,536 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:FriendBegin
+2018-10-29 18:02:27,537 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000002,name=綦母愫]设置了每日重置标记:FriendEnd
+2018-10-29 18:02:27,817 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:03:02,660 (Log.java:142) [INFO][GAME] ===InformMsgHandler.java:25 _msg_CSInformChat 收到聊天请求消息msg=channel: 1
+content: "gmhumansetlv 50"
+
+2018-10-29 18:03:08,934 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:03:13,554 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:03:13,555 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:03:13,555 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:03:13,556 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+
+
+
+
+
+
+7.19ms	3	0.93ms	0.81%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 18:03:13,559 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:04:13,558 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:05:13,566 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:05:29,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:06:13,572 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:07:13,575 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:08:09,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:08:13,541 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:08:13,541 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:08:13,541 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:08:13,542 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+
+
+
+2018-10-29 18:08:13,571 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:08:50,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:09:13,569 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:10:13,556 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:11:13,557 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:12:11,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:12:13,560 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:13:10,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:13:13,554 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:13:13,554 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:13:13,554 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+
+
+2018-10-29 18:13:13,563 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:14:13,562 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:15:13,557 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:15:32,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:16:13,563 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:17:13,566 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:18:11,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:18:13,539 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:18:13,539 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:18:13,539 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:18:13,540 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+
+
+2018-10-29 18:18:13,572 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:18:53,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:19:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:20:13,574 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:21:13,559 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:22:13,563 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:22:14,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:23:12,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:23:13,555 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:23:13,556 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:23:13,556 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:23:13,557 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+
+2018-10-29 18:23:13,566 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:24:13,567 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:25:13,557 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:25:35,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:26:13,570 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:27:13,558 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:28:13,542 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:28:13,544 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:28:13,544 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:28:13,547 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+
+
+2018-10-29 18:28:13,567 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:28:13,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:28:56,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:29:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:30:13,556 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:31:13,557 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:32:13,558 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:32:17,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:33:13,555 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:33:13,556 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:33:13,556 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:33:13,558 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+
+
+2018-10-29 18:33:13,562 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:33:14,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:34:13,563 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：1 =========
+2018-10-29 18:34:56,740 (Log.java:142) [INFO][GAME] ===AccountManager.java:195 _msg_CSLogin3 玩家登陆信息1008：account=603161498,password=c45bc38df985bdcbcb95c2b5f1585235,channelId=3,serverId=90006,loginType=4
+2018-10-29 18:34:56,881 (Log.java:33) [ERROR][GAME] ===AccountManager.java:283 _result_queryAccount Object is null
+2018-10-29 18:34:56,942 (Log.java:142) [INFO][GAME] ===AccountManager.java:694 _msg_CSQueryById 查询角色信息：humanid=0
+2018-10-29 18:35:01,320 (Log.java:142) [INFO][GAME] ===AccountMsgHandler.java:136 _msg_CSCharacterCreate 玩家创角中。。account=6031614983
+2018-10-29 18:35:01,321 (Log.java:142) [INFO][GAME] ===AccountManager.java:981 _msg_CSCharacterCreate 玩家创角中。。处理创建角色。。account=6031614983
+2018-10-29 18:35:01,340 (Log.java:142) [INFO][GAME] ===AccountManager.java:1014 _result_CSCharacterCreate 玩家创角中。。查询验证是否能创建角色。。account=6031614983，serverId = 6
+2018-10-29 18:35:01,424 (Log.java:142) [INFO][GAME] ===AccountManager.java:857 _result_applyCreateHuman 玩家创角中。。创角成功。account=6031614983
+2018-10-29 18:35:01,471 (GiftService.java:153) [ERROR][PLATFORM] 公测返还结果参数不对或者已经返还过了，result=2,accountId=6031614983,humanId=900050000031000005
+2018-10-29 18:35:01,841 (HumanManager.java:944) [INFO][GAME] ===玩家登陆！account=6031614983, humanId=900050000031000005
+2018-10-29 18:35:01,843 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:TowerBegin
+2018-10-29 18:35:01,843 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:TowerEnd
+2018-10-29 18:35:01,844 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:FengMoBegin
+2018-10-29 18:35:01,844 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:FengMoEnd
+2018-10-29 18:35:01,844 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:InstanceBegin
+2018-10-29 18:35:01,845 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:InstanceEnd
+2018-10-29 18:35:01,846 (ShopManager.java:369) [ERROR][TABLE] 该商店数据为空, type 类型=ShopGeneral
+2018-10-29 18:35:01,846 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:01,846 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:01,846 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:ShopBegin
+2018-10-29 18:35:01,849 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:01,850 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:01,851 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:01,851 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:01,851 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:01,852 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:01,852 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:01,852 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:ShopEnd
+2018-10-29 18:35:01,852 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:InvadeBegin
+2018-10-29 18:35:01,852 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:InvadeEnd
+2018-10-29 18:35:01,853 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:DailyQuestBegin
+2018-10-29 18:35:01,853 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:DailyQuestEnd
+2018-10-29 18:35:01,853 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:RepSpecialBegin
+2018-10-29 18:35:01,854 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:RepSpecialEnd
+2018-10-29 18:35:01,855 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:GuildBegin
+2018-10-29 18:35:01,855 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:GuildEnd
+2018-10-29 18:35:01,857 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:QunyingBegin
+2018-10-29 18:35:01,857 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:QunyingEnd
+2018-10-29 18:35:01,857 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:MultiTeamBegin
+2018-10-29 18:35:01,858 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:MultiTeamEnd
+2018-10-29 18:35:01,858 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:HeroGraveBegin
+2018-10-29 18:35:01,858 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:HeroGraveEnd
+2018-10-29 18:35:01,865 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:FriendBegin
+2018-10-29 18:35:01,865 (Log.java:142) [INFO][GAME] ===HumanManager.java:4998 setDayResetOk human=HumanObject[id=900050000031000005,name=万城]设置了每日重置标记:FriendEnd
+2018-10-29 18:35:02,048 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:35:10,539 (InstanceMsgHandler.java:51) [INFO][STAGE_COMMON] 进入副本跟踪：humanid=900050000031000005
+2018-10-29 18:35:10,540 (InstanceManager.java:307) [INFO][STAGE_COMMON] 进入副本跟踪：create()
+2018-10-29 18:35:10,546 (StageGlobalService.java:586) [INFO][GAME] 创造副本信息：stageSn=6001011,mapSn=1002
+2018-10-29 18:35:10,547 (StageServiceProxy.java:198) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=90005~world0,portId=port0],remote=CallPoint[nodeId=90005~world0,portId=stage2,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+2018-10-29 18:35:10,559 (StageService.java:61) [INFO][GAME] 创造副本信息：createStageInstance(),portId=900050000042000011,remote=900050000042000011
+2018-10-29 18:35:13,565 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:35:38,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:36:02,356 (Port.java:440) [ERROR][CORE] 发现超时的返回值监听：要删除的超时监听数量=1
+2018-10-29 18:36:06,743 (InstanceMsgHandler.java:51) [INFO][STAGE_COMMON] 进入副本跟踪：humanid=900050000031000005
+2018-10-29 18:36:06,744 (InstanceManager.java:307) [INFO][STAGE_COMMON] 进入副本跟踪：create()
+2018-10-29 18:36:06,754 (StageGlobalService.java:586) [INFO][GAME] 创造副本信息：stageSn=6001021,mapSn=1002
+2018-10-29 18:36:06,754 (StageServiceProxy.java:198) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=90005~world0,portId=port0],remote=CallPoint[nodeId=90005~world0,portId=stage3,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+2018-10-29 18:36:06,764 (StageService.java:61) [INFO][GAME] 创造副本信息：createStageInstance(),portId=900050000044000012,remote=900050000044000012
+2018-10-29 18:36:13,556 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:36:54,170 (InstanceMsgHandler.java:51) [INFO][STAGE_COMMON] 进入副本跟踪：humanid=900050000031000005
+2018-10-29 18:36:54,171 (InstanceManager.java:307) [INFO][STAGE_COMMON] 进入副本跟踪：create()
+2018-10-29 18:36:54,187 (StageGlobalService.java:586) [INFO][GAME] 创造副本信息：stageSn=6001031,mapSn=1004
+2018-10-29 18:36:54,188 (StageServiceProxy.java:198) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=90005~world0,portId=port0],remote=CallPoint[nodeId=90005~world0,portId=stage4,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+2018-10-29 18:36:54,202 (StageService.java:61) [INFO][GAME] 创造副本信息：createStageInstance(),portId=900050000045000013,remote=900050000045000013
+2018-10-29 18:37:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:37:33,532 (InstanceMsgHandler.java:51) [INFO][STAGE_COMMON] 进入副本跟踪：humanid=900050000031000005
+2018-10-29 18:37:33,533 (InstanceManager.java:307) [INFO][STAGE_COMMON] 进入副本跟踪：create()
+2018-10-29 18:37:33,535 (StageGlobalService.java:586) [INFO][GAME] 创造副本信息：stageSn=6001041,mapSn=1002
+2018-10-29 18:37:33,536 (StageServiceProxy.java:198) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=90005~world0,portId=port0],remote=CallPoint[nodeId=90005~world0,portId=stage2,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+2018-10-29 18:37:33,556 (StageService.java:61) [INFO][GAME] 创造副本信息：createStageInstance(),portId=900050000042000016,remote=900050000042000016
+2018-10-29 18:38:13,542 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:38:13,544 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:38:13,544 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 3--------------------------------
+2018-10-29 18:38:13,545 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量621次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+135	1890B	14B	21.74%	10207
+107	1324B	12B	17.23%	3201
+35	280B	8B	5.64%	1201
+29	290B	10B	4.67%	2101
+28	916B	32B	4.51%	1502
+23	230B	10B	3.70%	3811
+22	220B	10B	3.54%	3203
+19	190B	10B	3.06%	5391
+17	187B	11B	2.74%	2201
+15	150B	10B	2.42%	10216
+14	140B	10B	2.25%	3803
+13	351B	27B	2.09%	2405
+12	156B	13B	1.93%	10208
+12	120B	10B	1.93%	10210
+12	96B	8B	1.93%	10212
+12	518B	43B	1.93%	111
+12	396B	33B	1.93%	1203
+11	88B	8B	1.77%	2202
+11	88B	8B	1.77%	2203
+8	64B	8B	1.29%	1003
+
+收到总消息大小8KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+135	1890B	14B	21.17%	10207
+107	1324B	12B	14.83%	3201
+28	916B	32B	10.26%	1502
+12	518B	43B	5.80%	111
+12	396B	33B	4.44%	1203
+13	351B	27B	3.93%	2405
+29	290B	10B	3.25%	2101
+35	280B	8B	3.14%	1201
+23	230B	10B	2.58%	3811
+22	220B	10B	2.46%	3203
+19	190B	10B	2.13%	5391
+17	187B	11B	2.09%	2201
+12	156B	13B	1.75%	10208
+15	150B	10B	1.68%	10216
+8	144B	18B	1.61%	1009
+14	140B	10B	1.57%	3803
+6	132B	22B	1.48%	1907
+12	120B	10B	1.34%	10210
+12	96B	8B	1.08%	10212
+4	95B	23B	1.06%	1005
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+12	518B	43B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+12	396B	33B	33B	33B	1203
+1	32B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+3	82B	27B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+1	20B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+8	144B	18B	18B	18B	1009
+107	1324B	12B	14B	12B	3201
+135	1890B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量1859次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+250	48KB	200B	13.45%	1902
+107	1324B	12B	5.76%	3202
+104	10KB	106B	5.59%	1601
+97	3932B	40B	5.22%	10205
+96	1728B	18B	5.16%	2409
+77	1386B	18B	4.14%	1936
+74	1806B	24B	3.98%	2001
+72	576B	8B	3.87%	1000
+60	3380B	56B	3.23%	1112
+45	512B	11B	2.42%	1114
+41	5KB	140B	2.21%	2102
+37	11KB	306B	1.99%	1205
+37	6KB	181B	1.99%	1216
+31	1278B	41B	1.67%	1202
+29	1443B	49B	1.56%	2011
+28	648B	23B	1.51%	1904
+27	334B	12B	1.45%	10204
+23	810B	35B	1.24%	1204
+23	43KB	1916B	1.24%	4803
+23	690B	30B	1.24%	3812
+
+发送总消息大小211KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+250	48KB	200B	23.13%	1902
+23	43KB	1916B	20.38%	4803
+9	25KB	2956B	12.30%	2205
+4	17KB	4368B	8.08%	2402
+37	11KB	306B	5.24%	1205
+104	10KB	106B	5.12%	1601
+37	6KB	181B	3.11%	1216
+41	5KB	140B	2.67%	2102
+8	4168B	521B	1.93%	1101
+97	3932B	40B	1.82%	10205
+60	3380B	56B	1.56%	1112
+12	2252B	187B	1.04%	10201
+1	1926B	1926B	0.89%	4302
+74	1806B	24B	0.84%	2001
+96	1728B	18B	0.80%	2409
+5	1488B	297B	0.69%	1693
+29	1443B	49B	0.67%	2011
+16	1424B	89B	0.66%	3702
+77	1386B	18B	0.64%	1936
+107	1324B	12B	0.61%	3202
+
+发送消息均大小143B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+9	25KB	2956B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+23	43KB	1916B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+250	48KB	200B	824B	152B	1902
+8	4168B	521B	692B	424B	1101
+41	5KB	140B	627B	10B	2102
+5	1488B	297B	616B	102B	1693
+8	949B	118B	370B	8B	1692
+12	2252B	187B	312B	108B	10201
+37	11KB	306B	308B	306B	1205
+104	10KB	106B	291B	10B	1601
+29	1443B	49B	230B	20B	2011
+37	6KB	181B	188B	174B	1216
+31	1278B	41B	183B	8B	1202
+11	207B	18B	127B	8B	1691
+8	792B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+16	1424B	89B	89B	89B	3702
+
+2018-10-29 18:38:13,545 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时615ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+306ms	168	168	0.88ms	49.75%	158ms	4130
+51ms	12	12	2.13ms	8.41%	26ms	4146
+21ms	9	9	1.95ms	3.52%	4.14ms	12321
+24ms	8	8	1.80ms	4.06%	10ms	4128
+16ms	8	8	1.68ms	2.67%	2.97ms	12292
+15ms	77	77	0.17ms	2.50%	2.64ms	16385
+13ms	6	6	1.78ms	2.23%	3.01ms	12294
+14ms	6	6	1.76ms	2.28%	3.45ms	16388
+12ms	45	45	0.20ms	2.05%	3.71ms	12329
+9.46ms	47	47	0.18ms	1.54%	0.91ms	24578
+9.16ms	45	45	0.19ms	1.49%	0.70ms	12325
+7.99ms	465	465	0.01ms	1.30%	1.92ms	12326
+7.35ms	96	96	0.06ms	1.20%	1.38ms	2097153
+6.60ms	11	11	0.48ms	1.07%	1.33ms	28678
+5.67ms	31	31	0.15ms	0.92%	1.17ms	8197
+3.47ms	11	11	0.28ms	0.56%	0.37ms	28674
+3.22ms	6	6	0.37ms	0.52%	0.98ms	24593
+2.21ms	11	11	0.15ms	0.36%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.41%	1.33ms	0
+1.62ms	3	3	0.30ms	0.26%	0.71ms	69633
+
+Msg总耗时4815ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	85.34%	3958ms	game.msg.MsgInform$CSInformChat
+98ms	11	6.99ms	2.04%	21ms	game.msg.MsgInstance$CSInstanceEnd
+69ms	31	1.62ms	1.45%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.50%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.06%	16ms	game.msg.MsgPet$CSPetRecruit
+38ms	6	4.75ms	0.81%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+27ms	107	0.24ms	0.57%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+32ms	13	1.89ms	0.67%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+26ms	23	1.02ms	0.54%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+21ms	12	1.51ms	0.45%	3.33ms	game.msg.MsgStage$CSStageSwitch
+23ms	12	1.36ms	0.48%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+10ms	11	0.86ms	0.23%	1.44ms	game.msg.MsgInstance$CSInstanceLeave
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.48%	14ms	game.msg.MsgPet$CSPetAdvanced
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+8.73ms	29	0.27ms	0.18%	1.04ms	game.msg.MsgShop$CSShopOpen
+9.81ms	22	0.30ms	0.20%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+9.30ms	12	0.54ms	0.19%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+45ms	3	1.86ms	0.94%	39ms	game.msg.MsgItem$CSEquipIntensify
+4.92ms	135	0.04ms	0.10%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 18:38:13,545 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时2921ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1014ms	135579	0.01ms	34.73%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+4965ms	585	1.72ms	169.95%	3961ms	class game.worldsrv.character.HumanObjectService$31
+413ms	26849	0.02ms	14.17%	2.69ms	class game.seam.account.AccountService$6
+147ms	1774	0.08ms	5.03%	5.95ms	class core.connsrv.Connection$5
+59ms	153	0.37ms	2.05%	3.87ms	class game.worldsrv.activity.ActivityService$3
+324ms	4	13ms	11.12%	270ms	class game.platform.gift.GiftService$2
+91ms	36	1.48ms	3.14%	38ms	class game.seam.account.AccountService$4
+47ms	4990	0.01ms	1.63%	2.77ms	class game.worldsrv.name.NameService$4
+45ms	845	0.05ms	1.56%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+28ms	23	0.95ms	0.97%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+16ms	12	0.85ms	0.57%	6.38ms	class game.worldsrv.stage.StageService$4
+10ms	12	0.74ms	0.37%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+10ms	11	0.78ms	0.35%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+9.78ms	8	0.86ms	0.33%	2.90ms	class game.platform.login.LoginService$1
+6.19ms	45	0.12ms	0.21%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+5.32ms	23	0.19ms	0.18%	0.92ms	class game.worldsrv.rank.RankGlobalService$1
+11ms	8	0.46ms	0.38%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+3.29ms	180	0.02ms	0.11%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+3.83ms	11	0.26ms	0.13%	0.95ms	class game.worldsrv.stage.StageGlobalService$10
+6.88ms	6	0.46ms	0.24%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+
+请求回调总耗时948ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+289ms	894	0.32ms	30.54%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	8	3.50ms	19.69%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+40ms	23	1.56ms	4.28%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+30ms	4	2.98ms	3.26%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+29ms	8	1.64ms	3.16%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+26ms	4	0.02ms	2.77%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	8	0.01ms	2.73%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	4	3.03ms	2.69%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+25ms	8	1.83ms	2.67%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+24ms	8	0.02ms	2.59%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+22ms	153	0.13ms	2.33%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+19ms	8	0.02ms	2.02%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.80%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.56%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+13ms	4990	0.00ms	1.41%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	13	0.62ms	1.31%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+11ms	845	0.01ms	1.23%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+10ms	12	0.50ms	1.13%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.06%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+7.78ms	8	0.32ms	0.82%	5.21ms	class game.worldsrv.friend.FriendManager$$Lambda$689/77925338
+
+2018-10-29 18:38:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:38:15,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:38:28,525 (InstanceMsgHandler.java:51) [INFO][STAGE_COMMON] 进入副本跟踪：humanid=900050000031000005
+2018-10-29 18:38:28,526 (InstanceManager.java:307) [INFO][STAGE_COMMON] 进入副本跟踪：create()
+2018-10-29 18:38:28,532 (StageGlobalService.java:586) [INFO][GAME] 创造副本信息：stageSn=6001051,mapSn=1003
+2018-10-29 18:38:28,532 (StageServiceProxy.java:198) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=90005~world0,portId=port0],remote=CallPoint[nodeId=90005~world0,portId=stage3,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+2018-10-29 18:38:28,536 (StageService.java:61) [INFO][GAME] 创造副本信息：createStageInstance(),portId=900050000044000014,remote=900050000044000014
+2018-10-29 18:38:59,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:39:13,575 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:39:50,759 (InstanceMsgHandler.java:51) [INFO][STAGE_COMMON] 进入副本跟踪：humanid=900050000031000005
+2018-10-29 18:39:50,761 (InstanceManager.java:307) [INFO][STAGE_COMMON] 进入副本跟踪：create()
+2018-10-29 18:39:50,766 (StageGlobalService.java:586) [INFO][GAME] 创造副本信息：stageSn=6002021,mapSn=1001
+2018-10-29 18:39:50,766 (StageServiceProxy.java:198) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=90005~world0,portId=port0],remote=CallPoint[nodeId=90005~world0,portId=stage4,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+2018-10-29 18:39:50,775 (StageService.java:61) [INFO][GAME] 创造副本信息：createStageInstance(),portId=900050000045000015,remote=900050000045000015
+2018-10-29 18:40:13,566 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:41:13,575 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:41:13,933 (InstanceMsgHandler.java:51) [INFO][STAGE_COMMON] 进入副本跟踪：humanid=900050000031000005
+2018-10-29 18:41:13,934 (InstanceManager.java:307) [INFO][STAGE_COMMON] 进入副本跟踪：create()
+2018-10-29 18:41:13,942 (StageGlobalService.java:586) [INFO][GAME] 创造副本信息：stageSn=6002031,mapSn=1001
+2018-10-29 18:41:13,943 (StageServiceProxy.java:198) [INFO][GAME] 创造副本信息：localPort=DefaultPort[nodeId=90005~world0,portId=port0],remote=CallPoint[nodeId=90005~world0,portId=stage2,servId=stageDefault,callerInfo=StageGlobalService.java:589 createInstance]
+2018-10-29 18:41:13,956 (StageService.java:61) [INFO][GAME] 创造副本信息：createStageInstance(),portId=900050000042000020,remote=900050000042000020
+2018-10-29 18:42:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:42:20,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:43:13,545 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:43:13,546 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:43:13,548 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:43:13,549 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量750次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	24.13%	10207
+130	1608B	12B	17.33%	3201
+42	336B	8B	5.60%	1201
+29	290B	10B	3.87%	2101
+28	916B	32B	3.73%	1502
+27	270B	10B	3.60%	3203
+23	230B	10B	3.07%	5391
+23	230B	10B	3.07%	3811
+21	210B	10B	2.80%	10216
+20	220B	11B	2.67%	2201
+15	120B	8B	2.00%	2202
+15	120B	8B	2.00%	2203
+15	195B	13B	2.00%	10208
+15	150B	10B	2.00%	10210
+15	120B	8B	2.00%	10212
+15	495B	33B	2.00%	1203
+14	140B	10B	1.87%	3803
+13	351B	27B	1.73%	2405
+12	518B	43B	1.60%	111
+11	121B	11B	1.47%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.98%	10207
+130	1608B	12B	15.21%	3201
+28	916B	32B	8.67%	1502
+12	518B	43B	4.90%	111
+15	495B	33B	4.68%	1203
+13	351B	27B	3.32%	2405
+42	336B	8B	3.18%	1201
+29	290B	10B	2.74%	2101
+27	270B	10B	2.55%	3203
+23	230B	10B	2.18%	5391
+23	230B	10B	2.18%	3811
+20	220B	11B	2.08%	2201
+21	210B	10B	1.99%	10216
+15	195B	13B	1.85%	10208
+15	150B	10B	1.42%	10210
+8	144B	18B	1.36%	1009
+5	142B	28B	1.34%	1606
+14	140B	10B	1.32%	3803
+6	132B	22B	1.25%	1907
+11	121B	11B	1.14%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+12	518B	43B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+8	144B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2128次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+259	50KB	200B	12.17%	1902
+150	5KB	40B	7.05%	10205
+130	1608B	12B	6.11%	3202
+112	11KB	109B	5.26%	1601
+96	1728B	18B	4.51%	2409
+88	2092B	23B	4.14%	2001
+82	656B	8B	3.85%	1000
+78	1404B	18B	3.67%	1936
+76	4272B	56B	3.57%	1112
+52	589B	11B	2.44%	1114
+48	14KB	306B	2.26%	1205
+48	8KB	180B	2.26%	1216
+41	5KB	140B	1.93%	2102
+38	2014B	53B	1.79%	1202
+36	442B	12B	1.69%	10204
+35	1563B	44B	1.64%	2011
+34	340B	10B	1.60%	10222
+30	1050B	35B	1.41%	1204
+28	648B	23B	1.32%	1904
+27	270B	10B	1.27%	3204
+
+发送总消息大小228KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+259	50KB	200B	22.12%	1902
+25	45KB	1859B	19.83%	4803
+9	25KB	2956B	11.35%	2205
+4	17KB	4368B	7.45%	2402
+48	14KB	306B	6.27%	1205
+112	11KB	109B	5.21%	1601
+48	8KB	180B	3.69%	1216
+150	5KB	40B	2.59%	10205
+41	5KB	140B	2.46%	2102
+76	4272B	56B	1.82%	1112
+8	4168B	521B	1.78%	1101
+15	3117B	207B	1.33%	10201
+88	2092B	23B	0.89%	2001
+38	2014B	53B	0.86%	1202
+1	1926B	1926B	0.82%	4302
+96	1728B	18B	0.74%	2409
+6	1624B	270B	0.69%	1693
+130	1608B	12B	0.69%	3202
+35	1563B	44B	0.67%	2011
+16	1424B	89B	0.61%	3702
+
+发送消息均大小143B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+9	25KB	2956B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+25	45KB	1859B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+259	50KB	200B	824B	152B	1902
+8	4168B	521B	692B	424B	1101
+41	5KB	140B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+8	949B	118B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+48	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+35	1563B	44B	230B	20B	2011
+48	8KB	180B	188B	174B	1216
+38	2014B	53B	183B	8B	1202
+11	207B	18B	127B	8B	1691
+8	792B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+16	1424B	89B	89B	89B	3702
+
+2018-10-29 18:43:13,549 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时632ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+306ms	168	168	0.88ms	48.41%	158ms	4130
+51ms	12	12	2.13ms	8.18%	26ms	4146
+25ms	11	11	1.96ms	4.07%	4.14ms	12321
+24ms	8	8	1.80ms	3.95%	10ms	4128
+16ms	8	8	1.68ms	2.60%	2.97ms	12292
+15ms	78	78	0.17ms	2.49%	2.64ms	16385
+13ms	6	6	1.78ms	2.17%	3.01ms	12294
+14ms	6	6	1.76ms	2.22%	3.45ms	16388
+10ms	52	52	0.19ms	1.66%	0.70ms	12325
+10ms	58	58	0.17ms	1.69%	0.91ms	24578
+13ms	52	52	0.19ms	2.11%	3.71ms	12329
+9.32ms	15	15	0.53ms	1.47%	1.33ms	28678
+9.21ms	489	489	0.01ms	1.46%	1.92ms	12326
+7.35ms	96	96	0.06ms	1.16%	1.38ms	2097153
+6.03ms	38	38	0.13ms	0.95%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.78%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.73%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.52%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.40%	1.33ms	0
+1.62ms	3	3	0.30ms	0.26%	0.71ms	69633
+
+Msg总耗时4907ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.74%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+76ms	38	1.49ms	1.56%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+26ms	23	1.02ms	0.53%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.08%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.48%	14ms	game.msg.MsgPet$CSPetAdvanced
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.23%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+8.73ms	29	0.27ms	0.18%	1.04ms	game.msg.MsgShop$CSShopOpen
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 18:43:13,551 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3146ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+5s	714	1.55ms	161.15%	3961ms	class game.worldsrv.character.HumanObjectService$31
+1091ms	150197	0.01ms	34.69%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+414ms	26879	0.02ms	13.16%	2.69ms	class game.seam.account.AccountService$6
+163ms	2033	0.08ms	5.20%	5.95ms	class core.connsrv.Connection$5
+65ms	179	0.35ms	2.10%	3.87ms	class game.worldsrv.activity.ActivityService$3
+324ms	4	13ms	10.33%	270ms	class game.platform.gift.GiftService$2
+91ms	36	1.48ms	2.92%	38ms	class game.seam.account.AccountService$4
+49ms	964	0.05ms	1.56%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.51%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.94%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.48%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.59%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.43%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+7.89ms	27	0.26ms	0.25%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+9.78ms	8	0.86ms	0.31%	2.90ms	class game.platform.login.LoginService$1
+6.83ms	52	0.12ms	0.22%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+11ms	8	0.46ms	0.36%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+3.55ms	200	0.02ms	0.11%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+3.66ms	65	0.05ms	0.12%	0.33ms	class game.worldsrv.compete.CompeteService$27
+7.34ms	7	0.46ms	0.23%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+
+请求回调总耗时965ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+289ms	895	0.32ms	30.00%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	8	3.50ms	19.33%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.31%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+30ms	4	2.98ms	3.20%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+29ms	8	1.64ms	3.10%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+26ms	4	0.02ms	2.72%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	8	0.01ms	2.68%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	179	0.13ms	2.67%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	4	3.03ms	2.64%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+25ms	8	1.83ms	2.62%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+24ms	8	0.02ms	2.55%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	8	0.02ms	1.98%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.77%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.53%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+13ms	4990	0.00ms	1.39%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	13	0.62ms	1.28%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+12ms	964	0.01ms	1.28%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+10ms	12	0.50ms	1.11%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.04%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+8.90ms	30	0.20ms	0.92%	2.90ms	class game.worldsrv.stage.StageGlobalService$$Lambda$731/1861936726
+
+2018-10-29 18:43:13,565 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:43:16,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:44:13,570 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:44:19,654 (Log.java:142) [INFO][GAME] ===AccountManager.java:195 _msg_CSLogin3 玩家登陆信息1008：account=603161498,password=7d0987100a121b50b94e175bef89f14f,channelId=3,serverId=90006,loginType=4
+2018-10-29 18:44:19,796 (AccountManager.java:365) [INFO][GAME] ===登陆检测到已有玩家存在，踢出存在的玩家！account=6031614983, loginedHumanId=900050000031000005
+2018-10-29 18:44:19,800 (HumanManager.java:1637) [INFO][GAME] ===玩家登出！account=6031614983, humanId=900050000031000005
+2018-10-29 18:44:19,813 (Port.java:329) [WARN][CORE] 执行Call队列时无法找到处理服务：call=Call[type=1000,fromNodeId=90005~world0,fromPortId=game0,to=CallPoint[nodeId=90005~world0,portId=0,servId=780902181,callerInfo=HumanGlobalManager.java:27 sendMsg],callId=32851,methodKey=5,methodKeyName=Connection_sendMsg_int_Chunk,methodParam={1105,},returns={},param={}]
+2018-10-29 18:44:19,813 (Port.java:329) [WARN][CORE] 执行Call队列时无法找到处理服务：call=Call[type=1000,fromNodeId=90005~world0,fromPortId=game0,to=CallPoint[nodeId=90005~world0,portId=0,servId=780902181,callerInfo=HumanGlobalService.java:521 kickHuman],callId=32852,methodKey=1,methodKeyName=Connection_close,methodParam={},returns={},param={}]
+2018-10-29 18:44:19,857 (Log.java:142) [INFO][GAME] ===AccountManager.java:694 _msg_CSQueryById 查询角色信息：humanid=900050000031000005
+2018-10-29 18:44:20,448 (HumanManager.java:944) [INFO][GAME] ===玩家登陆！account=6031614983, humanId=900050000031000005
+2018-10-29 18:44:20,453 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:44:20,453 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:44:20,790 (ShopManager.java:308) [ERROR][TABLE] ***********条件不足，不能开启该商店
+2018-10-29 18:44:37,551 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000005,name=万城],id=900050000041000477,sn=1
+2018-10-29 18:44:47,564 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000005,name=万城],id=900050000041000478,sn=2
+2018-10-29 18:45:09,995 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000005,name=万城],id=900050000041000479,sn=1
+2018-10-29 18:45:13,458 (Log.java:142) [INFO][GAME] ===VipStoreManager.java:527 _msg_CSPayCheckCode 返回充值校验码:human=HumanObject[id=900050000031000005,name=万城],id=900050000041000480,sn=2
+2018-10-29 18:45:13,565 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:45:41,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:46:13,562 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:47:13,557 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:48:13,545 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:48:13,547 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:48:13,547 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:48:13,548 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2198次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.97%	1902
+150	5KB	40B	6.82%	10205
+130	1608B	12B	5.91%	3202
+112	11KB	109B	5.10%	1601
+96	1728B	18B	4.37%	2409
+91	728B	8B	4.14%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.55%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.37%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.64%	2011
+36	442B	12B	1.64%	10204
+34	340B	10B	1.55%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.76%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	11.00%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 18:48:13,548 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时665ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.86%	158ms	4130
+64ms	18	18	2.11ms	9.63%	26ms	4146
+25ms	11	11	1.96ms	3.86%	4.14ms	12321
+20ms	9	9	1.83ms	3.12%	4.35ms	12292
+26ms	9	9	1.77ms	3.97%	10ms	4128
+15ms	78	78	0.17ms	2.37%	2.64ms	16385
+15ms	7	7	1.73ms	2.28%	3.01ms	12294
+14ms	6	6	1.76ms	2.11%	3.45ms	16388
+10ms	52	52	0.19ms	1.57%	0.70ms	12325
+10ms	58	58	0.17ms	1.60%	0.91ms	24578
+13ms	52	52	0.19ms	2.00%	3.71ms	12329
+9.32ms	15	15	0.53ms	1.40%	1.33ms	28678
+9.61ms	490	490	0.02ms	1.44%	1.92ms	12326
+7.35ms	96	96	0.06ms	1.11%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 18:48:13,550 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3264ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1182ms	165035	0.01ms	36.24%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	155.73%	3961ms	class game.worldsrv.character.HumanObjectService$31
+414ms	26909	0.02ms	12.69%	2.69ms	class game.seam.account.AccountService$6
+166ms	2093	0.08ms	5.09%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	2.04%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.86%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.96%	270ms	class game.platform.gift.GiftService$2
+52ms	1070	0.05ms	1.60%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.46%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.90%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.46%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.57%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.41%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.30%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.24%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.21%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+6.88ms	3	1.43ms	0.21%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+11ms	9	0.45ms	0.36%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+3.83ms	219	0.02ms	0.12%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+3.66ms	65	0.05ms	0.11%	0.33ms	class game.worldsrv.compete.CompeteService$27
+
+请求回调总耗时988ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+289ms	896	0.32ms	29.34%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.89%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.19%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.19%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.13%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.67%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.62%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.62%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.58%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.94%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.50%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+13ms	1070	0.01ms	1.39%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.36%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.27%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.09%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.02%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 18:48:13,573 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:48:17,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:49:02,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:49:13,556 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:50:13,564 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:51:13,563 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:52:13,562 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:52:23,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:53:13,552 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:53:13,554 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:53:13,554 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:53:13,555 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2203次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.94%	1902
+150	5KB	40B	6.81%	10205
+130	1608B	12B	5.90%	3202
+112	11KB	109B	5.08%	1601
+96	1728B	18B	4.36%	2409
+95	760B	8B	4.31%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.54%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.36%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.63%	2011
+36	442B	12B	1.63%	10204
+34	340B	10B	1.54%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.75%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	10.99%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 18:53:13,556 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时665ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.86%	158ms	4130
+64ms	18	18	2.11ms	9.63%	26ms	4146
+25ms	11	11	1.96ms	3.86%	4.14ms	12321
+20ms	9	9	1.83ms	3.12%	4.35ms	12292
+26ms	9	9	1.77ms	3.97%	10ms	4128
+15ms	78	78	0.17ms	2.37%	2.64ms	16385
+15ms	7	7	1.73ms	2.28%	3.01ms	12294
+14ms	6	6	1.76ms	2.11%	3.45ms	16388
+10ms	52	52	0.19ms	1.57%	0.70ms	12325
+10ms	58	58	0.17ms	1.60%	0.91ms	24578
+13ms	52	52	0.19ms	2.00%	3.71ms	12329
+9.32ms	15	15	0.53ms	1.40%	1.33ms	28678
+9.61ms	490	490	0.02ms	1.44%	1.92ms	12326
+7.35ms	96	96	0.06ms	1.11%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 18:53:13,556 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3368ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1283ms	179927	0.01ms	38.09%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	150.94%	3961ms	class game.worldsrv.character.HumanObjectService$31
+414ms	26939	0.02ms	12.31%	2.69ms	class game.seam.account.AccountService$6
+166ms	2094	0.08ms	4.94%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	1.97%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.77%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.65%	270ms	class game.platform.gift.GiftService$2
+53ms	1119	0.05ms	1.59%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.41%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.87%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.44%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.55%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.40%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.30%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.23%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.20%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+8.74ms	9	0.51ms	0.26%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+6.88ms	3	1.43ms	0.20%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+4.20ms	239	0.02ms	0.12%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+11ms	9	0.45ms	0.34%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+
+请求回调总耗时988ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+290ms	897	0.32ms	29.35%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.88%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.19%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.18%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.13%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.66%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.62%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.62%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.58%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.94%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.50%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+14ms	1119	0.01ms	1.42%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.36%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.27%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.09%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.02%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 18:53:13,557 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:53:18,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:53:37,430 (Port.java:329) [WARN][CORE] 执行Call队列时无法找到处理服务：call=Call[type=1000,fromNodeId=90005~world0,fromPortId=stage0,to=CallPoint[nodeId=90005~world0,portId=0,servId=-19711245,callerInfo=HumanObject.java:877 sendMsg],callId=169084,methodKey=5,methodKeyName=Connection_sendMsg_int_Chunk,methodParam={1119,},returns={},param={}]
+2018-10-29 18:53:37,431 (Port.java:329) [WARN][CORE] 执行Call队列时无法找到处理服务：call=Call[type=1000,fromNodeId=90005~world0,fromPortId=stage0,to=CallPoint[nodeId=90005~world0,portId=0,servId=-19711245,callerInfo=HumanObject.java:877 sendMsg],callId=169085,methodKey=5,methodKeyName=Connection_sendMsg_int_Chunk,methodParam={1112,},returns={},param={}]
+2018-10-29 18:54:13,570 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:55:13,559 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：2 =========
+2018-10-29 18:55:14,342 (HumanManager.java:1637) [INFO][GAME] ===玩家登出！account=6031614983, humanId=900050000031000005
+2018-10-29 18:55:20,060 (HumanManager.java:1637) [INFO][GAME] ===玩家登出！account=test, humanId=900050000031000002
+2018-10-29 18:55:44,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:56:13,567 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 18:57:13,564 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 18:58:13,554 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 18:58:13,555 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 18:58:13,556 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 18:58:13,556 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2203次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.94%	1902
+150	5KB	40B	6.81%	10205
+130	1608B	12B	5.90%	3202
+112	11KB	109B	5.08%	1601
+96	1728B	18B	4.36%	2409
+95	760B	8B	4.31%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.54%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.36%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.63%	2011
+36	442B	12B	1.63%	10204
+34	340B	10B	1.54%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.75%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	10.99%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 18:58:13,557 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时669ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.57%	158ms	4130
+64ms	18	18	2.11ms	9.57%	26ms	4146
+25ms	11	11	1.96ms	3.84%	4.14ms	12321
+20ms	9	9	1.83ms	3.10%	4.35ms	12292
+26ms	9	9	1.77ms	3.95%	10ms	4128
+18ms	9	9	1.75ms	2.80%	3.01ms	12294
+15ms	78	78	0.17ms	2.36%	2.64ms	16385
+14ms	6	6	1.76ms	2.09%	3.45ms	16388
+10ms	52	52	0.19ms	1.56%	0.70ms	12325
+10ms	58	58	0.17ms	1.59%	0.91ms	24578
+13ms	52	52	0.19ms	1.99%	3.71ms	12329
+10ms	491	491	0.02ms	1.50%	1.92ms	12326
+9.32ms	15	15	0.53ms	1.39%	1.33ms	28678
+7.35ms	96	96	0.06ms	1.10%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 18:58:13,557 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3401ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1315ms	186069	0.01ms	38.67%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	149.48%	3961ms	class game.worldsrv.character.HumanObjectService$31
+414ms	26969	0.02ms	12.20%	2.69ms	class game.seam.account.AccountService$6
+166ms	2094	0.08ms	4.89%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	1.95%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.74%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.56%	270ms	class game.platform.gift.GiftService$2
+53ms	1119	0.05ms	1.58%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.40%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.87%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.44%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.54%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.39%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.29%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.23%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.20%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+8.74ms	9	0.51ms	0.26%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+6.88ms	3	1.43ms	0.20%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+4.34ms	247	0.02ms	0.13%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+11ms	9	0.45ms	0.34%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+
+请求回调总耗时989ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+290ms	898	0.32ms	29.37%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.88%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.18%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.18%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.13%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.66%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.62%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.62%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.58%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.94%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.50%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+14ms	1119	0.01ms	1.42%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.36%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.27%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.09%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.02%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 18:58:13,559 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 18:58:19,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 18:59:05,899 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 18:59:13,565 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:00:13,575 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:01:13,574 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:02:13,569 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:02:26,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:03:13,548 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 19:03:13,549 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 19:03:13,549 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 19:03:13,550 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2203次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.94%	1902
+150	5KB	40B	6.81%	10205
+130	1608B	12B	5.90%	3202
+112	11KB	109B	5.08%	1601
+96	1728B	18B	4.36%	2409
+95	760B	8B	4.31%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.54%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.36%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.63%	2011
+36	442B	12B	1.63%	10204
+34	340B	10B	1.54%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.75%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	10.99%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 19:03:13,551 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时669ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.57%	158ms	4130
+64ms	18	18	2.11ms	9.57%	26ms	4146
+25ms	11	11	1.96ms	3.84%	4.14ms	12321
+20ms	9	9	1.83ms	3.10%	4.35ms	12292
+26ms	9	9	1.77ms	3.95%	10ms	4128
+18ms	9	9	1.75ms	2.80%	3.01ms	12294
+15ms	78	78	0.17ms	2.36%	2.64ms	16385
+14ms	6	6	1.76ms	2.09%	3.45ms	16388
+10ms	52	52	0.19ms	1.56%	0.70ms	12325
+10ms	58	58	0.17ms	1.59%	0.91ms	24578
+13ms	52	52	0.19ms	1.99%	3.71ms	12329
+10ms	491	491	0.02ms	1.50%	1.92ms	12326
+9.32ms	15	15	0.53ms	1.39%	1.33ms	28678
+7.35ms	96	96	0.06ms	1.10%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 19:03:13,551 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3401ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1315ms	186069	0.01ms	38.67%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	149.46%	3961ms	class game.worldsrv.character.HumanObjectService$31
+415ms	26999	0.02ms	12.21%	2.69ms	class game.seam.account.AccountService$6
+166ms	2094	0.08ms	4.89%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	1.95%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.74%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.55%	270ms	class game.platform.gift.GiftService$2
+53ms	1119	0.05ms	1.58%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.40%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.87%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.44%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.54%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.39%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.29%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.23%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.20%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+8.74ms	9	0.51ms	0.26%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+6.88ms	3	1.43ms	0.20%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+4.34ms	247	0.02ms	0.13%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+11ms	9	0.45ms	0.34%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+
+请求回调总耗时989ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+290ms	899	0.32ms	29.39%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.87%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.18%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.18%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.13%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.66%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.62%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.62%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.58%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.94%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.50%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+14ms	1119	0.01ms	1.42%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.35%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.27%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.09%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.02%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 19:03:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:03:20,934 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 19:04:13,570 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:05:13,563 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:05:47,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:06:13,561 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:07:13,557 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:08:13,553 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 19:08:13,554 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 19:08:13,554 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 19:08:13,555 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2203次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.94%	1902
+150	5KB	40B	6.81%	10205
+130	1608B	12B	5.90%	3202
+112	11KB	109B	5.08%	1601
+96	1728B	18B	4.36%	2409
+95	760B	8B	4.31%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.54%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.36%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.63%	2011
+36	442B	12B	1.63%	10204
+34	340B	10B	1.54%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.75%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	10.99%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 19:08:13,555 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时669ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.57%	158ms	4130
+64ms	18	18	2.11ms	9.57%	26ms	4146
+25ms	11	11	1.96ms	3.84%	4.14ms	12321
+20ms	9	9	1.83ms	3.10%	4.35ms	12292
+26ms	9	9	1.77ms	3.95%	10ms	4128
+18ms	9	9	1.75ms	2.80%	3.01ms	12294
+15ms	78	78	0.17ms	2.36%	2.64ms	16385
+14ms	6	6	1.76ms	2.09%	3.45ms	16388
+10ms	52	52	0.19ms	1.56%	0.70ms	12325
+10ms	58	58	0.17ms	1.59%	0.91ms	24578
+13ms	52	52	0.19ms	1.99%	3.71ms	12329
+10ms	491	491	0.02ms	1.50%	1.92ms	12326
+9.32ms	15	15	0.53ms	1.39%	1.33ms	28678
+7.35ms	96	96	0.06ms	1.10%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 19:08:13,556 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3402ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1315ms	186069	0.01ms	38.66%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	149.44%	3961ms	class game.worldsrv.character.HumanObjectService$31
+415ms	27029	0.02ms	12.23%	2.69ms	class game.seam.account.AccountService$6
+166ms	2094	0.08ms	4.89%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	1.95%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.74%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.55%	270ms	class game.platform.gift.GiftService$2
+53ms	1119	0.05ms	1.58%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.40%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.87%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.44%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.54%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.39%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.29%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.23%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.20%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+8.74ms	9	0.51ms	0.26%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+6.88ms	3	1.43ms	0.20%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+4.34ms	247	0.02ms	0.13%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+11ms	9	0.45ms	0.34%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+
+请求回调总耗时989ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+291ms	900	0.32ms	29.41%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.87%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.18%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.18%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.13%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.66%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.62%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.62%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.58%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.94%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.50%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+14ms	1119	0.01ms	1.42%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.35%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.27%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.09%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.02%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 19:08:13,561 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:08:21,934 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 19:09:08,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:09:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:10:13,560 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:11:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:12:13,561 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:12:29,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:13:13,548 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 19:13:13,549 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 19:13:13,549 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 19:13:13,550 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2203次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.94%	1902
+150	5KB	40B	6.81%	10205
+130	1608B	12B	5.90%	3202
+112	11KB	109B	5.08%	1601
+96	1728B	18B	4.36%	2409
+95	760B	8B	4.31%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.54%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.36%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.63%	2011
+36	442B	12B	1.63%	10204
+34	340B	10B	1.54%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.75%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	10.99%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 19:13:13,551 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时669ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.57%	158ms	4130
+64ms	18	18	2.11ms	9.57%	26ms	4146
+25ms	11	11	1.96ms	3.84%	4.14ms	12321
+20ms	9	9	1.83ms	3.10%	4.35ms	12292
+26ms	9	9	1.77ms	3.95%	10ms	4128
+18ms	9	9	1.75ms	2.80%	3.01ms	12294
+15ms	78	78	0.17ms	2.36%	2.64ms	16385
+14ms	6	6	1.76ms	2.09%	3.45ms	16388
+10ms	52	52	0.19ms	1.56%	0.70ms	12325
+10ms	58	58	0.17ms	1.59%	0.91ms	24578
+13ms	52	52	0.19ms	1.99%	3.71ms	12329
+10ms	491	491	0.02ms	1.50%	1.92ms	12326
+9.32ms	15	15	0.53ms	1.39%	1.33ms	28678
+7.35ms	96	96	0.06ms	1.10%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 19:13:13,552 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3402ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1315ms	186069	0.01ms	38.66%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	149.42%	3961ms	class game.worldsrv.character.HumanObjectService$31
+416ms	27059	0.02ms	12.24%	2.69ms	class game.seam.account.AccountService$6
+166ms	2094	0.08ms	4.89%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	1.95%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.74%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.55%	270ms	class game.platform.gift.GiftService$2
+53ms	1119	0.05ms	1.58%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.40%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.87%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.44%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.54%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.39%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.29%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.23%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.20%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+8.74ms	9	0.51ms	0.26%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+6.88ms	3	1.43ms	0.20%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+4.34ms	247	0.02ms	0.13%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+11ms	9	0.45ms	0.34%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+
+请求回调总耗时990ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+291ms	901	0.32ms	29.43%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.86%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.18%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.18%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.13%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.66%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.62%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.62%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.58%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.94%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.49%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+14ms	1119	0.01ms	1.42%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.35%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.27%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.09%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.01%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 19:13:13,568 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:13:22,934 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 19:14:13,574 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:15:13,561 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:15:50,899 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:16:13,570 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:17:13,561 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:18:13,547 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 19:18:13,548 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 19:18:13,549 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 19:18:13,550 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2203次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.94%	1902
+150	5KB	40B	6.81%	10205
+130	1608B	12B	5.90%	3202
+112	11KB	109B	5.08%	1601
+96	1728B	18B	4.36%	2409
+95	760B	8B	4.31%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.54%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.36%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.63%	2011
+36	442B	12B	1.63%	10204
+34	340B	10B	1.54%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.75%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	10.99%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 19:18:13,550 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时669ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.57%	158ms	4130
+64ms	18	18	2.11ms	9.57%	26ms	4146
+25ms	11	11	1.96ms	3.84%	4.14ms	12321
+20ms	9	9	1.83ms	3.10%	4.35ms	12292
+26ms	9	9	1.77ms	3.95%	10ms	4128
+18ms	9	9	1.75ms	2.80%	3.01ms	12294
+15ms	78	78	0.17ms	2.36%	2.64ms	16385
+14ms	6	6	1.76ms	2.09%	3.45ms	16388
+10ms	52	52	0.19ms	1.56%	0.70ms	12325
+10ms	58	58	0.17ms	1.59%	0.91ms	24578
+13ms	52	52	0.19ms	1.99%	3.71ms	12329
+10ms	491	491	0.02ms	1.50%	1.92ms	12326
+9.32ms	15	15	0.53ms	1.39%	1.33ms	28678
+7.35ms	96	96	0.06ms	1.10%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 19:18:13,551 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3402ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1315ms	186069	0.01ms	38.65%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	149.39%	3961ms	class game.worldsrv.character.HumanObjectService$31
+416ms	27089	0.02ms	12.25%	2.69ms	class game.seam.account.AccountService$6
+166ms	2094	0.08ms	4.89%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	1.95%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.74%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.55%	270ms	class game.platform.gift.GiftService$2
+53ms	1119	0.05ms	1.58%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.40%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.87%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.44%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.54%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.39%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.29%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.23%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.20%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+8.74ms	9	0.51ms	0.26%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+6.88ms	3	1.43ms	0.20%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+4.34ms	247	0.02ms	0.13%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+11ms	9	0.45ms	0.34%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+
+请求回调总耗时990ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+291ms	902	0.32ms	29.45%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.86%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.18%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.18%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.13%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.66%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.62%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.62%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.58%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.94%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.49%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+14ms	1119	0.01ms	1.42%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.35%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.27%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.08%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.01%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 19:18:13,567 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:18:23,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 19:19:11,899 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:19:13,570 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:20:13,567 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:21:13,559 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:22:13,572 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:22:32,899 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:23:13,557 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 19:23:13,559 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 19:23:13,560 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 19:23:13,560 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2203次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.94%	1902
+150	5KB	40B	6.81%	10205
+130	1608B	12B	5.90%	3202
+112	11KB	109B	5.08%	1601
+96	1728B	18B	4.36%	2409
+95	760B	8B	4.31%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.54%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.36%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.63%	2011
+36	442B	12B	1.63%	10204
+34	340B	10B	1.54%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.75%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	10.99%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 19:23:13,561 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时669ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.57%	158ms	4130
+64ms	18	18	2.11ms	9.57%	26ms	4146
+25ms	11	11	1.96ms	3.84%	4.14ms	12321
+20ms	9	9	1.83ms	3.10%	4.35ms	12292
+26ms	9	9	1.77ms	3.95%	10ms	4128
+18ms	9	9	1.75ms	2.80%	3.01ms	12294
+15ms	78	78	0.17ms	2.36%	2.64ms	16385
+14ms	6	6	1.76ms	2.09%	3.45ms	16388
+10ms	52	52	0.19ms	1.56%	0.70ms	12325
+10ms	58	58	0.17ms	1.59%	0.91ms	24578
+13ms	52	52	0.19ms	1.99%	3.71ms	12329
+10ms	491	491	0.02ms	1.50%	1.92ms	12326
+9.32ms	15	15	0.53ms	1.39%	1.33ms	28678
+7.35ms	96	96	0.06ms	1.10%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 19:23:13,561 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3403ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1315ms	186069	0.01ms	38.65%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	149.37%	3961ms	class game.worldsrv.character.HumanObjectService$31
+417ms	27119	0.02ms	12.26%	2.69ms	class game.seam.account.AccountService$6
+166ms	2094	0.08ms	4.89%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	1.95%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.74%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.55%	270ms	class game.platform.gift.GiftService$2
+53ms	1119	0.05ms	1.58%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.40%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.87%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.44%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.54%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.39%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.29%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.23%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.20%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+8.74ms	9	0.51ms	0.26%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+6.88ms	3	1.43ms	0.20%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+4.34ms	247	0.02ms	0.13%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+11ms	9	0.45ms	0.34%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+
+请求回调总耗时991ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+292ms	903	0.32ms	29.51%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.84%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.17%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.18%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.12%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.66%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.62%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.62%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.58%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.93%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.49%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+14ms	1119	0.01ms	1.42%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.35%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.26%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.08%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.01%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 19:23:13,575 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:23:24,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 19:24:13,564 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:25:13,574 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:25:53,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:26:13,564 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:27:13,557 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:28:13,556 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 19:28:13,557 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 19:28:13,557 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 19:28:13,558 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2203次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.94%	1902
+150	5KB	40B	6.81%	10205
+130	1608B	12B	5.90%	3202
+112	11KB	109B	5.08%	1601
+96	1728B	18B	4.36%	2409
+95	760B	8B	4.31%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.54%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.36%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.63%	2011
+36	442B	12B	1.63%	10204
+34	340B	10B	1.54%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.75%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	10.99%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 19:28:13,559 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时669ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.57%	158ms	4130
+64ms	18	18	2.11ms	9.57%	26ms	4146
+25ms	11	11	1.96ms	3.84%	4.14ms	12321
+20ms	9	9	1.83ms	3.10%	4.35ms	12292
+26ms	9	9	1.77ms	3.95%	10ms	4128
+18ms	9	9	1.75ms	2.80%	3.01ms	12294
+15ms	78	78	0.17ms	2.36%	2.64ms	16385
+14ms	6	6	1.76ms	2.09%	3.45ms	16388
+10ms	52	52	0.19ms	1.56%	0.70ms	12325
+10ms	58	58	0.17ms	1.59%	0.91ms	24578
+13ms	52	52	0.19ms	1.99%	3.71ms	12329
+10ms	491	491	0.02ms	1.50%	1.92ms	12326
+9.32ms	15	15	0.53ms	1.39%	1.33ms	28678
+7.35ms	96	96	0.06ms	1.10%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 19:28:13,559 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3403ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1315ms	186069	0.01ms	38.64%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	149.36%	3961ms	class game.worldsrv.character.HumanObjectService$31
+417ms	27149	0.02ms	12.27%	2.69ms	class game.seam.account.AccountService$6
+166ms	2094	0.08ms	4.89%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	1.95%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.74%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.55%	270ms	class game.platform.gift.GiftService$2
+53ms	1119	0.05ms	1.58%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.40%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.87%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.44%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.54%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.39%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.29%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.23%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.20%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+8.74ms	9	0.51ms	0.26%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+6.88ms	3	1.43ms	0.20%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+4.34ms	247	0.02ms	0.13%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+11ms	9	0.45ms	0.34%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+
+请求回调总耗时991ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+292ms	904	0.32ms	29.52%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.84%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.17%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.18%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.12%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.66%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.62%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.62%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.57%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.93%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.49%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+14ms	1119	0.01ms	1.42%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.35%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.26%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.08%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.01%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
+
+2018-10-29 19:28:13,575 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:28:25,933 (ClassScanProcess.java:121) [INFO][GAME] ty-1.0.jar开始一次扫描key=136969641540540710000,jarValue=136969641540540710000
+2018-10-29 19:29:13,575 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:29:14,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:30:13,560 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:31:13,571 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:32:13,560 (HumanGlobalService.java:138) [INFO][GAME] ========= 每分钟打印下在线人数：0 =========
+2018-10-29 19:32:35,898 (DataScanProcess.java:128) [INFO][GAME] game-data.jar开始一次扫描key=11389511540540710000,jarValue=11389511540540710000
+2018-10-29 19:33:13,545 (StageGlobalService.java:98) [ERROR][STAGE_COMMON] pulseStageLog--------------------------------
+2018-10-29 19:33:13,546 (StageGlobalService.java:107) [ERROR][STAGE_COMMON] pulseStageLog countAllHuman 0--------------------------------
+2018-10-29 19:33:13,546 (StageGlobalService.java:108) [ERROR][STAGE_COMMON] pulseStageLog countAllStage 2--------------------------------
+2018-10-29 19:33:13,547 (StatisticsMSG.java:219) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - 消息协议  ==
+========================
+收到总消息数量763次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+181	2534B	14B	23.72%	10207
+130	1608B	12B	17.04%	3201
+43	344B	8B	5.64%	1201
+32	320B	10B	4.19%	2101
+28	916B	32B	3.67%	1502
+27	270B	10B	3.54%	3203
+27	270B	10B	3.54%	3811
+24	240B	10B	3.15%	5391
+21	210B	10B	2.75%	10216
+20	220B	11B	2.62%	2201
+15	120B	8B	1.97%	2202
+15	120B	8B	1.97%	2203
+15	195B	13B	1.97%	10208
+15	150B	10B	1.97%	10210
+15	120B	8B	1.97%	10212
+15	495B	33B	1.97%	1203
+14	140B	10B	1.83%	3803
+13	351B	27B	1.70%	2405
+13	587B	45B	1.70%	111
+11	121B	11B	1.44%	2226
+
+收到总消息大小10KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+181	2534B	14B	23.55%	10207
+130	1608B	12B	14.94%	3201
+28	916B	32B	8.51%	1502
+13	587B	45B	5.45%	111
+15	495B	33B	4.60%	1203
+13	351B	27B	3.26%	2405
+43	344B	8B	3.20%	1201
+32	320B	10B	2.97%	2101
+27	270B	10B	2.51%	3203
+27	270B	10B	2.51%	3811
+24	240B	10B	2.23%	5391
+20	220B	11B	2.04%	2201
+21	210B	10B	1.95%	10216
+15	195B	13B	1.81%	10208
+9	162B	18B	1.51%	1009
+15	150B	10B	1.39%	10210
+5	142B	28B	1.32%	1606
+14	140B	10B	1.30%	3803
+6	132B	22B	1.23%	1907
+11	121B	11B	1.12%	2226
+
+收到消息均大小17B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+13	587B	45B	69B	29B	111
+1	58B	58B	58B	58B	1626
+28	916B	32B	36B	20B	1502
+15	495B	33B	33B	33B	1203
+2	64B	32B	32B	32B	1604
+2	64B	32B	32B	32B	2410
+5	142B	28B	30B	22B	1606
+13	351B	27B	27B	27B	2405
+2	54B	27B	27B	27B	1912
+4	95B	23B	26B	20B	1005
+3	72B	24B	24B	24B	1619
+6	132B	22B	22B	22B	1907
+2	40B	20B	20B	20B	1602
+2	36B	18B	18B	18B	2407
+9	162B	18B	18B	18B	1009
+130	1608B	12B	14B	12B	3201
+181	2534B	14B	14B	14B	10207
+4	56B	14B	14B	14B	2403
+2	28B	14B	14B	14B	2220
+3	42B	14B	14B	14B	3703
+
+发送总消息数量2203次, 高占比列表:
+次数	总大小	均大小	数量%	消息ID
+263	51KB	201B	11.94%	1902
+150	5KB	40B	6.81%	10205
+130	1608B	12B	5.90%	3202
+112	11KB	109B	5.08%	1601
+96	1728B	18B	4.36%	2409
+95	760B	8B	4.31%	1000
+90	2184B	24B	4.09%	2001
+78	1404B	18B	3.54%	1936
+77	4328B	56B	3.50%	1112
+52	589B	11B	2.36%	1114
+50	14KB	306B	2.27%	1205
+50	8KB	180B	2.27%	1216
+44	5KB	138B	2.00%	2102
+39	2192B	56B	1.77%	1202
+36	1683B	46B	1.63%	2011
+36	442B	12B	1.63%	10204
+34	340B	10B	1.54%	10222
+31	734B	23B	1.41%	1904
+30	1050B	35B	1.36%	1204
+27	270B	10B	1.23%	3204
+
+发送总消息大小237KB, 高占比列表:
+次数	总大小	均大小	大小%	消息ID
+263	51KB	201B	21.75%	1902
+26	49KB	1935B	20.67%	4803
+10	26KB	2676B	10.99%	2205
+4	17KB	4368B	7.18%	2402
+50	14KB	306B	6.29%	1205
+112	11KB	109B	5.02%	1601
+50	8KB	180B	3.70%	1216
+44	5KB	138B	2.51%	2102
+150	5KB	40B	2.49%	10205
+9	4854B	539B	1.99%	1101
+77	4328B	56B	1.78%	1112
+15	3117B	207B	1.28%	10201
+39	2192B	56B	0.90%	1202
+90	2184B	24B	0.90%	2001
+1	1926B	1926B	0.79%	4302
+96	1728B	18B	0.71%	2409
+36	1683B	46B	0.69%	2011
+6	1624B	270B	0.67%	1693
+130	1608B	12B	0.66%	3202
+18	1602B	89B	0.66%	3702
+
+发送消息均大小140B, 高占比列表:
+次数	总大小	均大小	最大	最小	消息ID
+10	26KB	2676B	25KB	20B	2205
+4	17KB	4368B	7KB	1910B	2402
+26	49KB	1935B	3819B	374B	4803
+1	1926B	1926B	1926B	1926B	4302
+263	51KB	201B	824B	152B	1902
+9	4854B	539B	692B	424B	1101
+44	5KB	138B	627B	10B	2102
+6	1624B	270B	616B	102B	1693
+9	1200B	133B	370B	8B	1692
+15	3117B	207B	312B	108B	10201
+50	14KB	306B	308B	306B	1205
+112	11KB	109B	291B	10B	1601
+36	1683B	46B	230B	20B	2011
+50	8KB	180B	188B	174B	1216
+39	2192B	56B	183B	8B	1202
+13	342B	26B	127B	8B	1691
+9	891B	99B	99B	99B	4101
+10	950B	95B	96B	93B	2406
+2	192B	96B	96B	96B	2408
+18	1602B	89B	89B	89B	3702
+
+2018-10-29 19:33:13,548 (StatisticsOB.java:135) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - OB类事件  ==
+========================
+Event总耗时669ms, 高占比列表:
+耗时	抛次数	接次数	均耗时	耗时%	最大耗时	关键字
+318ms	189	189	0.85ms	47.57%	158ms	4130
+64ms	18	18	2.11ms	9.57%	26ms	4146
+25ms	11	11	1.96ms	3.84%	4.14ms	12321
+20ms	9	9	1.83ms	3.10%	4.35ms	12292
+26ms	9	9	1.77ms	3.95%	10ms	4128
+18ms	9	9	1.75ms	2.80%	3.01ms	12294
+15ms	78	78	0.17ms	2.36%	2.64ms	16385
+14ms	6	6	1.76ms	2.09%	3.45ms	16388
+10ms	52	52	0.19ms	1.56%	0.70ms	12325
+10ms	58	58	0.17ms	1.59%	0.91ms	24578
+13ms	52	52	0.19ms	1.99%	3.71ms	12329
+10ms	491	491	0.02ms	1.50%	1.92ms	12326
+9.32ms	15	15	0.53ms	1.39%	1.33ms	28678
+7.35ms	96	96	0.06ms	1.10%	1.38ms	2097153
+6.07ms	39	39	0.13ms	0.91%	1.17ms	8197
+4.95ms	15	15	0.30ms	0.74%	0.50ms	28674
+4.60ms	8	8	0.45ms	0.69%	0.99ms	24593
+3.28ms	15	15	0.18ms	0.49%	0.58ms	1638416
+2.54ms	2	2	0.61ms	0.38%	1.33ms	0
+1.99ms	9	9	0.11ms	0.30%	0.98ms	12291
+
+Msg总耗时4919ms, 高占比列表:
+耗时	抛次数	均耗时	耗时%	最大耗时	关键字
+4109ms	28	5.41ms	83.54%	3958ms	game.msg.MsgInform$CSInformChat
+123ms	15	6.82ms	2.52%	21ms	game.msg.MsgInstance$CSInstanceEnd
+81ms	39	1.59ms	1.66%	19ms	game.msg.MsgStage$CSStageEnter
+72ms	3	14ms	1.47%	28ms	game.msg.MsgItem$CSPickItem
+51ms	4	8.67ms	1.04%	16ms	game.msg.MsgPet$CSPetRecruit
+34ms	130	0.25ms	0.71%	2.12ms	game.msg.MsgGuide$CSChangeGuideStatus
+38ms	6	4.75ms	0.79%	10ms	game.msg.MsgGeneral$CSGeneralReplace
+31ms	27	1.05ms	0.63%	2.83ms	game.msg.MsgVipStore$CSPayCheckCode
+32ms	13	1.89ms	0.65%	7.45ms	game.msg.MsgPet$CSPetAddLevel
+28ms	15	1.58ms	0.58%	4.80ms	game.msg.MsgStage$CSStageSwitch
+27ms	15	1.39ms	0.56%	6.77ms	game.msg.MsgInstance$CSInstanceEnter
+15ms	15	0.94ms	0.32%	1.81ms	game.msg.MsgInstance$CSInstanceLeave
+52ms	5	2.64ms	1.07%	39ms	game.msg.MsgItem$CSEquipIntensify
+12ms	27	0.36ms	0.26%	3.15ms	game.msg.MsgGuide$CSChangeGuidePlotStatus
+15ms	4	2.35ms	0.31%	5.68ms	game.msg.MsgPet$CSPetInfo
+23ms	2	4.33ms	0.47%	14ms	game.msg.MsgPet$CSPetAdvanced
+9.56ms	32	0.27ms	0.19%	1.04ms	game.msg.MsgShop$CSShopOpen
+14ms	3	2.79ms	0.30%	6.15ms	game.msg.MsgHoroscope$CSHoroSelect
+11ms	15	0.55ms	0.22%	2.80ms	game.msg.MsgTurnbasedFight$CSTurnbasedAutoFight
+6.50ms	181	0.04ms	0.13%	0.10ms	game.msg.MsgTurnbasedFight$CSTurnbasedCastSkill
+
+2018-10-29 19:33:13,549 (StatisticsRPC.java:133) [INFO][CORE_STATIS] 
+========================
+==  游戏运行统计 - RPC调用  ==
+========================
+主动调用总耗时3404ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+1315ms	186069	0.01ms	38.64%	3.55ms	class game.worldsrv.human.HumanGlobalService$55
+5s	724	1.55ms	149.34%	3961ms	class game.worldsrv.character.HumanObjectService$31
+418ms	27179	0.02ms	12.28%	2.69ms	class game.seam.account.AccountService$6
+166ms	2094	0.08ms	4.89%	5.95ms	class core.connsrv.Connection$5
+66ms	181	0.35ms	1.95%	3.87ms	class game.worldsrv.activity.ActivityService$3
+93ms	39	1.41ms	2.74%	38ms	class game.seam.account.AccountService$4
+324ms	4	13ms	9.55%	270ms	class game.platform.gift.GiftService$2
+53ms	1119	0.05ms	1.58%	3.13ms	class game.worldsrv.character.HumanObjectService$7
+47ms	4990	0.01ms	1.40%	2.77ms	class game.worldsrv.name.NameService$4
+29ms	30	0.77ms	0.87%	6.45ms	class game.worldsrv.stage.StageObjectService$4
+14ms	15	0.88ms	0.44%	1.70ms	class game.worldsrv.stage.StageGlobalService$13
+18ms	15	0.81ms	0.54%	6.38ms	class game.worldsrv.stage.StageService$4
+13ms	15	0.77ms	0.39%	1.88ms	class game.worldsrv.stage.StageGlobalService$2
+9.94ms	9	0.78ms	0.29%	2.90ms	class game.platform.login.LoginService$1
+7.91ms	28	0.25ms	0.23%	0.99ms	class game.worldsrv.rank.RankGlobalService$1
+6.83ms	52	0.12ms	0.20%	0.72ms	class game.worldsrv.human.HumanGlobalService$58
+8.74ms	9	0.51ms	0.26%	4.14ms	class game.worldsrv.character.HumanObjectService$8
+6.88ms	3	1.43ms	0.20%	2.60ms	class game.worldsrv.character.HumanObjectService$26
+4.34ms	247	0.02ms	0.13%	0.06ms	class game.worldsrv.human.HumanGlobalService$54
+11ms	9	0.45ms	0.34%	7.52ms	class game.worldsrv.stage.StageObjectService$3
+
+请求回调总耗时991ms, 高占比列表:
+总耗时	次数	均耗时	耗时%	最大耗时	关键字
+292ms	905	0.32ms	29.54%	2.26ms	class game.worldsrv.human.HumanGlobalService$$Lambda$565/1360960597
+186ms	9	3.11ms	18.83%	158ms	class game.worldsrv.tower.TowerManager$$Lambda$650/660944339
+51ms	30	1.55ms	5.17%	4.68ms	class game.worldsrv.stage.StageGlobalService$$Lambda$729/565208105
+31ms	9	1.63ms	3.18%	16ms	class game.worldsrv.activity.ActivityManager$$Lambda$658/1974942764
+30ms	4	2.98ms	3.12%	19ms	class game.seam.account.AccountManager$$Lambda$616/1526671288
+26ms	9	1.80ms	2.71%	10ms	class game.worldsrv.human.HumanManager$$Lambda$629/1243077511
+26ms	6	0.03ms	2.66%	26ms	class game.worldsrv.general.GeneralManager$$Lambda$745/1843151304
+25ms	9	0.01ms	2.61%	25ms	class game.worldsrv.heroGrave.HeroGraveManager$$Lambda$634/1445855732
+25ms	181	0.13ms	2.61%	2.19ms	class game.worldsrv.activity.ActivityManager$$Lambda$651/1681025954
+25ms	6	2.02ms	2.57%	13ms	class game.worldsrv.general.GeneralManager$$Lambda$744/391647774
+24ms	9	0.02ms	2.49%	24ms	class game.worldsrv.invade.InvadeManager$$Lambda$642/1508385829
+19ms	9	0.02ms	1.93%	18ms	class game.worldsrv.human.HumanManager$$Lambda$637/231455168
+17ms	1	0.00ms	1.73%	17ms	class game.platform.integration.PayManager$$Lambda$748/1086248811
+14ms	1	0.00ms	1.49%	14ms	class game.worldsrv.compete.CompeteService$$Lambda$555/777931256
+14ms	1119	0.01ms	1.42%	1.85ms	class core.connsrv.Connection$$Lambda$695/312232852
+13ms	4990	0.00ms	1.35%	2.15ms	class game.worldsrv.compete.CompeteService$$Lambda$545/1668321566
+12ms	6	0.03ms	1.26%	12ms	class game.worldsrv.item.ItemBodyManager$$Lambda$746/1883980204
+12ms	13	0.62ms	1.25%	4.35ms	class game.worldsrv.compete.CompeteService$$Lambda$559/547937168
+10ms	12	0.50ms	1.08%	4.74ms	class game.worldsrv.compete.CompeteService$$Lambda$560/1381507115
+10ms	4	1.41ms	1.01%	4.39ms	class game.worldsrv.human.HumanApplyService$$Lambda$618/2037555521
